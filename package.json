@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "packageManager": "pnpm@7.9.0",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/content": "^2.1.1",
+    "@nuxt/image-edge": "1.0.0-27719579.87dcdf2",
+    "@unocss/nuxt": "^0.45.21",
+    "@vueuse/math": "^9.3.0",
+    "@vueuse/motion": "2.0.0-beta.22",
+    "@vueuse/nuxt": "^9.2.0",
+    "nuxt": "3.0.0-rc.11",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.3"
+  }
+}

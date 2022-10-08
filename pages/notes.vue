@@ -1,0 +1,83 @@
+<script lang="ts" setup>
+useHead({
+  title: 'Notes',
+  meta: [
+    { name: 'og:image', content: 'https://gaunt.me/og/notes.png' },
+  ],
+})
+
+const { data: posts } = await useAsyncData('notes', () => {
+  return queryContent('/notes').find()
+})
+</script>
+
+<template>
+  <div flex w-full gap-3>
+    <div flex>
+      <div
+        xl="w-106"
+        relative
+        bg-neutral-800
+        highlight
+        rounded-8
+        h-full
+        max-h-page
+        flex-none
+        overflow-y-auto
+        w-90
+      >
+        <div flex-1 space-y-6 h-full p-3>
+          <div flex flex-col gap-2>
+            <div flex flex-col justify-center p-2>
+              <div flex flex-none items-center justify-between>
+                <span flex items-center space-x-3 px-2>
+                  <h2 text-lg font-semibold tracking-wide line-clamp-1>
+                    Notes
+                  </h2>
+                </span>
+              </div>
+            </div>
+
+            <div flex flex-col gap-2>
+              <template v-for="post in posts">
+                <NuxtLink
+                  :href="post._path"
+                  :title="post.title"
+                  hover="before:bg-neutral-700 before:bg-opacity-50 before:scale-100"
+                  active-class="bg-neutral-700! bg-opacity-80"
+                  before:transition-all
+                  before:scale-95
+                  before:content-none
+                  before:rounded-2xl
+                  before:absolute
+                  before:inset-none
+                  flex
+                  space-x-3
+                  py-4
+                  px-5
+                  rounded-2xl
+                  relative
+                  transition
+                >
+                  <div flex flex-1 flex-col justify-center space-y-1 relative>
+                    <div text-lg font-semibold line-clamp-3 text-neutral-100>
+                      {{ post.title }}
+                    </div>
+
+                    <div font-medium text-neutral-400 line-clamp-1>
+                      {{ post.published }}
+                    </div>
+                  </div>
+                </NuxtLink>
+              </template>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div flex bg-neutral-800 highlight rounded-8 w-full>
+      <NuxtPage />
+    </div>
+  </div>
+</template>

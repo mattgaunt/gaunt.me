@@ -1,0 +1,11 @@
+<template>
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.6 3.15A2.45 2.45 0 0 0 3.15 5.6v2.45h4.9v-4.9H5.6ZM1.65 5.6A3.95 3.95 0 0 1 5.6 1.65h3.2a.75.75 0 0 1 .75.75v6.4a.75.75 0 0 1-.75.75H2.4a.75.75 0 0 1-.75-.75V5.6ZM14.45 2.4a.75.75 0 0 1 .75-.75h3.2a3.95 3.95 0 0 1 3.95 3.95v3.2a.75.75 0 0 1-.75.75h-6.4a.75.75 0 0 1-.75-.75V2.4Zm1.5.75v4.9h4.9V5.6a2.45 2.45 0 0 0-2.45-2.45h-2.45Z" fill-current />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.45 8.8a.75.75 0 0 1 .75-.75h6.4a.75.75 0 0 1 .75.75V12a3.95 3.95 0 0 1-3.95 3.95h-3.2a.75.75 0 0 1-.75-.75V8.8Zm1.5.75v4.9h2.45A2.45 2.45 0 0 0 20.85 12V9.55h-4.9ZM1.65 15.2a.75.75 0 0 1 .75-.75h6.4a.75.75 0 0 1 .75.75v6.4a.75.75 0 0 1-.75.75H5.6a3.95 3.95 0 0 1-3.95-3.95v-3.2Zm1.5.75v2.45a2.45 2.45 0 0 0 2.45 2.45h2.45v-4.9h-4.9Z" fill-current />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.05 15.2a.75.75 0 0 1 .75-.75h6.4a.75.75 0 0 1 .75.75v3.2A3.95 3.95 0 0 1 12 22.35H8.8a.75.75 0 0 1-.75-.75v-6.4Zm1.5.75v4.9H12a2.45 2.45 0 0 0 2.45-2.45v-2.45h-4.9Z" fill-current />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65 8.8a.75.75 0 0 1 .75-.75h6.4a.75.75 0 0 1 .75.75v6.4a.75.75 0 0 1-.75.75H2.4a.75.75 0 0 1-.75-.75V8.8Zm1.5.75v4.9h4.9v-4.9h-4.9Z" fill-current />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.05 2.4a.75.75 0 0 1 .75-.75h6.4a.75.75 0 0 1 .75.75v6.4a.75.75 0 0 1-.75.75H8.8a.75.75 0 0 1-.75-.75V2.4Zm1.5.75v4.9h4.9v-4.9h-4.9Z" fill-current />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.6 2.4a3.2 3.2 0 0 0-3.2 3.2v3.2h12.8V2.4H5.6Zm12.8 0a3.2 3.2 0 0 1 3.2 3.2v3.2h-6.4V2.4h3.2Zm3.2 9.6a3.2 3.2 0 0 1-3.2 3.2h-3.2V8.8h6.4V12Zm-16 9.6a3.2 3.2 0 0 1-3.2-3.2V8.8h12.8V18.4a3.2 3.2 0 0 1-3.2 3.2H5.6Z" fill-current opacity-12 />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.05 8.8a.75.75 0 0 1 .75-.75h6.4a.75.75 0 0 1 .75.75v6.4a.75.75 0 0 1-.75.75H8.8a.75.75 0 0 1-.75-.75V8.8Zm1.5.75v4.9h4.9v-4.9h-4.9Z" fill-current />
+  </svg>
+</template>
