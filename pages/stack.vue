@@ -7,7 +7,7 @@ useHead({
 })
 
 const { data: stack } = await useAsyncData('stack', () => {
-  return queryContent('/stack').find()
+  return queryContent('stack').find()
 })
 </script>
 

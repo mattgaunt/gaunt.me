@@ -7,7 +7,7 @@ useHead({
 })
 
 const { data: posts } = await useAsyncData('notes', () => {
-  return queryContent('/notes').find()
+  return queryContent('notes').find()
 })
 </script>
 

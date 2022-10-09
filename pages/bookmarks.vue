@@ -7,7 +7,7 @@ useHead({
 })
 
 const { data: bookmarks } = await useAsyncData('bookmarks', () => {
-  return queryContent('/bookmarks').find()
+  return queryContent('bookmarks').find()
 })
 </script>
 

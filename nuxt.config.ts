@@ -21,7 +21,6 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
   ],
   content: {
-    documentDriven: true,
     highlight: {
       theme: 'dracula',
     },
