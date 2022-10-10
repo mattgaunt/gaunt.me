@@ -33,10 +33,7 @@ const { open } = useContactModal()
 
         <nav flex flex-col gap-6>
           <SidebarSection>
-            <SidebarNavLink icon="House" href="/">
-              Recents
-            </SidebarNavLink>
-            <SidebarNavLink icon="User" href="/about">
+            <SidebarNavLink icon="User" href="/">
               About
             </SidebarNavLink>
             <SidebarNavLink icon="Code" href="/projects">
