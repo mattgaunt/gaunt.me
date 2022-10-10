@@ -10,7 +10,8 @@
               </h2>
 
               <p text-lg text-neutral-400 leading-relaxed tracking-wide>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text, forever.
+                The discovery platform for great gaming gear. It helps you become a better gamer, streamer or
+                content creator by matching with the pros.
               </p>
             </div>
 

@@ -29,14 +29,14 @@ useMotion(mobile, {
       <div col-span-12>
         <div flex justify-center p-10 md:p-12>
           <h2 text-3xl md:text-4xl text-neutral-500 font-medium leading-tight md:leading-tight>
-            <span text-white font-bold block>Gaming fingertips.</span> Generate endless variations
-            of layouts in minutes.
+            <span text-white font-bold block>Digest on the go.</span> Great gaming content,
+            at your fingertips.
           </h2>
         </div>
       </div>
       <div col-span-12>
         <div flex justify-center>
-          <NuxtImg
+          <img
             ref="mobile"
             src="/projects/alwaysdead/mobile.png"
             alt="Alwaysdead Mobile"
