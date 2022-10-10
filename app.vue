@@ -4,6 +4,7 @@ const description = $ref('Full-stack developer, budding designer, and tinkerer, 
 
 useHead({
   title: title,
+  titleTemplate: `%s - Matthew Gaunt`,
   link: [
     { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
     { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg', sizes: 'any' },

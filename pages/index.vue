@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 useHead({
-  title: 'Recents',
+  titleTemplate: 'Matthew Gaunt'
 })
 
 const first = ref<HTMLElement>()
