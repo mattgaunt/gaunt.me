@@ -59,7 +59,7 @@ refs.forEach((ref, index) => {
       </div>
       <div col-span-12 md:min-h-xs h-full mt="-20 md:-50">
         <div flex justify-center items-center>
-          <NuxtImg
+          <img
             src="/projects/midnite/wave.svg"
             alt="Midnite"
             relative
