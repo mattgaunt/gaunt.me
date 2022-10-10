@@ -57,15 +57,9 @@ const { open } = useContactModal()
           </SidebarSection>
 
           <SidebarSection label="Stay in touch">
-            <SidebarNavLink
-              component="button"
-              icon="Chat"
-              cursor-pointer
-              text-left
-              @click.prevent="open"
-            >
+            <SidebarNavButton icon="Chat" @click.prevent="open">
               Contact
-            </SidebarNavLink>
+            </SidebarNavButton>
             <SidebarNavLink
               icon="Twitter"
               external

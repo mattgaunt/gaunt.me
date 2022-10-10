@@ -34,9 +34,9 @@ defineProps({
         />
       </div>
       <div flex flex-1 items-center w-full>
-        <h4 flex-1 text-xl font-bold line-clamp-1>
+        <h3 flex-1 text-xl font-bold line-clamp-1>
           {{ item.title }}
-        </h4>
+        </h3>
 
         <div flex gap-1>
           <span

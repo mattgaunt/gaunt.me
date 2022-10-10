@@ -5,9 +5,9 @@
         <div bg-neutral-800 rounded-full aspect-square w-15 />
       </div>
       <div flex flex-col gap-px>
-        <h4 text-lg font-semibold leading-tight>
+        <h3 text-lg font-semibold leading-tight>
           Tom MacWright
-        </h4>
+        </h3>
         <span text-neutral-400 tracking-wide>
           verse
         </span>
