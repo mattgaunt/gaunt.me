@@ -25,6 +25,9 @@ export default defineNuxtConfig({
       theme: 'dracula',
     },
   },
+  image: {
+    provider: 'vercel',
+  },
   unocss: {
     preflight: true,
   },
