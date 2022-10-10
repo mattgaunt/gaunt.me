@@ -12,17 +12,21 @@ useHead({
   ],
   meta: [
     { name: 'description', content: description },
-    { name: 'og:title', content: title },
-    { name: 'og:description', content: description },
-    { name: 'og:url', content: 'https://gaunt.me' },
-    { name: 'og:type', content: 'website' },
-    { name: 'og:image', content: 'https://gaunt.me/og/default.png' },
+    { property: 'og:title', content: title },
+    { property: 'og:description', content: description },
+    { property: 'og:image', content: 'https://gaunt.me/og/default.png' },
+    { property: 'og:url', content: 'https://gaunt.me' },
+    { property: 'og:type', content: 'website' },
     { name: 'twitter:creator', content: '@mattgaunt' },
+    { name: 'twitter:site', content: '@mattgaunt' },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:image', content: 'https://gaunt.me/og/default.png' },
     { name: 'theme-color', content: '#fff', media: '(prefers-color-scheme: light)' },
     { name: 'theme-color', content: 'rgb(23, 23, 23)', media: '(prefers-color-scheme: dark)' },
   ],
+  htmlAttrs: {
+    lang: 'en',
+  },
 })
 </script>
 
