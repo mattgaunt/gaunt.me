@@ -2,10 +2,10 @@ export default defineAppConfig({
   name: 'Matthew Gaunt',
   email: 'hello@gaunt.me',
   socials: {
-    twitter: 'twitter.com/@mattgaunt',
-    github: 'github.com/mattgaunt',
-    polywork: 'polywork.com/mattgaunt',
-    linkedin: 'linkedin.com/matthew.gaunt',
+    twitter: 'https://twitter.com/mattgaunt',
+    github: 'https://github.com/mattgaunt',
+    polywork: 'https://www.polywork.com/mattgaunt',
+    linkedin: 'https://www.linkedin.com/in/matthew-gaunt-aa8769184/',
   },
 })
 

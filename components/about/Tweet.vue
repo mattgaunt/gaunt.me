@@ -1,7 +1,11 @@
+<script lang="ts" setup>
+const config = useAppConfig()
+</script>
+
 <template>
   <div bg-neutral-900 bg-opacity-25 rounded-8 md:rounded-10>
     <a
-      href="https://twitter.com/mattgaunt"
+      :href="config.socials.twitter"
       target="_blank"
       hover="-rotate-1 -translate-y-5"
       bg="#168DFF"

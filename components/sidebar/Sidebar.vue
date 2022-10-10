@@ -63,7 +63,7 @@ const { open } = useContactModal()
             <SidebarNavLink
               icon="Twitter"
               external
-              to="https://twitter.com/mattgaunt"
+              :to="config.socials.twitter"
               target="_blank"
             >
               Twitter
@@ -71,7 +71,7 @@ const { open } = useContactModal()
             <SidebarNavLink
               icon="Polywork"
               external
-              to="https://polywork.com/mattgaunt"
+              :to="config.socials.polywork"
               target="_blank"
             >
               Polywork
@@ -79,7 +79,7 @@ const { open } = useContactModal()
             <SidebarNavLink
               icon="Github"
               external
-              to="https://github.com/mattgaunt"
+              :to="config.socials.github"
               target="_blank"
             >
               GitHub
