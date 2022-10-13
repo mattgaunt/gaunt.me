@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { useMotion } from '@vueuse/motion'
-
 const left = ref<HTMLElement>()
 const right = ref<HTMLElement>()
 

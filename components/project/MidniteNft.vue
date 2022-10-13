@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { useMotion } from '@vueuse/motion'
-
 const wolf1 = ref<HTMLElement>()
 const wolf2 = ref<HTMLElement>()
 const wolf3 = ref<HTMLElement>()

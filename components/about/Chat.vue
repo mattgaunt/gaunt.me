@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-import { useMotion } from '@vueuse/motion'
-
 const { open } = useContactModal()
+
 const message = ref<HTMLElement>()
 const reply = ref<HTMLElement>()
 
