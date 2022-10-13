@@ -1,10 +1,12 @@
 <script lang="ts" setup>
+const config = useAppConfig()
+
 const title = $ref('Matthew Gaunt')
 const description = $ref('Full-stack developer, budding designer, and tinkerer, working remotely.')
 
 useHead({
   title: title,
-  titleTemplate: `%s - Matthew Gaunt`,
+  titleTemplate: `%s - ${config.name}`,
   link: [
     { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
     { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg', sizes: 'any' },
