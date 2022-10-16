@@ -21,7 +21,7 @@ transform.x = 52 * activeIdx.value
 </script>
 
 <template>
-  <div flex md:hidden justify-center items-center fixed inset-x-none bottom-8 z-100>
+  <div flex lg:hidden justify-center items-center fixed inset-x-none bottom-8 z-100>
     <div flex bg-neutral-900 rounded-3xl overflow-hidden relative shadow-lg shadow-opacity-10 h-15 px-4>
       <div
         ref="target"
