@@ -86,8 +86,8 @@ const links = [
                   </DialogTitle>
                   <div mt-2>
                     <p text-lg text-neutral-400 leading-relaxed tracking-wide>
-                      We like to do things a little different. We'd love to discuss your
-                      next project or great idea on discord, or DM us on twitter.
+                      Thanks for wanting to reach out! You can find me anywhere below, or feel free to
+                      DM me on Twitter to have a chat.
                     </p>
                   </div>
                 </div>

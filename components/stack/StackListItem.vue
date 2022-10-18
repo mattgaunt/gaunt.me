@@ -24,14 +24,9 @@ defineProps({
   >
     <div flex flex-col items-center gap-6 md:gap-8>
       <div flex items-center flex-none py-8>
-        <div
-          inline-flex
-          bg-neutral-800
-          highlight
-          rounded-8
-          w-22
-          h-22
-        />
+        <div inline-flex rounded-8 overflow-hidden>
+          <img loading="lazy" :src="item.image" aspect-square max-w-22>
+        </div>
       </div>
       <div flex flex-1 items-center w-full>
         <h3 flex-1 text-xl font-bold line-clamp-1>

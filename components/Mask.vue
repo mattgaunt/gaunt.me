@@ -1,9 +1,7 @@
 <template>
   <div
-    mask-spacer
     pointer-events-none
     select-none
-    backdrop-blur-5px
     absolute
     inset-x-2
     bottom-none
@@ -18,10 +16,3 @@
     h-32
   />
 </template>
-
-<style>
-[mask-spacer] {
-  -webkit-mask-image: linear-gradient(to top, #000 25%, transparent);
-  mask-image: linear-gradient(to top, #000 25%, transparent);
-}
-</style>

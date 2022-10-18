@@ -76,7 +76,15 @@ const { data: posts } = await useAsyncData('notes', () => {
       </div>
     </div>
 
-    <div flex bg-neutral-800 highlight rounded-8 w-full>
+    <div
+      flex
+      bg-neutral-800
+      highlight
+      rounded-8
+      overflow-y-auto
+      max-h-page
+      w-full
+    >
       <NuxtPage />
     </div>
   </div>

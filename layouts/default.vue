@@ -5,7 +5,7 @@
     <Contact />
 
     <div flex flex-1>
-      <div lg="py-4 pr-4" flex w-full>
+      <div flex w-full lg:py-3 lg:pr-3>
         <slot />
       </div>
     </div>

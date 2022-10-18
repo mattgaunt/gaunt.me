@@ -49,6 +49,8 @@ useHead({
   --body-margin-left: max(24px, env(safe-area-inset-left));
   --body-margin-right: max(24px, env(safe-area-inset-right));
   --body-background-color: #1c1c1c;
+  --page-max-width: 1200px;
+  --page-padding-default: 32px;
   --content-width: 640px;
   --scrollbar-width: 12px;
   --scrollbar-color: #333;

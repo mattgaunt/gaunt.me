@@ -1,12 +1,3 @@
-<script lang="ts" setup>
-defineProps({
-  component: {
-    type: String,
-    default: 'button',
-  },
-})
-</script>
-
 <script lang="ts">
 export default {
   inheritAttrs: false,
@@ -15,8 +6,7 @@ export default {
 
 <template>
   <div>
-    <Component
-      :is="component"
+    <NuxtLink
       v-bind="$attrs"
       hover="bg-opacity-15"
       inline-flex
@@ -37,6 +27,6 @@ export default {
       transition-all
     >
       <slot />
-    </Component>
+    </NuxtLink>
   </div>
 </template>
