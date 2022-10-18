@@ -19,7 +19,7 @@ useHead({
                 <ProjectAlwaysdead />
               </div>
               <div col-span-1>
-                <div grid grid-cols-1 md:grid-cols-2 gap-6>
+                <div grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8>
                   <div col-span-1 flex>
                     <ProjectCheckpoint />
                   </div>
@@ -32,7 +32,7 @@ useHead({
                 <ProjectMidnite />
               </div>
               <div col-span-1>
-                <div grid grid-cols-1 md:grid-cols-2 gap-6>
+                <div grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8>
                   <div col-span-1 flex>
                     <ProjectMidniteNft />
                   </div>

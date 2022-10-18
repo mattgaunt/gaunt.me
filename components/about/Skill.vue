@@ -16,11 +16,10 @@ const opacity = computed(() => 1 - Math.abs(relativePos.value) / 4)
 
 <template>
   <div
-    md="text-4xl"
     flex
     items-center
     absolute
-    text-3xl
+    title-xl
     transform
     transition
     duration-500

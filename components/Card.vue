@@ -1,0 +1,23 @@
+<template>
+  <div
+    relative
+    rounded-12
+    bg-gradient-to-b
+    from-white
+    from-opacity-3
+    to-white
+    to-opacity-5
+    h-full
+    p-4
+    before:mask
+    before:content-none
+    before:rounded-inherit
+    before:absolute
+    before:inset-none
+    before:pointer-events-none
+    before:select-none
+    before:p-px
+  >
+    <slot />
+  </div>
+</template>

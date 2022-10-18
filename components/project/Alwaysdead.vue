@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { useMotion } from '@vueuse/motion'
-
 const one = ref<HTMLElement>(null)
 const two = ref<HTMLElement>(null)
 const three = ref<HTMLElement>(null)
@@ -120,13 +118,13 @@ useMotion(five, {
 </script>
 
 <template>
-  <div bg-neutral-700 highlight rounded-8 md:rounded-10 overflow-hidden>
+  <Card overflow-hidden p-none>
     <div grid items-center gap-8>
       <div col-span-12>
         <div flex justify-center w-full>
           <div space-y-8 text-center py-16 md:py-20 px-6>
             <div flex flex-col space-y-6 max-w-xl>
-              <h2 text="#27FFF2" text-4xl md:text-5xl font-bold leading-tight tracking-px>
+              <h2 text="#27FFF2" title-2xl tracking-px>
                 Daily digest for your gaming habits.
               </h2>
 
@@ -202,5 +200,5 @@ useMotion(five, {
         </div>
       </div>
     </div>
-  </div>
+  </Card>
 </template>

@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { useMotion } from '@vueuse/motion'
-
 const left = ref<HTMLElement>()
 const right = ref<HTMLElement>()
 
@@ -29,13 +27,13 @@ refs.forEach((ref, index) => {
 </script>
 
 <template>
-  <div bg-neutral-700 highlight rounded-8 md:rounded-10 overflow-hidden>
-    <div grid items-stretch gap-4>
+  <Card overflow-hidden p-none>
+    <div grid items-stretch gap-4 w-full>
       <div col-span-12>
         <div flex justify-center w-full relative z-5>
           <div space-y-8 text-center py-16 md:py-20 px-6>
             <div flex flex-col space-y-6 max-w-lg>
-              <h2 text="#B3FF66" text-4xl md:text-5xl font-bold tracking-px>
+              <h2 text="#B3FF66" title-2xl tracking-px>
                 Next level betting.
               </h2>
 
@@ -68,5 +66,5 @@ refs.forEach((ref, index) => {
         </div>
       </div>
     </div>
-  </div>
+  </Card>
 </template>

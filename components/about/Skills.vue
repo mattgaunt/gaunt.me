@@ -25,11 +25,11 @@ whenever(logicNot(hovered), () => resume())
 </script>
 
 <template>
-  <div bg-neutral-700 highlight rounded-8 md:rounded-10 overflow-hidden>
-    <div md="p-12" grid gap-24 p-10>
+  <Card overflow-hidden p-none>
+    <div md="p-12" grid gap-24 p-10 w-full>
       <div col-span-12>
         <div flex items-center>
-          <h2 md="text-4xl leading-tight" text-3xl font-bold leading-tight>
+          <h2 title-lg font-bold leading-tight>
             Skills.
           </h2>
         </div>
@@ -48,5 +48,5 @@ whenever(logicNot(hovered), () => resume())
         </div>
       </div>
     </div>
-  </div>
+  </Card>
 </template>

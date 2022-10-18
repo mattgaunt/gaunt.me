@@ -21,8 +21,8 @@ transform.x = 52 * activeIdx.value
 </script>
 
 <template>
-  <div flex md:hidden justify-center items-center fixed inset-x-none bottom-8 z-100>
-    <div flex highlight bg-neutral-700 rounded-3xl overflow-hidden relative h-15 px-4>
+  <div flex lg:hidden justify-center items-center fixed inset-x-none bottom-8 z-100>
+    <div flex bg-neutral-900 rounded-3xl overflow-hidden relative shadow-lg shadow-opacity-10 h-15 px-4>
       <div
         ref="target"
         transition
@@ -31,7 +31,7 @@ transform.x = 52 * activeIdx.value
         left-4
         inset-y-2
         inline-flex
-        bg-neutral-600
+        bg-neutral-700
         highlight
         rounded-2xl
         w-11

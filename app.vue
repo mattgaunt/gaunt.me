@@ -1,9 +1,12 @@
 <script lang="ts" setup>
+const config = useAppConfig()
+
 const title = $ref('Matthew Gaunt')
 const description = $ref('Full-stack developer, budding designer, and tinkerer, working remotely.')
 
 useHead({
   title: title,
+  titleTemplate: `%s - ${config.name}`,
   link: [
     { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
     { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg', sizes: 'any' },
@@ -46,6 +49,8 @@ useHead({
   --body-margin-left: max(24px, env(safe-area-inset-left));
   --body-margin-right: max(24px, env(safe-area-inset-right));
   --body-background-color: #1c1c1c;
+  --page-max-width: 1200px;
+  --page-padding-default: 32px;
   --content-width: 640px;
   --scrollbar-width: 12px;
   --scrollbar-color: #333;

@@ -1,50 +1,37 @@
 <template>
-  <div flex bg-neutral-900 bg-opacity-25 rounded-10>
-    <a
-      href="https://checkpoint.live/"
-      target="_blank"
-      hover="-rotate-1 -translate-y-5"
-      bg="#0082FF"
-      highlight
-      rounded-8
-      md:rounded-10
-      overflow-hidden
-      transition
-      duration-250
-      min-h-124
-    >
-      <div flex flex-col justify-between p-10 md:p-12 h-full>
-        <div flex-1>
-          <div inline-flex>
-            <Icon
-              name="Checkpoint"
-              size="48"
-              text-white
-            />
+  <div flex bg-neutral-900 bg-opacity-25 rounded-12>
+    <a href="https://checkpoint.live/" target="_blank" hover="-rotate-1 -translate-y-5" transition duration-250>
+      <Card
+        from="#168DFF/75"
+        to="#168DFF/100"
+        overflow-hidden
+        p-none
+        before:from-white
+        before:from-opacity-15
+        before:to-white
+        before:to-opacity-15
+      >
+        <div flex flex-col justify-between p-10 md:p-12 h-full>
+          <div flex-1>
+            <div inline-flex>
+              <Icon
+                name="Checkpoint"
+                size="48"
+                text-white
+              />
+            </div>
           </div>
-        </div>
-        <div space-y-12>
-          <div flex flex-col space-y-6 max-w-xl>
-            <h2 text="#88C5FF" text-3xl md:text-4xl font-medium leading-tight md:leading-tight>
-              <span text-white font-bold>Powerful events for gaming.</span> Providing an
-              unrivalled event experiences.
-            </h2>
-          </div>
-
-          <div>
-            <a
-              href="https://checkpoint.live"
-              target="_blank"
-              title="Visit Checkpoint"
-              text-white
-              font-medium
-              tracking-wide
-            >
+          <div flex flex-col space-y-2 py-2>
+            <h2 title-lg text-white>
               Checkpoint.live
-            </a>
+            </h2>
+
+            <p title-lg text-white text-opacity-70 font-medium>
+              Providing un-rivalled event experiences in gaming.
+            </p>
           </div>
         </div>
-      </div>
+      </Card>
     </a>
   </div>
 </template>
