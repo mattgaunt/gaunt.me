@@ -53,13 +53,17 @@ second.forEach((ref, index) => {
 </script>
 
 <template>
-  <div bg-neutral-700 highlight rounded-8 md:rounded-10 overflow-hidden>
+  <Card overflow-hidden p-none>
     <div grid items-stretch gap-4 h-full>
       <div col-span-12>
-        <div flex justify-center p-10 md:p-12>
-          <h2 text-3xl md:text-4xl text-neutral-500 font-medium leading-tight md:leading-tight>
-            <span text-white font-bold block>Midnite Wolf Pack.</span> Supercharged fandom through NFTs.
+        <div flex flex-col gap-2 p-10 md:p-12>
+          <h2 title-lg text-white>
+            Midnite Wolf Pack.
           </h2>
+
+          <p title-lg text-neutral-400 font-medium>
+            Supercharged fandom through NFTs.
+          </p>
         </div>
       </div>
       <div col-span-12>
@@ -141,5 +145,5 @@ second.forEach((ref, index) => {
         </div>
       </div>
     </div>
-  </div>
+  </Card>
 </template>

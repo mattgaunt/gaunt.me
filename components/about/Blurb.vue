@@ -27,13 +27,13 @@ refs.forEach((ref, index) => {
 </script>
 
 <template>
-  <div bg-neutral-700 highlight rounded-8 md:rounded-10 overflow-hidden>
+  <Card overflow-hidden p-none>
     <div flex flex-col items-stretch p-10 md:p-20>
       <div grid grid-cols-6 gap-6 md:gap-12>
         <div col-span-6 md:col-span-3>
           <div flex items-center w-full>
             <div flex flex-col items-start space-y-12 md:py-4>
-              <h2 text="md:2.75rem" text-4xl font-bold leading-tight tracking-px>
+              <h2 title-2xl font-bold leading-tight tracking-px>
                 A Full-Stack Developer and Designer
                 Based in the UK.
               </h2>
@@ -71,5 +71,5 @@ refs.forEach((ref, index) => {
         </div>
       </div>
     </div>
-  </div>
+  </Card>
 </template>

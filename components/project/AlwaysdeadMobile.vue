@@ -22,14 +22,17 @@ useMotion(mobile, {
 </script>
 
 <template>
-  <div bg-neutral-700 highlight rounded-8 md:rounded-10 overflow-hidden>
+  <Card overflow-hidden p-none>
     <div grid items-stretch gap-4 h-full>
       <div col-span-12>
-        <div flex justify-center p-10 md:p-12>
-          <h2 text-3xl md:text-4xl text-neutral-500 font-medium leading-tight md:leading-tight>
-            <span text-white font-bold block>Digest on the go.</span> Great gaming content,
-            at your fingertips.
+        <div flex flex-col gap-2 p-10 md:p-12>
+          <h2 title-lg text-white>
+            Digest on the go.
           </h2>
+
+          <p title-lg text-neutral-400 font-medium>
+            Great gaming content, at your fingertips.
+          </p>
         </div>
       </div>
       <div col-span-12>
@@ -43,5 +46,5 @@ useMotion(mobile, {
         </div>
       </div>
     </div>
-  </div>
+  </Card>
 </template>
