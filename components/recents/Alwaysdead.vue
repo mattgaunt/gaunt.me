@@ -1,31 +1,3 @@
-<script lang="ts" setup>
-const left = ref<HTMLElement>()
-const right = ref<HTMLElement>()
-
-const refs = [left, right]
-
-refs.forEach((ref, i) => {
-  useMotion(ref, {
-    initial: {
-      y: 20,
-      scale: 0.9,
-      opacity: 0,
-    },
-    visibleOnce: {
-      y: 10,
-      scale: 1,
-      opacity: 1,
-      transition: {
-        type: 'spring',
-        stiffness: 250,
-        damping: 40,
-        delay: 100 * i,
-      },
-    },
-  })
-})
-</script>
-
 <template>
   <Card min-h-130 overflow-hidden>
     <div grid grid-cols-2 items-stretch>
@@ -58,7 +30,6 @@ refs.forEach((ref, i) => {
           <div flex justify-center items-center relative>
             <div class="flex justify-center gap-8 transform scale-75 -my-4">
               <AlwaysdeadPost
-                ref="left"
                 image="https://d3sg99hx6ladh0.cloudfront.net/media/980/conversions/jyjSxslI8oJ7eWa2F6Rr97bDWVk3bjZfiVV1iLSk-thumbnail.jpg"
                 title="Valheim and Slime Rancher 2 join Deathloop on Xbox Game Pass"
                 source="Polygon"
@@ -71,7 +42,6 @@ refs.forEach((ref, i) => {
                 max-w-84
               />
               <AlwaysdeadPost
-                ref="right"
                 image="https://d3sg99hx6ladh0.cloudfront.net/media/971/conversions/44YC4APO7KuErgrosXppXHqu2nMEwC7igd07tyyF-thumbnail.jpg"
                 title="Electronic Arts CEO kinda hopes Call of Duty will become an Xbox exclusive"
                 source="PCGamer"
