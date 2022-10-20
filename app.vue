@@ -46,9 +46,9 @@ useHead({
 }
 
 :root {
+  --body-background-color: #1c1c1c;
   --body-margin-left: max(24px, env(safe-area-inset-left));
   --body-margin-right: max(24px, env(safe-area-inset-right));
-  --body-background-color: #1c1c1c;
   --page-max-width: 1200px;
   --page-padding-default: 32px;
   --content-width: 640px;
@@ -68,17 +68,19 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: var(--scrollbar-width);
-  height: var(--scrollbar-width);
+  @apply w-[var(--scrollbar-width)];
+  @apply h-[var(--scrollbar-width)];
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-color);
-  border-radius: var(--scrollbar-width);
-  border: 3px solid transparent;
-  background-clip: content-box;
-  -webkit-transition: background .2s ease;
-  transition: background .2s ease;
+  @apply bg-[var(--scrollbar-color)];
+  @apply rounded-[var(--scrollbar-width)];
+  @apply border-3;
+  @apply border-transparent;
+  @apply bg-clip-content;
+  @apply transition-colors;
+  @apply transition-ease;
+  @apply duration-200;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -90,6 +92,6 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  @apply bg-transparent;
 }
 </style>
