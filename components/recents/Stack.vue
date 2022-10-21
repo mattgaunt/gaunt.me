@@ -55,8 +55,8 @@ refs.forEach((ref, i) => {
                   flex-col
                   transition
                   duration-250
-                  bg-neutral-600
-                  bg-opacity-70
+                  bg-white
+                  bg-opacity-7
                   rounded-3xl
                   highlight
                   px-8
@@ -82,7 +82,7 @@ refs.forEach((ref, i) => {
                           h-6
                           px-2
                         >
-                          <div bg-neutral-600 rounded-xl w-full h-2 />
+                          <div bg-white bg-opacity-12 rounded-xl w-full h-2 />
                         </div>
                       </div>
                     </div>
@@ -94,8 +94,8 @@ refs.forEach((ref, i) => {
                   flex-col
                   transition
                   duration-250
-                  bg-neutral-600
-                  bg-opacity-70
+                  bg-white
+                  bg-opacity-7
                   rounded-3xl
                   highlight
                   px-8
@@ -121,7 +121,7 @@ refs.forEach((ref, i) => {
                           h-6
                           px-2
                         >
-                          <div bg-neutral-600 rounded-xl w-full h-2 />
+                          <div bg-white bg-opacity-12 rounded-xl w-full h-2 />
                         </div>
                       </div>
                     </div>
@@ -134,8 +134,8 @@ refs.forEach((ref, i) => {
                   flex-col
                   transition
                   duration-250
-                  bg-neutral-600
-                  bg-opacity-70
+                  bg-white
+                  bg-opacity-7
                   rounded-3xl
                   highlight
                   px-8
@@ -161,7 +161,7 @@ refs.forEach((ref, i) => {
                           h-6
                           px-2
                         >
-                          <div bg-neutral-600 rounded-xl w-full h-2 />
+                          <div bg-white bg-opacity-12 rounded-xl w-full h-2 />
                         </div>
                       </div>
                     </div>
@@ -173,8 +173,8 @@ refs.forEach((ref, i) => {
                   flex-col
                   transition
                   duration-250
-                  bg-neutral-600
-                  bg-opacity-70
+                  bg-white
+                  bg-opacity-7
                   rounded-3xl
                   highlight
                   px-8
@@ -200,7 +200,7 @@ refs.forEach((ref, i) => {
                           h-6
                           px-2
                         >
-                          <div bg-neutral-600 rounded-xl w-full h-2 />
+                          <div bg-white bg-opacity-12 rounded-xl w-full h-2 />
                         </div>
                       </div>
                     </div>

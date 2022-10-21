@@ -33,7 +33,7 @@ export default {
       font-medium
     >
       <span flex items-center justify-center>
-        <Icon :name="icon" size="24" />
+        <Icon :name="icon" size="22" />
       </span>
       <span flex-1>
         <span text-white font-medium tracking-wide>

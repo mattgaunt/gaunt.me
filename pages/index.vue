@@ -3,16 +3,9 @@ useHead({
   titleTemplate: 'Matthew Gaunt'
 })
 
-const first = ref<HTMLElement>()
-const m = ref<HTMLElement>()
-const a = ref<HTMLElement>()
-const g = ref<HTMLElement>()
-const i = ref<HTMLElement>()
-const c = ref<HTMLElement>()
+const magic = ref<HTMLElement>()
 
-const letters = [m, a, g, i, c]
-
-useMotion(first, {
+useMotion(magic, {
   initial: {
     opacity: 0,
     y: -20,
@@ -22,30 +15,11 @@ useMotion(first, {
     y: 0,
     transition: {
       type: 'spring',
-      stiffness: 200,
-      damping: 10,
-      delay: 100,
+      stiffness: 150,
+      damping: 8,
+      delay: 150,
     },
   },
-})
-
-letters.forEach((ref, i) => {
-  useMotion(ref, {
-    initial: {
-      opacity: 0,
-      y: -20,
-    },
-    enter: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: 'spring',
-        stiffness: 150,
-        damping: 8,
-        delay: 200 + 50 * i,
-      },
-    },
-  })
 })
 </script>
 
@@ -61,25 +35,28 @@ letters.forEach((ref, i) => {
           <div grid grid-cols-8 gap-24 items-center>
             <div col-span-6 col-start-2>
               <div flex flex-col items-center space-y-16 py-32 relative>
-                <div flex flex-col items-center text-center max-w-172 space-y-10 relative>
-                  <h1 text-76px text-neutral-500 font-bold leading-20>
-                    <span ref="first" text-white transition>
-                      Development, with a little
-                      <span text="#F9FD33" inline-flex mr-4>
-                        <span ref="m" text="#42DC7F">M</span>
-                        <span ref="a" text="#5BE692">a</span>
-                        <span ref="g" text="#6BED9F">g</span>
-                        <span ref="i" text="#7DF4AC">i</span>
-                        <span ref="c" text="#84F7B1">c.</span>
-                      </span>
+                <div flex flex-col items-center text-center max-w-172 space-y-8 relative>
+                  <h1 inline-block title-3xl text-white leading-20>
+                    Development, with a little
+                    <span
+                      ref="magic"
+                      animate-ease-in-out
+                      animate-count-infinite
+                      animate-duration-3s
+                      inline-block
+                      text-transparent
+                      leading-24
+                      magic
+                    >
+                      Magic.
                     </span>
                   </h1>
 
-                  <div max-w-40em px-2>
-                    <p text-para text-neutral-400 font-light leading-relaxed tracking-wide>
-                      I’m an all-stack developer, semi-capable designer and full
-                      time tinkerer. If you can’t find me writing code, or designing
-                      in Figma, I’ll likely be crying in AWS console.
+                  <div max-w-42em px-2>
+                    <p text-para text-neutral-400 font-light leading-relaxed>
+                      I’m a full-stack developer, semi-capable designer and notorious non-stop tinkerer.
+                      If you can’t find me writing code, or designing in Figma, I’ll
+                      likely be crying in AWS console.
                     </p>
                   </div>
                 </div>
@@ -90,7 +67,7 @@ letters.forEach((ref, i) => {
               </div>
             </div>
           </div>
-          
+
           <div grid grid-cols-8 gap-20>
             <div col-span-8>
               <div flex flex-col items-center gap-2>

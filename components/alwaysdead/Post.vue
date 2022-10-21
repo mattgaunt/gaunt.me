@@ -28,7 +28,7 @@ defineProps({
 </script>
 
 <template>
-  <article bg-neutral-600 rounded-3xl overflow-hidden>
+  <article bg="#39393b" rounded-3xl overflow-hidden>
     <div group>
       <div flex flex-col space-y-4 p-4>
         <div flex flex-col flex-auto>

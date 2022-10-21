@@ -15,7 +15,6 @@ const { data: posts } = await useAsyncData('notes', () => {
   <div flex w-full gap-3>
     <div flex>
       <div
-        xl="w-106"
         relative
         bg-neutral-800
         highlight
@@ -25,6 +24,7 @@ const { data: posts } = await useAsyncData('notes', () => {
         flex-none
         overflow-y-auto
         w-90
+        xl:w-106
       >
         <div flex-1 space-y-6 h-full p-3>
           <div flex flex-col gap-2>

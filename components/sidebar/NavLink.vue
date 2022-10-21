@@ -22,7 +22,7 @@ export default {
     <NuxtLink
       prefetch
       v-bind="$attrs"
-      active-class="bg-white/8! border-white/4 text-white!"
+      active-class="bg-white/7! border-white/4 text-white!"
       hover="bg-neutral-700/20"
       active="scale-98"
       transition
@@ -40,10 +40,10 @@ export default {
       font-medium
     >
       <span flex items-center justify-center>
-        <Icon :name="icon" size="24" />
+        <Icon :name="icon" size="22" />
       </span>
       <span flex-1>
-        <span text-white font-medium tracking-wide>
+        <span text-inherit font-medium tracking-wide>
           <slot />
         </span>
       </span>

@@ -94,4 +94,10 @@ body {
 ::-webkit-scrollbar-track {
   @apply bg-transparent;
 }
+
+@keyframes magic {
+  to {
+    background-position: 200% center;
+  }
+}
 </style>
