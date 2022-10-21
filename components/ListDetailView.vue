@@ -12,10 +12,6 @@ defineProps({
     type: String,
     required: true,
   },
-  divider: {
-    type: Boolean,
-    default: false,
-  },
 })
 </script>
 
@@ -41,10 +37,6 @@ defineProps({
           </p>
         </div>
       </div>
-      
-      <template v-if="divider">
-        <div bg-neutral-700 w-30 h-px />
-      </template>
     </div>
     
     <div flex flex-col w-full>
