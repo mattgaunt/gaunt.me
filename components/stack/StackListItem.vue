@@ -24,7 +24,7 @@ defineProps({
   >
     <div flex flex-col items-center gap-6 md:gap-8>
       <div flex items-center flex-none py-8>
-        <div inline-flex rounded-8 overflow-hidden>
+        <div inline-flex rounded-7 overflow-hidden>
           <img loading="lazy" :src="item.image" aspect-square max-w-22>
         </div>
       </div>
@@ -37,7 +37,9 @@ defineProps({
           <span
             v-for="tag in item.tags"
             py="1.5"
-            bg-neutral-800
+            bg-neutral-600
+            bg-opacity-75
+            highlight
             rounded-3xl
             text-sm
             leading-normal
