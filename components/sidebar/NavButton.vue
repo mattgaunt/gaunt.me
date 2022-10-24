@@ -36,7 +36,7 @@ export default {
         <Icon :name="icon" size="22" />
       </span>
       <span flex-1>
-        <span text-white font-medium tracking-wide>
+        <span text-inherit font-medium tracking-wide>
           <slot />
         </span>
       </span>
