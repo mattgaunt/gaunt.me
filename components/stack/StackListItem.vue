@@ -41,7 +41,8 @@ defineProps({
             bg-opacity-75
             highlight
             rounded-3xl
-            text-sm
+            text-xs
+            font-medium
             leading-normal
             tracking-wide
             px-3
