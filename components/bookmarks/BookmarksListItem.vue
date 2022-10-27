@@ -23,19 +23,16 @@ defineProps({
   >
     <div flex items-center gap-6 md:gap-8>
       <div flex flex-none>
-        <div
-          bg-neutral-800
-          rounded-3xl
-          w-16
-          h-16
-        />
+        <div inline-flex rounded-5 overflow-hidden>
+          <img loading="lazy" :src="bookmark.image" aspect-square max-w-16>
+        </div>
       </div>
       <div flex flex-1 flex-col space-y-1>
         <h3 text-xl font-semibold line-clamp-1>
           {{ bookmark.title }}
         </h3>
         <span text-neutral-400 leading-normal tracking-wide>
-          {{ bookmark.source }}
+          {{ bookmark.website }}
         </span>
       </div>
     </div>
