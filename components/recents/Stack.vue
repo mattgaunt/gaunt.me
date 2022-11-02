@@ -33,7 +33,7 @@ refs.forEach((ref, i) => {
         <div flex justify-center w-full>
           <div space-y-8 text-center pt-12 pb-6 px-6>
             <div flex flex-col space-y-4 max-w-lg>
-              <h2 text-3xl text-white font-bold tracking-px>
+              <h2 text-3xl text-white font-bold>
                 My Stack
               </h2>
 
@@ -65,7 +65,7 @@ refs.forEach((ref, i) => {
                   <div flex flex-col items-center gap-4>
                     <div flex items-center flex-none py-6>
                       <div inline-flex rounded-8 overflow-hidden>
-                        <img src="/stack/loom.webp" aspect-square max-w-20>
+                        <img src="/stack/linear.png" aspect-square max-w-20>
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
@@ -104,7 +104,7 @@ refs.forEach((ref, i) => {
                   <div flex flex-col items-center gap-4>
                     <div flex items-center flex-none py-6>
                       <div inline-flex rounded-8 overflow-hidden>
-                        <img src="/stack/contrast.webp" aspect-square max-w-20>
+                        <img src="/stack/raycast.png" aspect-square max-w-20>
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
@@ -144,7 +144,7 @@ refs.forEach((ref, i) => {
                   <div flex flex-col items-center gap-4>
                     <div flex items-center flex-none py-6>
                       <div inline-flex rounded-8 overflow-hidden>
-                        <img src="/stack/contrast.webp" aspect-square max-w-20>
+                        <img src="/stack/vercel.png" aspect-square max-w-20>
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
@@ -183,7 +183,7 @@ refs.forEach((ref, i) => {
                   <div flex flex-col items-center gap-4>
                     <div flex items-center flex-none py-6>
                       <div inline-flex rounded-8 overflow-hidden>
-                        <img src="/stack/loom.webp" aspect-square max-w-20>
+                        <img src="/stack/hybridly.png" aspect-square max-w-20>
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
