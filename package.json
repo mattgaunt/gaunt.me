@@ -9,16 +9,16 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.1.1",
+    "@nuxt/content": "^2.2.1",
     "@nuxt/image-edge": "1.0.0-27719579.87dcdf2",
-    "@unocss/nuxt": "^0.45.21",
-    "@vueuse/math": "^9.3.0",
+    "@unocss/nuxt": "^0.45.30",
+    "@vueuse/math": "^9.4.0",
     "@vueuse/motion": "2.0.0-beta.22",
-    "@vueuse/nuxt": "^9.2.0",
-    "nuxt": "3.0.0-rc.11",
-    "typescript": "^4.8.3"
+    "@vueuse/nuxt": "^9.4.0",
+    "nuxt": "3.0.0-rc.13",
+    "typescript": "^4.8.4"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.7.3"
+    "@headlessui/vue": "^1.7.4"
   }
 }
