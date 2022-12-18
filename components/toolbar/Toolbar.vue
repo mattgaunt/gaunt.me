@@ -10,7 +10,7 @@ const tabs = [
 
 const target = ref<HTMLElement>()
 const { transform } = useElementTransform(target)
-const route = useActiveRoute()
+const route = useRoute()
 const activeIdx = computed(() => {
   return tabs.findIndex(t => t.name === route.name)
 })
