@@ -17,26 +17,26 @@ export default {
   <div flex items-stretch space-x-1 group>
     <button
       v-bind="$attrs"
-      hover="bg-neutral-700/20"
+      hover="bg-zinc-700/20"
       active="scale-98"
       transition
       flex
       flex-1
       items-center
       gap-3
-      rounded-2xl
+      rounded-4
       px-4
-      py-3
-      text-base
-      text-neutral-500
+      py-default
+      text-sm
+      text-zinc-400
       text-left
       font-medium
     >
       <span flex items-center justify-center>
-        <Icon :name="icon" size="22" />
+        <Icon :name="icon" size="18" />
       </span>
       <span flex-1>
-        <span text-inherit font-medium tracking-wide>
+        <span text-inherit truncate>
           <slot />
         </span>
       </span>

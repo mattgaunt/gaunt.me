@@ -5,9 +5,10 @@ const { open } = useContactModal()
 
 <template>
   <aside
-    absolute
-    lg:relative
-    lg:inset-y-none
+    relative
+    contents
+    inset-y-none
+    left-none
     flex
     flex-col
     flex-none
@@ -15,12 +16,11 @@ const { open } = useContactModal()
     transition
     duration-200
     ease-in-out
-    w-58
-    xl:w-70
+    w-62
     z-auto
   >
-    <div flex-1 space-y-6 h-full p-3>
-      <div flex flex-col gap-2>
+    <div flex-1 space-y-6 h-full p-1>
+      <div flex flex-col gap-4>
         <div flex flex-col justify-center p-2>
           <div flex flex-none items-center justify-between>
             <span flex items-center space-x-3>
@@ -31,7 +31,7 @@ const { open } = useContactModal()
           </div>
         </div>
 
-        <nav flex flex-col gap-6>
+        <nav flex flex-col gap-4>
           <SidebarSection>
             <SidebarNavLink icon="House" href="/">
               Recents

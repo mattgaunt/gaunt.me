@@ -22,8 +22,8 @@ export default {
     <NuxtLink
       prefetch
       v-bind="$attrs"
-      active-class="bg-white/7! border-white/4 text-white!"
-      hover="bg-neutral-700/20"
+      active-class="bg-zinc-800/70! text-white!"
+      hover="bg-zinc-800/30"
       active="scale-98"
       transition
       flex
@@ -32,25 +32,25 @@ export default {
       gap-3
       border
       border-transparent
-      rounded-2xl
+      rounded-4
       px-4
-      py-3
-      text-base
-      text-neutral-500
+      py-default
+      text-sm
+      text-zinc-400
       font-medium
     >
       <span flex items-center justify-center>
-        <Icon :name="icon" size="22" />
+        <Icon :name="icon" size="18" />
       </span>
       <span flex-1>
-        <span text-inherit font-medium tracking-wide>
+        <span text-inherit truncate>
           <slot />
         </span>
       </span>
 
       <template v-if="external">
         <span flex items-center flex-none>
-          <Icon name="External" />
+          <Icon name="External" size="12" opacity-50 />
         </span>
       </template>
     </NuxtLink>
