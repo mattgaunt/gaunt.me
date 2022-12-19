@@ -52,12 +52,14 @@ useHead({
   --page-max-width: 1200px;
   --page-padding-default: 32px;
   --content-width: 640px;
-  --scrollbar-width: 12px;
-  --scrollbar-color: #333;
+  --scrollbar-color: theme('colors.zinc.800');
+  --scrollbar-color-hover: theme('colors.zinc.700');
+  --scrollbar-color-active: theme('colors.zinc.600');
+  --scrollbar-width: 16px;
 }
 
 body {
-  @apply bg-neutral-900;
+  @apply bg-zinc-900;
   @apply flex;
   @apply flex-col;
   @apply h-full;
@@ -75,7 +77,7 @@ body {
 ::-webkit-scrollbar-thumb {
   @apply bg-[var(--scrollbar-color)];
   @apply rounded-[var(--scrollbar-width)];
-  @apply border-3;
+  @apply border-5;
   @apply border-transparent;
   @apply bg-clip-content;
   @apply transition-colors;
@@ -84,15 +86,17 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  --scrollbar-color: #707070;
+  --scrollbar-color: var(--scrollbar-color-hover);
 }
 
 ::-webkit-scrollbar-thumb:active {
-  --scrollbar-color: #a0a0a0;
+  --scrollbar-color: var(--scrollbar-color-active);
 }
 
 ::-webkit-scrollbar-track {
   @apply bg-transparent;
+  @apply border-l;
+  @apply border-white/5;
 }
 
 @keyframes magic {
