@@ -16,7 +16,8 @@
     "@vueuse/motion": "2.0.0-beta.25",
     "@vueuse/nuxt": "^9.4.0",
     "nuxt": "^3.0.0",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "uuid": "^9.0.0"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.4"
