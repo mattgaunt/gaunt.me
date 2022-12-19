@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-  <div flex items-stretch space-x-1 group>
+  <div flex gap-x-1 group>
     <NuxtLink
       prefetch
       v-bind="$attrs"
@@ -33,7 +33,7 @@ export default {
       border
       border-transparent
       rounded-4
-      px-4
+      px-3
       py-default
       text-sm
       text-zinc-400
@@ -50,7 +50,7 @@ export default {
 
       <template v-if="external">
         <span flex items-center flex-none>
-          <Icon name="External" size="12" opacity-50 />
+          <Icon name="External" size="14" opacity-50 />
         </span>
       </template>
     </NuxtLink>

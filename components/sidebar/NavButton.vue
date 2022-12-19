@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div flex items-stretch space-x-1 group>
+  <div flex gap-x-1 group>
     <button
       v-bind="$attrs"
       hover="bg-zinc-700/20"
@@ -25,7 +25,7 @@ export default {
       items-center
       gap-3
       rounded-4
-      px-4
+      px-3
       py-default
       text-sm
       text-zinc-400
