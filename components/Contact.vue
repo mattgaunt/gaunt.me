@@ -113,8 +113,8 @@ const links = [
                           p-8
                           transition-all
                         >
-                          <div class="flex h-8 w-8 items-center justify-center rounded-full ring-1 backdrop-blur-[2px] transition duration-300 bg-white/3 ring-white/25 group-hover:bg-emerald-300/10 group-hover:ring-emerald-400">
-                            <Icon :name="link.icon" size="18" class="transition-colors duration-300 fill-white/10 stroke-zinc-400 group-hover:fill-emerald-300/10 group-hover:stroke-emerald-400" />
+                          <div class="flex h-8 w-8 items-center justify-center rounded-full ring-1 backdrop-blur-[2px] transition duration-300 bg-white/3 ring-white/25 group-hover:bg-cyan-300/10 group-hover:ring-cyan-400">
+                            <Icon :name="link.icon" size="18" class="transition-colors duration-300 fill-white/10 stroke-zinc-400 group-hover:fill-cyan-300/10 group-hover:stroke-cyan-400" />
                           </div>
 
                           <span text-sm text-white font-semibold>

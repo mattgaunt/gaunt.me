@@ -11,12 +11,12 @@ export default {
       inline-flex
       justify-center
       items-center
-      bg-emerald
+      bg-cyan
       bg-opacity-12
       hover:bg-opacity-10
       ring
       ring-inset
-      ring-emerald
+      ring-cyan
       ring-opacity-15
       rounded-5
       min-h-11

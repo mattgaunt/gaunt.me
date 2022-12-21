@@ -75,7 +75,7 @@
           <button type="button" class="bg-[#38383B] py-1.5 text-zinc-300 font-medium hover:bg-[#48484A] focus:z-10">
             <time datetime="2022-01-11" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">11</time>
           </button>
-          <button type="button" class="bg-[#38383B] py-1.5 text-[#C1FA6B]/100 font-semibold hover:bg-[#48484A] focus:z-10">
+          <button type="button" class="bg-[#38383B] py-1.5 text-cyan/100 font-semibold hover:bg-[#48484A] focus:z-10">
             <time datetime="2022-01-12" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">12</time>
           </button>
           <button type="button" class="bg-[#38383B] py-1.5 text-zinc-300 font-medium hover:bg-[#48484A] focus:z-10">
@@ -106,7 +106,7 @@
             <time datetime="2022-01-21" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">21</time>
           </button>
           <button type="button" class="bg-[#38383B] py-1.5 text-zinc-300 font-medium hover:bg-[#48484A] focus:z-10">
-            <time datetime="2022-01-22" class="bg-[#C1FA6B] mx-auto flex h-7 w-7 items-center justify-center rounded-full font-semibold text-zinc-900">22</time>
+            <time datetime="2022-01-22" class="bg-cyan mx-auto flex h-7 w-7 items-center justify-center rounded-full font-semibold text-zinc-900">22</time>
           </button>
           <button type="button" class="bg-[#38383B] py-1.5 text-zinc-300 font-medium hover:bg-[#48484A] focus:z-10">
             <time datetime="2022-01-23" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">23</time>
@@ -159,7 +159,7 @@
       </div>
       <Button
         type="button"
-        bg="#C1FA6B/100"
+        bg="cyan/100"
         border-transparent
         text-zinc-900
         w-full
