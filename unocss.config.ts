@@ -9,46 +9,50 @@ import {
 
 export default defineConfig({
   shortcuts: [
-    ['max-h-page', 'max-h-[calc(100vh_-_24px)]'],
+    ['max-h-page', 'max-h-[calc(100vh_-_16px)]'],
     ['title-lg', 'text-1.75rem font-bold leading-tight'],
     ['title-xl', 'text-2.25rem font-bold leading-tight'],
     ['title-2xl', 'text-2.625rem font-bold leading-tight'],
     ['title-3xl', 'text-4.75rem font-bold leading-tight'],
-    ['magic-gradient', 'bg-gradient-to-r from-[#A6A5F2] via-[#727EFD] to-[#A6A5F2]'],
-    ['magic', 'magic-gradient text-transparent bg-clip-text animate-[magic] bg-[length:200%]'],
     ['mask', '[mask-composite:xor] [mask:linear-gradient(black,black)_content-box_content-box,linear-gradient(black,black)] bg-gradient-to-b bg-gradient-from-white/5 bg-gradient-to-white/5'],
-    ['mask-radial', '[background:radial-gradient(circle_at_bottom_center,var(--color),transparent_70%)]'],
-    ['mask-glow', '[mask-image:radial-gradient(circle_at_center_center,black,transparent)]'],
-    ['ambiance', '[--color:#666] pointer-events-none select-none relative mask-glow w-[min(var(--page-max-width),100%)] h-150 overflow-hidden before:content-none before:absolute before:inset-none before:mask-radial before:opacity-40'],
-    ['particles', 'top-full left-50% rotate-20 -translate-50% mask-glow'],
     ['glow', '[background:radial-gradient(ellipse_at_center,var(--un-gradient-stops))]'],
-    ['highlight', 'shadow-px shadow-inset shadow-white/10'],
+    ['highlight', 'shadow-px shadow-inset shadow-white/5'],
+    ['py-default', 'py-2.5'],
   ],
   theme: {
-    colors: {
-      neutral: {
-        50: '#FAFAFA',
-        100: '#F5F5F5',
-        200: '#E5E5E5',
-        300: '#D4D4D4',
-        400: '#A3A3A3',
-        500: '#A5A4AA',
-        600: '#3E3D43',
-        700: '#323137',
-        800: '#212026',
-        900: '#18171C',
-      },
-    },
     fontFamily: {
-      sans: ['PolySans', 'sans-serif'],
-      mono: ['Menlo', 'sans-serif'],
+      sans: [
+        'General Sans',
+      ],
     },
+
     fontSize: {
-      button: '0.9375rem',
-      para: '1.375rem',
+      '2xs': ['0.75rem', { lineHeight: '1.25rem' }],
+      xs: ['0.8125rem', { lineHeight: '1.5rem' }],
+      sm: ['0.9375rem', { lineHeight: '1.5rem' }],
+      base: ['1rem', { lineHeight: '1.75rem' }],
+      lg: ['1.125rem', { lineHeight: '1.75rem' }],
+      xl: ['1.25rem', { lineHeight: '1.75rem' }],
+      '2xl': ['1.5rem', { lineHeight: '2rem' }],
+      '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
+      '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
+      '5xl': ['3rem', { lineHeight: '1' }],
+      '6xl': ['3.75rem', { lineHeight: '1' }],
+      '7xl': ['4.5rem', { lineHeight: '1' }],
+      '8xl': ['6rem', { lineHeight: '1' }],
+      '9xl': ['8rem', { lineHeight: '1' }],
     },
+
     boxShadow: {
-      px: 'var(--un-shadow-inset) 0 0 2px 0 rgba(0, 0, 0, 1)',
+      glow: '0 0 4px rgb(0 0 0 / 0.1)',
+      px: 'var(--un-shadow-inset) 0 0 0 1px rgb(0 0 0 / 1)',
+    },
+
+    opacity: {
+      1: '0.01',
+      2.5: '0.025',
+      7.5: '0.075',
+      15: '0.15',
     },
   },
   presets: [
