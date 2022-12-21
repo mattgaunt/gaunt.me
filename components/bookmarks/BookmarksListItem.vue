@@ -31,7 +31,7 @@ defineProps({
     px-8
     py-6
   >
-    <div flex items-center gap-6 md:gap-8>
+    <div flex items-center gap-6>
       <div flex flex-none>
         <div inline-flex rounded-5 overflow-hidden>
           <img loading="lazy" :src="bookmark.image" aspect-square max-w-16>
