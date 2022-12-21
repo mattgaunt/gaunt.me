@@ -18,21 +18,19 @@ export default {
     <Component
       :is="component"
       v-bind="$attrs"
-      hover="bg-opacity-15"
       inline-flex
       justify-center
       items-center
       backdrop-blur-lg
       bg-white
-      bg-opacity-8
+      bg-opacity-7
+      hover:bg-opacity-15
       border
       border-white
       border-opacity-3
-      rounded-2xl
+      rounded-5
       min-h-11
       px-6
-      tracking-wide
-      text-button
       font-semibold
       transition-all
     >

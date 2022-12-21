@@ -1,5 +1,5 @@
 <template>
-  <div flex bg-neutral-800 highlight lg:rounded-8 w-full relative>
+  <div flex bg-zinc-800 highlight lg:rounded-8 w-full relative>
     <main id="main" relative flex flex-col lg:overflow-y-auto lg:max-h-page w-full>
       <Container max-w-5xl py-20 lg:py-32 h-screen>
         <ContentDoc>
@@ -13,7 +13,7 @@
                     </h1>
 
                     <div max-w-xl>
-                      <p text-xl text-neutral-400 font-light leading-relaxed tracking-wide>
+                      <p text-xl text-zinc-400 leading-relaxed tracking-wide>
                         You've managed to stumble across a page that does not exist.
                         Go ahead and try again.
                       </p>

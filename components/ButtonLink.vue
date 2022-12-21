@@ -5,24 +5,22 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div inline-flex>
     <NuxtLink
       v-bind="$attrs"
-      hover="bg-opacity-15"
       inline-flex
       justify-center
       items-center
-      backdrop-blur-lg
-      bg-white
-      bg-opacity-8
-      border
-      border-white
-      border-opacity-3
-      rounded-2xl
+      bg-emerald
+      bg-opacity-12
+      hover:bg-opacity-10
+      ring
+      ring-inset
+      ring-emerald
+      ring-opacity-15
+      rounded-5
       min-h-11
       px-6
-      tracking-wide
-      text-button
       font-semibold
       transition-all
     >

@@ -32,7 +32,7 @@ defineProps({
     <div group>
       <div flex flex-col space-y-4 p-4>
         <div flex flex-col flex-auto>
-          <div bg-neutral-800 rounded-2xl w-full>
+          <div bg-zinc-800 rounded-2xl w-full>
             <figure group-hover="opacity-80" flex-initial duration-250>
               <img
                 :src="image"
@@ -50,7 +50,7 @@ defineProps({
         <div flex-initial px-1>
           <div flex flex-col space-y-4>
             <div flex flex-col items-start space-y-4 min-h-38>
-              <div flex items-center space-x-1 bg-neutral-800 bg-opacity-60 rounded-xl p-2>
+              <div flex items-center space-x-1 bg-zinc-800 bg-opacity-60 rounded-xl p-2>
                 <div inline-flex items-center rounded-md overflow-hidden>
                   <img
                     :src="logo"
@@ -72,9 +72,9 @@ defineProps({
 
             <div flex justify-between items-center>
               <div flex gap-2>
-                <span text-sm text-neutral-300 font-medium>{{ date }}</span>
-                <span text-sm text-neutral-300 font-medium>&middot;</span>
-                <span text-sm text-neutral-300 font-medium>{{ reads }}</span>
+                <span text-sm text-zinc-300 font-medium>{{ date }}</span>
+                <span text-sm text-zinc-300 font-medium>&middot;</span>
+                <span text-sm text-zinc-300 font-medium>{{ reads }}</span>
               </div>
               <div flex gap-2>
                 <button
@@ -84,7 +84,7 @@ defineProps({
                   flex-col
                   transition
                   rounded-xl
-                  text-neutral-300
+                  text-zinc-300
                   p-1
                 >
                   <div self-center text-xl>
@@ -98,7 +98,7 @@ defineProps({
                   flex-col
                   transition
                   rounded-xl
-                  text-neutral-300
+                  text-zinc-300
                   p-1
                 >
                   <div self-center text-xl>

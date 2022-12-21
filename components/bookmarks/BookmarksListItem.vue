@@ -11,14 +11,24 @@ defineProps({
   <a
     :href="bookmark.source"
     target="_blank"
-    hover="scale-102.5"
+    flex
+    flex-col
     transition
     duration-250
-    bg-neutral-700
+    relative
     rounded-3xl
-    highlight
-    px-6
-    md:px-8
+    bg-zinc-800
+    h-full
+    hover:scale-101
+    before:mask
+    before:content-none
+    before:rounded-inherit
+    before:absolute
+    before:inset-none
+    before:pointer-events-none
+    before:select-none
+    before:p-px
+    px-8
     py-6
   >
     <div flex items-center gap-6 md:gap-8>
@@ -31,7 +41,7 @@ defineProps({
         <h3 text-xl font-semibold line-clamp-1>
           {{ bookmark.title }}
         </h3>
-        <span text-neutral-400 leading-normal tracking-wide>
+        <span text-zinc-400 leading-normal tracking-wide>
           {{ bookmark.website }}
         </span>
       </div>

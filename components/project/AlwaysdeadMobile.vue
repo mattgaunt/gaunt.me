@@ -30,7 +30,7 @@ useMotion(mobile, {
             Digest on the go.
           </h2>
 
-          <p title-lg text-neutral-400 font-medium>
+          <p title-lg text-zinc-400 font-medium>
             Great gaming content, at your fingertips.
           </p>
         </div>

@@ -33,11 +33,11 @@
           <div flex justify-center w-full>
             <div space-y-8 text-center pt-12 pb-6 px-6>
               <div flex flex-col space-y-4 max-w-lg>
-                <h2 text-3xl text-white font-bold tracking-px>
+                <h2 text-3xl text-white font-bold>
                   My Stack
                 </h2>
   
-                <p text-lg text-neutral-400 leading-relaxed tracking-wide>
+                <p text-lg text-zinc-400 leading-relaxed tracking-wide>
                   I’ve added a new section to the site that includes all of the
                   tools and stack that I use daily.
                 </p>

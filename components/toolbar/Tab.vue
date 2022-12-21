@@ -12,7 +12,7 @@ defineProps({
     active-class="text-white!"
     inline-flex
     rounded-4
-    text-neutral-400
+    text-zinc-400
     transition
     duration-500
     p-10px

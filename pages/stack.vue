@@ -36,7 +36,7 @@ const { data: stack } = await useAsyncData('stack', () => {
                   },
                 },
               }"
-              bg-neutral-900
+              bg-zinc-900
               bg-opacity-25
               rounded-3xl
             >

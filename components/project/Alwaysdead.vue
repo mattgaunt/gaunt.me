@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-const one = ref<HTMLElement>(null)
-const two = ref<HTMLElement>(null)
-const three = ref<HTMLElement>(null)
-const four = ref<HTMLElement>(null)
-const five = ref<HTMLElement>(null)
+const one = ref<HTMLElement>()
+const two = ref<HTMLElement>()
+const three = ref<HTMLElement>()
+const four = ref<HTMLElement>()
+const five = ref<HTMLElement>()
 
 useMotion(one, {
   initial: {
@@ -124,11 +124,11 @@ useMotion(five, {
         <div flex justify-center w-full>
           <div space-y-8 text-center py-16 md:py-20 px-6>
             <div flex flex-col space-y-6 max-w-xl>
-              <h2 text="#27FFF2" title-2xl tracking-px>
+              <h2 text="#27FFF2" text-4xl lg:(text-5xl leading-14) font-bold>
                 Daily digest for your gaming habits.
               </h2>
 
-              <p text-lg text-neutral-400 leading-relaxed tracking-wide>
+              <p text-lg text-zinc-400 leading-relaxed tracking-wide>
                 Building the best way to consume your favourite
                 gaming content for the topics you love, all in a
                 single digestible feed.
@@ -149,8 +149,8 @@ useMotion(five, {
       </div>
       <div col-span-12 min-h-sm h-full relative>
         <div flex flex-col items-center>
-          <div ref="four" absolute top-none bg-neutral-800 bg-opacity-50 rounded-2xl max-w-82 w-full aspect-square />
-          <div ref="five" absolute top-none bg-neutral-800 bg-opacity-50 rounded-2xl max-w-82 w-full aspect-square />
+          <div ref="four" absolute top-none bg-zinc-900 bg-opacity-25 rounded-2xl max-w-82 w-full aspect-square />
+          <div ref="five" absolute top-none bg-zinc-900 bg-opacity-25 rounded-2xl max-w-82 w-full aspect-square />
 
           <AlwaysdeadPost
             ref="one"
@@ -177,7 +177,7 @@ useMotion(five, {
             reads="47 reads"
             max-w-82
             shadow-2xl
-            shadow-neutral-900
+            shadow-zinc-900
             shadow-opacity-80
             absolute
             top-none
@@ -192,7 +192,7 @@ useMotion(five, {
             reads="33 reads"
             max-w-82
             shadow-2xl
-            shadow-neutral-900
+            shadow-zinc-900
             shadow-opacity-80
             absolute
             top-none

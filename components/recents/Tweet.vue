@@ -10,15 +10,15 @@ refs.forEach((ref, i) => {
   useMotion(ref, {
     initial: {
       opacity: 0,
-      y: -20,
+      scale: 0.5,
     },
     visible: {
       opacity: 1,
-      y: 0,
+      scale: 1,
       transition: {
         type: 'spring',
-        stiffness: 200,
-        damping: 10,
+        stiffness: 400,
+        damping: 8,
         delay: 100 * i,
       },
     },
@@ -27,7 +27,7 @@ refs.forEach((ref, i) => {
 </script>
 
 <template>
-  <div bg-neutral-900 bg-opacity-25 rounded-12 h-full>
+  <div bg-zinc-900 bg-opacity-25 rounded-10 h-full>
     <a href="https://twitter.com/mattgaunt" target="_blank" hover="rotate-1 -translate-y-5" block transition duration-250 h-full>
       <Card
         from="#3283FD/75"
@@ -49,7 +49,7 @@ refs.forEach((ref, i) => {
           </div>
           <div flex-initial>
             <div flex justify-center w-full>
-              <div space-y-8 text-left py-8 px-6>
+              <div space-y-8 text-left p-6>
                 <div flex flex-col space-y-3 max-w-lg>
                   <p text-white text-opacity-75 tracking-wide>
                     18 Oct

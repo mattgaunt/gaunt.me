@@ -33,7 +33,7 @@ refs.forEach((ref, index) => {
         <div col-span-6 md:col-span-3>
           <div flex items-center w-full>
             <div flex flex-col items-start space-y-12 md:py-4>
-              <h2 title-2xl font-bold leading-tight tracking-px>
+              <h2 text-5xl font-extrabold leading-tight>
                 A Full-Stack Developer and Designer
                 Based in the UK.
               </h2>
@@ -53,14 +53,14 @@ refs.forEach((ref, index) => {
         <div col-span-6 md:col-span-3>
           <div flex items-center w-full>
             <div flex flex-col space-y-6>
-              <div prose text-xl text-neutral-300 font-light tracking-wide max-w-full>
+              <div prose text-xl text-zinc-300 tracking-wide max-w-full>
                 <p>
                   Hey, I'm Matthew. I'm a full-stack developer, budding designer and all round tinkerer. I was most recently
-                  leading frontend engineering at <a href="https://midnite.com/" font-medium text-white underline-neutral-500 underline-wavy>Midnite</a>, before leaving earlier this year to persuit
+                  leading frontend engineering at <a href="https://midnite.com/" font-medium text-white underline-zinc-500 underline-wavy>Midnite</a>, before leaving earlier this year to persuit
                   my own enthusiasm of building product.
                 </p>
                 <p>
-                  Before Midnite, I co-founded <a href="https://stormfoundry.co/" font-medium text-white underline-neutral-500 underline-wavy>Stormfoundry</a>, a development studio working primarily with companies in gaming and esports.
+                  Before Midnite, I co-founded <a href="https://stormfoundry.co/" font-medium text-white underline-zinc-500 underline-wavy>Stormfoundry</a>, a development studio working primarily with companies in gaming and esports.
                 </p>
                 <p>
                   I've developed everything from in-game content portals, to tournament platforms and sportsbooks. I thrive in an early-stage environment where it's all about getting a product in the hands of the users.

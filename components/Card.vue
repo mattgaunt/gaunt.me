@@ -1,7 +1,7 @@
 <template>
   <div
     relative
-    rounded-12
+    rounded-10
     bg-gradient-to-b
     from-white
     from-opacity-3

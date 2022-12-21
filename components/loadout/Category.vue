@@ -7,7 +7,7 @@ defineProps({
 </script>
 
 <template>
-  <article bg-neutral-800 rounded-8 min-w-64 relative>
+  <article bg-white bg-opacity-5 rounded-8 min-w-64 relative>
     <div grid grid-flow-row gap-16 p-8>
       <div col-span-1 inline-flex>
         <div flex justify-center relative>
@@ -15,7 +15,7 @@ defineProps({
             flex
             justify-center
             items-center
-            bg-neutral-700
+            bg-zinc-800
             rounded-7
             overflow-hidden
             aspect-square
@@ -25,7 +25,7 @@ defineProps({
               <Icon
                 :name="icon"
                 size="40"
-                text-neutral-400
+                text-zinc-400
               />
             </div>
           </div>
@@ -42,7 +42,7 @@ defineProps({
           >
             {{ name }}
           </h3>
-          <span text-neutral-400>
+          <span text-zinc-400>
             {{ count }} products
           </span>
         </div>

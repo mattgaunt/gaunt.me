@@ -3,12 +3,13 @@ const config = useAppConfig()
 </script>
 
 <template>
-  <div bg-neutral-900 bg-opacity-25 rounded-12 h-full>
+  <div bg-zinc-900 bg-opacity-25 rounded-10 h-full>
     <a :href="config.socials.twitter" target="_blank" hover="-rotate-1 -translate-y-5" block transition duration-250 h-full>
       <Card
         from="#3283FD/75"
         to="#3283FD/100"
         overflow-hidden
+        min-h-124
         before:from-white
         before:from-opacity-15
         before:to-white

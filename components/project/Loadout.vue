@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-const one = ref<HTMLElement>(null)
-const two = ref<HTMLElement>(null)
-const three = ref<HTMLElement>(null)
-const four = ref<HTMLElement>(null)
-const five = ref<HTMLElement>(null)
+const one = ref<HTMLElement>()
+const two = ref<HTMLElement>()
+const three = ref<HTMLElement>()
+const four = ref<HTMLElement>()
+const five = ref<HTMLElement>()
 
 const refs = [one, two, three, four, five]
 
@@ -34,11 +34,11 @@ refs.forEach((ref, index) => {
         <div flex justify-center w-full>
           <div space-y-8 text-center py-16 md:py-20 px-6>
             <div flex flex-col space-y-6 max-w-lg>
-              <h2 text="#FF5E33" title-2xl tracking-px>
+              <h2 text="#FF5E33" text-4xl lg:(text-5xl leading-14) font-bold>
                 Loadout with style.
               </h2>
 
-              <p text-lg text-neutral-400 leading-relaxed tracking-wide>
+              <p text-lg text-zinc-400 leading-relaxed tracking-wide>
                 The discovery platform for great gaming gear. It helps you become a better gamer, streamer or
                 content creator by matching with the pros.
               </p>
@@ -59,7 +59,7 @@ refs.forEach((ref, index) => {
       <div col-span-2 max-h-md h-full>
         <div flex justify-center items-center>
           <div flex items-start justify-center gap-5 w-full px-16>
-            <div grid grid-flow-row gap-6 pt-12>
+            <div grid grid-flow-row gap-5 pt-12>
               <LoadoutCategory
                 ref="one"
                 name="Mice"
@@ -73,7 +73,7 @@ refs.forEach((ref, index) => {
                 image="/projects/loadout/fnatic.png"
               />
             </div>
-            <div grid grid-flow-row gap-6>
+            <div grid grid-flow-row gap-5>
               <LoadoutProduct
                 ref="two"
                 name="Arctis Pro Wireless"

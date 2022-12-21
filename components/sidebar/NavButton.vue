@@ -33,7 +33,13 @@ export default {
       font-medium
     >
       <span flex items-center justify-center>
-        <Icon :name="icon" size="18" />
+        <Icon
+          :name="icon"
+          size="18"
+          fill-white
+          fill-opacity-10
+          stroke-zinc-500
+        />
       </span>
       <span flex-1>
         <span text-inherit truncate>

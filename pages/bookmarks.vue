@@ -38,7 +38,7 @@ const { data: bookmarks } = await useAsyncData('bookmarks', () => {
               }"
               flex
               flex-col
-              bg-neutral-900
+              bg-zinc-900
               bg-opacity-25
               rounded-3xl
             >

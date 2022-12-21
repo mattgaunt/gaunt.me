@@ -61,7 +61,7 @@ second.forEach((ref, index) => {
             Midnite Wolf Pack.
           </h2>
 
-          <p title-lg text-neutral-400 font-medium>
+          <p title-lg text-zinc-400 font-medium>
             Supercharged fandom through NFTs.
           </p>
         </div>

@@ -30,7 +30,7 @@ refs.forEach((ref, i) => {
 </script>
 
 <template>
-  <div bg-neutral-900 bg-opacity-25 rounded-12 h-full>
+  <div bg-zinc-900 bg-opacity-25 rounded-10 h-full>
     <a :href="config.socials.polywork" target="_blank" hover="-rotate-1 -translate-y-5" block transition duration-250 h-full>
       <Card
         from="#7B61FF/80"
@@ -55,7 +55,7 @@ refs.forEach((ref, i) => {
             <div flex justify-center w-full>
               <div space-y-6 text-center py-8 px-6>
                 <div flex flex-col space-y-2 max-w-lg>
-                  <h2 text-28px text-white font-bold tracking-px>
+                  <h2 text-28px text-white font-bold>
                     I'm On Polywork
                   </h2>
 

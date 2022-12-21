@@ -24,36 +24,22 @@ useMotion(magic, {
 </script>
 
 <template>
-  <div flex bg-neutral-800 highlight lg:rounded-8 w-full relative>
+  <div flex bg-zinc-800 bg-opacity-40 highlight rounded-l-8 rounded-r-2 w-full>
     <main id="main" relative flex flex-col lg:overflow-y-auto lg:max-h-page w-full>
-      <Container max-w-7xl pb-32>
-        <div flex flex-col space-y-16 relative>
-          <div absolute ambiance rotate-180>
-            <Magic absolute particles rotate-20 />
-          </div>
+      <HeroPattern />
 
-          <div grid grid-cols-8 gap-24 items-center>
-            <div col-span-6 col-start-2>
+      <Container max-w-7xl py-24>
+        <div flex flex-col space-y-16 relative>
+          <div grid grid-cols-6 gap-24 items-center>
+            <div col-span-4 col-start-2>
               <div flex flex-col items-center space-y-16 py-32 relative>
-                <div flex flex-col items-center text-center max-w-172 space-y-8 relative>
-                  <h1 inline-block title-3xl text-white leading-20>
-                    Development, with a little
-                    <span
-                      ref="magic"
-                      animate-ease-in-out
-                      animate-count-infinite
-                      animate-duration-3s
-                      inline-block
-                      text-transparent
-                      leading-24
-                      magic
-                    >
-                      Magic.
-                    </span>
+                <div flex flex-col items-center text-center max-w-178 space-y-8 relative>
+                  <h1 inline-block title-2xl lg:(title-3xl leading-20) text-white font-extrabold>
+                    Development, with a little Magic.
                   </h1>
 
                   <div max-w-42em px-2>
-                    <p text-para text-neutral-400 font-light leading-relaxed>
+                    <p text-xl text-zinc-400 font-normal leading-relaxed>
                       I’m a full-stack developer, semi-capable designer and notorious non-stop tinkerer.
                       If you can’t find me writing code, or designing in Figma, I’ll
                       likely be crying in AWS console.
@@ -71,14 +57,14 @@ useMotion(magic, {
           <div grid grid-cols-8 gap-20>
             <div col-span-8>
               <div flex flex-col items-center gap-2>
-                <span text-base text-neutral-400 tracking-wide>
+                <span text-base text-zinc-400 tracking-wide>
                   Recent Updates
                 </span>
 
                 <Icon
                   name="ArrowDown"
                   size="24"
-                  text-neutral-400
+                  text-zinc-400
                 />
               </div>
             </div>
@@ -101,6 +87,12 @@ useMotion(magic, {
                 </div>
                 <div col-span-5>
                   <RecentsLoadout />
+                </div>
+                <div col-span-5>
+                  <RecentsLoadout />
+                </div>
+                <div col-span-3>
+                  <RecentsPublish />
                 </div>
               </div>
             </div>

@@ -16,9 +16,18 @@ defineProps({
     flex-col
     transition
     duration-250
-    bg-neutral-700
+    relative
     rounded-3xl
-    highlight
+    bg-zinc-800
+    h-full
+    before:mask
+    before:content-none
+    before:rounded-inherit
+    before:absolute
+    before:inset-none
+    before:pointer-events-none
+    before:select-none
+    before:p-px
     px-8
     py-6
   >
@@ -37,11 +46,12 @@ defineProps({
           <span
             v-for="tag in item.tags"
             py="1.5"
-            bg-neutral-600
-            bg-opacity-75
+            bg-zinc-500
+            bg-opacity-10
             highlight
             rounded-3xl
             text-xs
+            text-zinc-300
             font-medium
             leading-normal
             tracking-wide

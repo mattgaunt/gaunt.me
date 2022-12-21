@@ -56,7 +56,7 @@ refs.forEach((ref, i) => {
                   transition
                   duration-250
                   bg-white
-                  bg-opacity-7
+                  bg-opacity-5
                   rounded-3xl
                   highlight
                   px-8
@@ -69,14 +69,14 @@ refs.forEach((ref, i) => {
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
-                      <div bg-neutral-800 rounded-xl h-6 w-20 />
+                      <div bg-zinc-800 rounded-xl h-6 w-20 />
 
                       <div flex gap-1>
                         <div
                           v-for="i in 2"
                           flex
                           items-center
-                          bg-neutral-800
+                          bg-zinc-800
                           rounded-3xl
                           w-16
                           h-6
@@ -95,7 +95,7 @@ refs.forEach((ref, i) => {
                   transition
                   duration-250
                   bg-white
-                  bg-opacity-7
+                  bg-opacity-5
                   rounded-3xl
                   highlight
                   px-8
@@ -108,14 +108,14 @@ refs.forEach((ref, i) => {
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
-                      <div bg-neutral-800 rounded-xl h-6 w-20 />
+                      <div bg-zinc-800 rounded-xl h-6 w-20 />
 
                       <div flex gap-1>
                         <div
                           v-for="i in 2"
                           flex
                           items-center
-                          bg-neutral-800
+                          bg-zinc-800
                           rounded-3xl
                           w-16
                           h-6
@@ -135,7 +135,7 @@ refs.forEach((ref, i) => {
                   transition
                   duration-250
                   bg-white
-                  bg-opacity-7
+                  bg-opacity-5
                   rounded-3xl
                   highlight
                   px-8
@@ -148,14 +148,14 @@ refs.forEach((ref, i) => {
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
-                      <div bg-neutral-800 rounded-xl h-6 w-20 />
+                      <div bg-zinc-800 rounded-xl h-6 w-20 />
 
                       <div flex gap-1>
                         <div
                           v-for="i in 2"
                           flex
                           items-center
-                          bg-neutral-800
+                          bg-zinc-800
                           rounded-3xl
                           w-16
                           h-6
@@ -174,7 +174,7 @@ refs.forEach((ref, i) => {
                   transition
                   duration-250
                   bg-white
-                  bg-opacity-7
+                  bg-opacity-5
                   rounded-3xl
                   highlight
                   px-8
@@ -187,14 +187,14 @@ refs.forEach((ref, i) => {
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
-                      <div bg-neutral-800 rounded-xl h-6 w-20 />
+                      <div bg-zinc-800 rounded-xl h-6 w-20 />
 
                       <div flex gap-1>
                         <div
                           v-for="i in 2"
                           flex
                           items-center
-                          bg-neutral-800
+                          bg-zinc-800
                           rounded-3xl
                           w-16
                           h-6

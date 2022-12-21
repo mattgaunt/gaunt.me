@@ -7,13 +7,13 @@ defineProps({
 </script>
 
 <template>
-  <article bg-neutral-800 rounded-8 relative>
+  <article bg-white bg-opacity-5 rounded-8 relative>
     <div grid grid-flow-row gap-4 p-8>
       <div col-span-1>
         <div
           inline-flex
           items-center
-          bg-neutral-700
+          bg-zinc-700
           bg-opacity-50
           rounded-xl
           px-3
@@ -35,7 +35,7 @@ defineProps({
       </div>
       <div col-span-1 space-y-4>
         <div inline-grid>
-          <span text-neutral-400>
+          <span text-zinc-400>
             {{ brand }}
           </span>
 

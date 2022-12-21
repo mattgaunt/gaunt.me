@@ -7,7 +7,7 @@ defineProps({
 </script>
 
 <template>
-  <article bg-neutral-800 rounded-8 min-w-64 relative>
+  <article bg-white bg-opacity-5 rounded-8 min-w-64 relative>
     <div grid grid-flow-row gap-16 p-8>
       <div col-span-1 inline-flex>
         <div flex justify-center relative>
@@ -29,7 +29,7 @@ defineProps({
           >
             {{ name }}
           </h3>
-          <span text-neutral-400>
+          <span text-zinc-400>
             @{{ username }}
           </span>
         </div>

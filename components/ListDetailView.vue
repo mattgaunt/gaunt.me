@@ -32,7 +32,7 @@ defineProps({
             {{ title }}
           </Heading>
 
-          <p text-lg md:text-xl text-neutral-400 font-light leading-relaxed md:leading-relaxed tracking-wide>
+          <p text-lg md:text-xl text-zinc-400 leading-relaxed md:leading-relaxed>
             {{ description }}
           </p>
         </div>
