@@ -12,19 +12,20 @@ const { data: posts } = await useAsyncData('notes', () => {
 </script>
 
 <template>
-  <div flex w-full gap-3>
+  <div flex w-full gap-2>
     <div flex>
       <div
         relative
-        bg-neutral-800
+        bg-zinc-800
+        bg-opacity-40
         highlight
-        rounded-8
+        rounded-6
         h-full
         max-h-page
         flex-none
         overflow-y-auto
         w-90
-        xl:w-106
+        xl:w-100
       >
         <div flex-1 space-y-6 h-full p-3>
           <div flex flex-col gap-2>
@@ -43,8 +44,8 @@ const { data: posts } = await useAsyncData('notes', () => {
                 <NuxtLink
                   :href="post._path"
                   :title="post.title"
-                  hover="before:bg-neutral-700 before:bg-opacity-50 before:scale-100"
-                  active-class="bg-neutral-700! bg-opacity-80"
+                  hover="before:bg-zinc-700 before:bg-opacity-50 before:scale-100"
+                  active-class="bg-zinc-700! bg-opacity-80"
                   before:transition-all
                   before:scale-95
                   before:content-none
@@ -60,11 +61,11 @@ const { data: posts } = await useAsyncData('notes', () => {
                   transition
                 >
                   <div flex flex-1 flex-col justify-center space-y-1 relative>
-                    <div text-lg font-semibold line-clamp-3 text-neutral-100>
+                    <div text-lg font-semibold line-clamp-3 text-zinc-100>
                       {{ post.title }}
                     </div>
 
-                    <div font-medium text-neutral-400 line-clamp-1>
+                    <div font-medium text-zinc-400 line-clamp-1>
                       {{ post.published }}
                     </div>
                   </div>
@@ -78,9 +79,11 @@ const { data: posts } = await useAsyncData('notes', () => {
 
     <div
       flex
-      bg-neutral-800
+      bg-zinc-800
+      bg-opacity-40
       highlight
-      rounded-8
+      rounded-l-6
+      rounded-r-2
       overflow-y-auto
       max-h-page
       w-full
