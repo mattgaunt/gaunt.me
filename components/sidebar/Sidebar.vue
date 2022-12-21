@@ -33,7 +33,7 @@ const { open } = useContactModal()
 
         <nav flex flex-col gap-4>
           <SidebarSection>
-            <SidebarNavLink icon="House" href="/">
+            <SidebarNavLink icon="Shapes" href="/">
               Recents
             </SidebarNavLink>
             <SidebarNavLink icon="User" href="/about">
@@ -67,14 +67,6 @@ const { open } = useContactModal()
               target="_blank"
             >
               Twitter
-            </SidebarNavLink>
-            <SidebarNavLink
-              icon="Polywork"
-              external
-              :to="config.socials.polywork"
-              target="_blank"
-            >
-              Polywork
             </SidebarNavLink>
             <SidebarNavLink
               icon="Github"
