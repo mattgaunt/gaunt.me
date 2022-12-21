@@ -44,8 +44,8 @@ const { data: posts } = await useAsyncData('notes', () => {
                 <NuxtLink
                   :href="post._path"
                   :title="post.title"
-                  hover="before:bg-zinc-700 before:bg-opacity-50 before:scale-100"
-                  active-class="bg-zinc-700! bg-opacity-80"
+                  hover="before:bg-zinc-800 before:bg-opacity-30 before:scale-100"
+                  active-class="bg-zinc-800"
                   before:transition-all
                   before:scale-95
                   before:content-none
@@ -61,11 +61,11 @@ const { data: posts } = await useAsyncData('notes', () => {
                   transition
                 >
                   <div flex flex-1 flex-col justify-center space-y-1 relative>
-                    <div text-lg font-semibold line-clamp-3 text-zinc-100>
+                    <div text-base font-semibold line-clamp-3>
                       {{ post.title }}
                     </div>
 
-                    <div font-medium text-zinc-400 line-clamp-1>
+                    <div text-sm text-zinc-400 font-medium line-clamp-1>
                       {{ post.published }}
                     </div>
                   </div>
@@ -87,6 +87,7 @@ const { data: posts } = await useAsyncData('notes', () => {
       overflow-y-auto
       max-h-page
       w-full
+      relative
     >
       <NuxtPage />
     </div>

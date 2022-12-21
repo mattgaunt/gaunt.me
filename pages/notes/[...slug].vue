@@ -5,8 +5,7 @@
         <ContentDoc
           prose
           prose-invert
-          prose-neutral
-          text-lg
+          prose-zinc
           max-w-full
         />
       </Container>
