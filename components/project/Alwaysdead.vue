@@ -162,7 +162,7 @@ useMotion(five, {
             reads="13 reads"
             max-w-82
             shadow-2xl
-            shadow-black
+            shadow-zinc-900
             shadow-opacity-90
             absolute
             top-none
