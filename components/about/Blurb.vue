@@ -63,7 +63,7 @@ refs.forEach((ref, index) => {
                   Before Midnite, I co-founded <a href="https://stormfoundry.co/" font-medium text-white underline-zinc-500 underline-wavy>Stormfoundry</a>, a development studio working primarily with companies in gaming and esports.
                 </p>
                 <p>
-                  I've developed everything from in-game content portals, to tournament platforms and sportsbooks. I thrive in an early-stage environment where it's all about getting a product in the hands of the users.
+                  I've developed everything from in-game content portals, to tournament platforms and sportsbooks. I thrive at early-stage companies where the attention is all on getting a product in the hands of users.
                 </p>
               </div>
             </div>
