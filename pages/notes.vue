@@ -32,7 +32,7 @@ const { data: posts } = await useAsyncData('notes', () => {
             <div flex flex-col justify-center p-2>
               <div flex flex-none items-center justify-between>
                 <span flex items-center space-x-3 px-2>
-                  <h2 text-lg font-semibold tracking-wide line-clamp-1>
+                  <h2 text-lg font-semibold line-clamp-1>
                     Notes
                   </h2>
                 </span>
