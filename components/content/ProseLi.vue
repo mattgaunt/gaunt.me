@@ -1,3 +1,5 @@
 <template>
-  <li><slot /></li>
+  <li text-zinc-400 font-medium>
+    <slot />
+  </li>
 </template>
