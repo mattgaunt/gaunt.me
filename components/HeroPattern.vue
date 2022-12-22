@@ -13,6 +13,7 @@
             [12, 7],
             [16, 7],
             [13, 4],
+            [20, 9],
           ]"
           class="absolute inset-x-0 inset-y-[-50%] h-[200%] w-full skew-y-[-30deg] fill-white/2.5 stroke-white/5 mix-blend-overlay"
         />
