@@ -46,7 +46,7 @@ gems.forEach((ref, i) => {
           <div flex-initial>
             <div flex justify-center w-full>
               <div space-y-8 text-left p-6>
-                <div flex flex-col space-y-3 max-w-lg>
+                <div flex flex-col space-y-2 max-w-lg>
                   <p text-white text-opacity-75 tracking-wide>
                     17 Oct
                   </p> 
