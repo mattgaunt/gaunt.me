@@ -27,17 +27,17 @@ refs.forEach((ref, i) => {
 </script>
 
 <template>
-  <Card min-h-130 overflow-hidden>
+  <Card max-h-148 overflow-hidden>
     <div grid grid-cols-2 gap-8>
       <div col-span-2>
         <div flex justify-center w-full>
           <div space-y-8 text-center pt-12 pb-6 px-6>
-            <div flex flex-col space-y-2 max-w-lg>
-              <h2 text-3xl text-white font-bold>
+            <div flex flex-col space-y-3 max-w-lg>
+              <Heading type="h2" text-3xl text-white>
                 My Stack
-              </h2>
+              </Heading>
 
-              <p text-lg text-neutral-400 leading-relaxed tracking-wide>
+              <p text-lg text-zinc-400 leading-relaxed tracking-normal>
                 I’ve added a new section to the site that includes all of the
                 tools and stack that I use daily.
               </p>

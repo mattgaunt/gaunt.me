@@ -40,13 +40,13 @@ gems.forEach((ref, i) => {
             <div flex justify-center w-full>
               <div space-y-8 text-left p-6>
                 <div flex flex-col space-y-2 max-w-lg>
-                  <p text-white text-opacity-75 tracking-wide>
+                  <p text-sm text-zinc-400 font-medium tracking-normal>
                     8 Nov
                   </p> 
 
-                  <h2 title-lg text-white leading-snug>
+                  <Heading type="h2" text-3xl text-white>
                     Publishable Models with Laravel
-                  </h2>
+                  </Heading>
                 </div>
               </div>
             </div>

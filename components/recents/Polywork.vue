@@ -54,12 +54,12 @@ refs.forEach((ref, i) => {
           <div flex-initial>
             <div flex justify-center w-full>
               <div space-y-6 text-center py-8 px-6>
-                <div flex flex-col space-y-2 max-w-lg>
-                  <h2 text-28px text-white font-bold>
+                <div flex flex-col space-y-3 max-w-lg>
+                  <Heading type="h2" text-3xl text-white>
                     I'm On Polywork
-                  </h2>
+                  </Heading>
 
-                  <p text-lg text-white text-opacity-75 tracking-wide>
+                  <p text-lg text-white text-opacity-75 tracking-normal>
                     I plan on keeping a regular changelog of what I'm building. Let's connect!
                   </p>
                 </div>

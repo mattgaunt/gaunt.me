@@ -44,16 +44,16 @@ gems.forEach((ref, i) => {
             </div>
           </div>
           <div flex-initial>
-            <div flex justify-center w-full>
+            <div flex justify-start w-full>
               <div space-y-8 text-left p-6>
                 <div flex flex-col space-y-2 max-w-lg>
-                  <p text-white text-opacity-75 tracking-wide>
+                  <p text-sm text-zinc-400 font-medium tracking-normal>
                     17 Oct
                   </p> 
 
-                  <h2 title-lg text-white leading-snug>
+                  <Heading type="h2" text-3xl text-white>
                     Creating themes with Nuxt 3
-                  </h2>
+                  </Heading>
                 </div>
               </div>
             </div>

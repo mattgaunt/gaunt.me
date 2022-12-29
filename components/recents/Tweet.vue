@@ -51,13 +51,13 @@ refs.forEach((ref, i) => {
             <div flex justify-center w-full>
               <div space-y-8 text-left p-6>
                 <div flex flex-col space-y-2 max-w-lg>
-                  <p text-white text-opacity-75 tracking-wide>
+                  <p text-sm text-white text-opacity-75 font-medium tracking-normal>
                     18 Oct
                   </p> 
 
-                  <h2 title-lg text-white>
+                  <Heading type="h2" text-3xl text-white>
                     Livewire 3 has me very excited for building Loadout.co
-                  </h2>
+                  </Heading>
                 </div>
               </div>
             </div>
