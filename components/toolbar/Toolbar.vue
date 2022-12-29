@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const tabs = [
-  { path: '/', name: 'index', label: 'Recents', icon: 'House' },
+  { path: '/', name: 'index', label: 'Recents', icon: 'Shapes' },
   { path: '/about', name: 'about', label: 'About', icon: 'User' },
   { path: '/projects', name: 'projects', label: 'Projects', icon: 'Code' },
   { path: '/stack', name: 'stack', label: 'Stack', icon: 'Stack' },
@@ -31,7 +31,7 @@ transform.x = 52 * activeIdx.value
         left-4
         inset-y-2
         inline-flex
-        bg-zinc-700
+        bg-zinc-800
         highlight
         rounded-2xl
         w-11
