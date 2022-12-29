@@ -22,7 +22,7 @@ export default {
     <NuxtLink
       prefetch
       v-bind="$attrs"
-      active-class="bg-zinc-800/70! text-white!"
+      active-class="bg-zinc-800/70! text-white! stroke-cyan/80! fill-cyan/12!"
       hover="bg-zinc-800/30"
       active="scale-98"
       transition
@@ -37,15 +37,17 @@ export default {
       py-default
       text-sm
       text-zinc-400
+      fill-white
+      fill-opacity-10
+      stroke-zinc-500
       font-medium
     >
       <span flex items-center justify-center>
         <Icon
           :name="icon"
           size="20"
-          fill-white
-          fill-opacity-10
-          stroke-zinc-500
+          stroke-inherit
+          fill-inherit
         />
       </span>
       <span flex-1>

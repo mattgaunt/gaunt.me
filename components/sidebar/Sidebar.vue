@@ -16,7 +16,8 @@ const { open } = useContactModal()
     transition
     duration-200
     ease-in-out
-    w-62
+    w-52
+    xl:w-62
     z-auto
   >
     <div flex-1 space-y-6 h-full p-1>
