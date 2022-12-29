@@ -35,11 +35,11 @@ refs.forEach((ref, index) => {
         <div flex justify-center w-full>
           <div space-y-8 text-center px-6>
             <div flex flex-col space-y-6 max-w-lg>
-              <h2 text="#C1FA6B" text-4xl lg:title-2xl font-bold>
+              <Heading type="h2" text="#C1FA6B" text-4xl lg:text-5xl>
                 Let's chat.
-              </h2>
+              </Heading>
 
-              <p text-lg text-zinc-400 leading-relaxed tracking-wide>
+              <p text-lg text-zinc-400 leading-relaxed>
                 Want to work together, or just want to chat? I'm always open to see how I can help, or we can
                 just play games together.
               </p>
