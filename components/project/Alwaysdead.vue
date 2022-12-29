@@ -124,11 +124,11 @@ useMotion(five, {
         <div flex justify-center w-full>
           <div space-y-8 text-center py-16 md:py-20 px-6>
             <div flex flex-col space-y-6 max-w-xl>
-              <h2 text="#27FFF2" text-4xl lg:(text-5xl leading-14) font-bold>
+              <Heading type="h2" text="#27FFF2" text-4xl lg:(text-5xl leading-14)>
                 Daily digest for your gaming habits.
-              </h2>
+              </Heading>
 
-              <p text-lg text-zinc-400 leading-relaxed tracking-wide>
+              <p text-lg text-zinc-400 leading-relaxed tracking-normal>
                 Building the best way to consume your favourite
                 gaming content for the topics you love, all in a
                 single digestible feed.
@@ -147,7 +147,7 @@ useMotion(five, {
           </div>
         </div>
       </div>
-      <div col-span-12 min-h-sm h-full relative>
+      <div col-span-12 min-h-90 h-full relative>
         <div flex flex-col items-center>
           <div ref="four" absolute top-none bg-zinc-900 bg-opacity-25 rounded-2xl max-w-82 w-full aspect-square />
           <div ref="five" absolute top-none bg-zinc-900 bg-opacity-25 rounded-2xl max-w-82 w-full aspect-square />

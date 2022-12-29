@@ -34,11 +34,11 @@ refs.forEach((ref, index) => {
         <div flex justify-center w-full>
           <div space-y-8 text-center py-16 md:py-20 px-6>
             <div flex flex-col space-y-6 max-w-lg>
-              <h2 text="#FF5E33" text-4xl lg:(text-5xl leading-14) font-bold>
+              <Heading type="h2" text="#FF5E33" text-4xl lg:(text-5xl leading-14)>
                 Loadout with style.
-              </h2>
+              </Heading>
 
-              <p text-lg text-zinc-400 leading-relaxed tracking-wide>
+              <p text-lg text-zinc-400 leading-relaxed tracking-normal>
                 The discovery platform for great gaming gear. It helps you become a better gamer, streamer or
                 content creator by matching with the pros.
               </p>
