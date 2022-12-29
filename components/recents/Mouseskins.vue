@@ -34,12 +34,12 @@
             <div space-y-8 text-center pt-12 pb-6 px-6>
               <div flex flex-col space-y-3 max-w-lg>
                 <Heading type="h2" text-3xl text-white>
-                  My Stack
+                  Joined Mouseskins
                 </Heading>
   
                 <p text-lg text-zinc-400 leading-relaxed tracking-normal>
-                  I’ve added a new section to the site that includes all of the
-                  tools and stack that I use daily.
+                  I've joined Mouseskins as their CTO. Super excited for what's coming
+                  next year from them.
                 </p>
               </div>
             </div>

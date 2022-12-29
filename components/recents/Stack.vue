@@ -27,7 +27,7 @@ refs.forEach((ref, i) => {
 </script>
 
 <template>
-  <Card max-h-148 overflow-hidden>
+  <Card min-h-142 overflow-hidden>
     <div grid grid-cols-2 gap-8>
       <div col-span-2>
         <div flex justify-center w-full>

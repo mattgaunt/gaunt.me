@@ -15,7 +15,7 @@ refs.forEach((ref, i) => {
       opacity: 0,
       y: -30,
     },
-    visible: {
+    visibleOnce: {
       opacity: 1,
       y: 0,
       transition: {
@@ -40,6 +40,7 @@ refs.forEach((ref, i) => {
         before:from-opacity-15
         before:to-white
         before:to-opacity-15
+        min-h-142
       >
         <div flex flex-col h-full gap-4>
           <div flex-1>

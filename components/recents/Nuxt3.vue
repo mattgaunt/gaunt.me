@@ -13,7 +13,7 @@ gems.forEach((ref, i) => {
       y: -30,
       scale: 0.9,
     },
-    visible: {
+    visibleOnce: {
       opacity: 1,
       y: 0,
       scale: 1,
@@ -31,7 +31,7 @@ gems.forEach((ref, i) => {
 <template>
   <div bg-zinc-900 bg-opacity-25 rounded-10 h-full>
     <NuxtLink to="/notes" hover="-rotate-1 -translate-y-5" block transition duration-250 h-full>
-      <Card overflow-hidden p-4>
+      <Card min-h-142 overflow-hidden p-4>
         <div flex flex-col h-full gap-4>
           <div flex-1>
             <div flex items-center relative>
