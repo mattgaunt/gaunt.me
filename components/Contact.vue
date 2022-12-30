@@ -30,7 +30,7 @@ const links = [
         leave-from="opacity-100"
         leave-to="opacity-0"
       >
-        <div fixed inset-none bg-zinc-900 bg-opacity-85 backdrop-blur-lg />
+        <div fixed inset-none bg-zinc-900 bg-opacity-85 backdrop-blur />
       </TransitionChild>
 
       <div fixed inset-none overflow-y-auto>
@@ -42,7 +42,7 @@ const links = [
             enter-to="opacity-100 translate-y-none"
             leave="duration-150 ease-in"
             leave-from="opacity-100 translate-y-none"
-            leave-to="opacity-0 -translate-y-3 "
+            leave-to="opacity-0 -translate-y-3"
           >
             <DialogPanel
               transform
@@ -79,7 +79,7 @@ const links = [
                     </button>
                   </div>
                   <div flex flex-col text-center space-y-6>
-                    <DialogTitle as="h2" text-4xl font-bold>
+                    <DialogTitle as="h2" font-heading text-4xl font-black>
                       Hey there! 👋
                     </DialogTitle>
                     <div mt-2>
