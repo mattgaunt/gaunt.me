@@ -28,7 +28,8 @@ defineProps({
     before:pointer-events-none
     before:select-none
     before:p-px
-    px-8
+    px-6
+    lg:px-8
     py-6
   >
     <div flex items-center gap-6>
