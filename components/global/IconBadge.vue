@@ -28,9 +28,10 @@ defineProps({
       <Icon
         :name="name"
         size="40"
-        fill-white
+        fill-cyan
         fill-opacity-10
-        stroke-zinc-400
+        stroke-cyan
+        stroke-opacity-80
       />
     </div>
   </div>
