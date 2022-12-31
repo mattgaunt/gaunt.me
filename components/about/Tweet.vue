@@ -27,7 +27,7 @@ const config = useAppConfig()
           <div flex-initial>
             <div flex justify-center w-full>
               <div space-y-8 text-left py-8 px-6>
-                <div flex flex-col space-y-3 max-w-lg>
+                <div flex flex-col space-y-2 max-w-lg>
                   <p text-sm text-white text-opacity-75 font-medium>
                     18 Oct
                   </p> 
