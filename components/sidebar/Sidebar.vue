@@ -9,7 +9,8 @@ const { open } = useContactModal()
     contents
     inset-y-none
     left-none
-    flex
+    hidden
+    lg:flex
     flex-col
     flex-none
     overflow-y-auto

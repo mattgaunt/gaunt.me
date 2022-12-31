@@ -9,12 +9,19 @@ useHead({
 const { data: posts } = await useAsyncData('notes', () => {
   return queryContent('notes').find()
 })
+
+const route = useRoute()
+const isNotesPage = computed(() => route.name === 'notes')
+const isNotePage = computed(() => route.name === 'notes-slug')
 </script>
 
 <template>
   <div flex w-full gap-2>
-    <div flex>
+    <div flex flex-1>
       <div
+        :class="{
+          'hidden xl:flex': isNotePage,
+        }"
         relative
         bg-zinc-800
         bg-opacity-40
@@ -24,7 +31,8 @@ const { data: posts } = await useAsyncData('notes', () => {
         max-h-page
         flex-none
         overflow-y-auto
-        w-90
+        w-full
+        lg:w-84
         xl:w-100
       >
         <div flex-1 space-y-6 h-full p-3>
@@ -78,14 +86,17 @@ const { data: posts } = await useAsyncData('notes', () => {
     </div>
 
     <div
-      flex
+      :class="{
+        'hidden lg:flex': isNotesPage,
+      }"
       bg-zinc-800
       bg-opacity-40
       highlight
-      rounded-l-6
-      rounded-r-2
-      overflow-y-auto
-      max-h-page
+      rounded-6
+      lg:rounded-l-6
+      lg:rounded-r-2
+      lg:overflow-y-auto
+      lg:max-h-page
       w-full
       relative
     >
