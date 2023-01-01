@@ -32,8 +32,8 @@ refs.forEach((ref, index) => {
       <div grid grid-cols-6 gap-6 md:gap-12>
         <div col-span-6 md:col-span-3>
           <div flex items-center w-full>
-            <div flex flex-col items-start space-y-12 md:py-4>
-              <Heading type="h2" text-5xl>
+            <div flex flex-col items-start space-y-8 md:space-y-12 md:py-4>
+              <Heading type="h2" text-4xl lg:text-5xl>
                 A Full-Stack Developer and Designer
                 Based in the UK.
               </Heading>

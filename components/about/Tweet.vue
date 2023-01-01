@@ -18,15 +18,15 @@ const config = useAppConfig()
         <div flex flex-col h-full gap-4>
           <div flex-1>
             <div flex items-center relative>
-              <img src="/recents/twitter/at.svg" class="absolute -left-8 top-4 max-w-42">
-              <img src="/recents/twitter/retweet.svg" class="absolute right-12 top-none max-w-42">
-              <img src="/recents/twitter/hashtag.svg" class="absolute left-16 top-42 max-w-42">
-              <img src="/recents/twitter/like.svg" class="absolute -right-8 top-48 max-w-42">
+              <img src="/recents/twitter/at.svg" class="absolute -left-8 top-4 max-w-24 md:max-w-42">
+              <img src="/recents/twitter/retweet.svg" class="absolute right-12 top-none max-w-24 md:max-w-42">
+              <img src="/recents/twitter/hashtag.svg" class="absolute left-16 top-32 md:top-42 max-w-24 md:max-w-42">
+              <img src="/recents/twitter/like.svg" class="absolute -right-8 top-40 md:top-48 max-w-24 md:max-w-42">
             </div>
           </div>
           <div flex-initial>
             <div flex justify-center w-full>
-              <div space-y-8 text-left py-8 px-6>
+              <div space-y-8 text-left p-6>
                 <div flex flex-col space-y-2 max-w-lg>
                   <p text-sm text-white text-opacity-75 font-medium>
                     18 Oct
