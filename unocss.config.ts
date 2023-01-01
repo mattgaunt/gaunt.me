@@ -21,8 +21,22 @@ export default defineConfig({
   ],
   theme: {
     fontFamily: {
-      sans: [
-        'General Sans',
+      heading: [
+        'Satoshi',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        "Segoe UI",
+        'Roboto',
+        'Helvetica Neue',
+        'Arial',
+        'Noto Sans',
+        'sans-serif',
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol',
+        'Noto Color Emoji',
       ],
     },
 
@@ -44,15 +58,7 @@ export default defineConfig({
     },
 
     boxShadow: {
-      glow: '0 0 4px rgb(0 0 0 / 0.1)',
       px: 'var(--un-shadow-inset) 0 0 0 1px rgb(0 0 0 / 1)',
-    },
-
-    opacity: {
-      1: '0.01',
-      2.5: '0.025',
-      7.5: '0.075',
-      15: '0.15',
     },
   },
   presets: [
