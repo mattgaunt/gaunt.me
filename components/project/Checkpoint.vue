@@ -27,7 +27,7 @@
               Checkpoint.live
             </Heading>
 
-            <p text-2xl text-white text-opacity-70 leading-tight>
+            <p text-xl md:text-2xl text-white text-opacity-70 leading-tight>
               Providing un-rivalled event experiences in gaming.
             </p>
           </div>

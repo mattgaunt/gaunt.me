@@ -147,8 +147,8 @@ useMotion(five, {
           </div>
         </div>
       </div>
-      <div col-span-12 min-h-90 h-full relative>
-        <div flex flex-col items-center>
+      <div col-span-12 min-h-60 md:min-h-90 h-full relative>
+        <div flex flex-col items-center transform scale-70 md:scale-100>
           <div ref="four" absolute top-none bg-zinc-900 bg-opacity-25 rounded-2xl max-w-82 w-full aspect-square />
           <div ref="five" absolute top-none bg-zinc-900 bg-opacity-25 rounded-2xl max-w-82 w-full aspect-square />
 

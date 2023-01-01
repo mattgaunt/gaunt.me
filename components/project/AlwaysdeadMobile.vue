@@ -30,7 +30,7 @@ useMotion(mobile, {
             Digest on the go.
           </Heading>
 
-          <p text-2xl text-zinc-400 leading-tight>
+          <p text-xl md:text-2xl text-zinc-400 leading-tight>
             Great gaming content, at your fingertips.
           </p>
         </div>

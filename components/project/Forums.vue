@@ -27,7 +27,7 @@
               Forums.so
             </Heading>
 
-            <p text-2xl text-white text-opacity-70 leading-tight>
+            <p text-xl md:text-2xl text-white text-opacity-70 leading-tight>
               Helping to create engaging online communities.
             </p>
           </div>
