@@ -1,3 +1,14 @@
-**[gaunt.me](https://gaunt.me)**
+<p align="center">
+  <h1 align="center">
+    Personal website
+  </h1>
+  <p align="center">
+    <a href="https://gaunt.me">
+      <img src="https://vercelbadge.vercel.app/api/mattgaunt/gaunt.me" />
+    </a>
+  </p>
+  &nbsp;
+  <br />
+</p>
 
-Personal playground powered by [Nuxt 3](https://v3.nuxtjs.org/)
+![](.github/assets/screenshot.png)
