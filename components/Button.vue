@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div relative>
     <Component
       :is="component"
       v-bind="$attrs"
