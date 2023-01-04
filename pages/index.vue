@@ -42,7 +42,7 @@ useMotion(magic, {
                     <p text-xl text-zinc-400 font-normal leading-relaxed>
                       I’m a full-stack developer, semi-capable designer and notorious non-stop tinkerer.
                       If you can’t find me writing code, or designing in Figma, I’ll
-                      likely be crying in AWS console.
+                      probably be playing some games.
                     </p>
                   </div>
                 </div>
