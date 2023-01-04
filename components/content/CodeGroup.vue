@@ -99,6 +99,7 @@ css({
       display: 'none'
     },
     '.preview-canvas': {
+      backgroundColor: '{color.zinc.900}',
       padding: '{space.4}',
       '&:has(.sandbox)': {
         padding: 0,
