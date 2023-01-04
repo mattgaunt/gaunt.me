@@ -26,12 +26,12 @@ whenever(logicNot(hovered), () => resume())
 
 <template>
   <Card overflow-hidden p-none>
-    <div md="p-12" grid gap-24 p-10 w-full>
+    <div md="p-12" grid gap-8 lg:gap-20 p-10 w-full>
       <div col-span-12>
         <div flex items-center>
-          <h2 title-lg font-bold leading-tight>
+          <Heading type="h2" text-3xl leading-tight>
             Skills.
-          </h2>
+          </Heading>
         </div>
       </div>
       <div col-span-12>

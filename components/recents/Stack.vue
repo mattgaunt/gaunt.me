@@ -27,17 +27,17 @@ refs.forEach((ref, i) => {
 </script>
 
 <template>
-  <Card min-h-130 overflow-hidden>
+  <Card min-h-142 overflow-hidden>
     <div grid grid-cols-2 gap-8>
       <div col-span-2>
         <div flex justify-center w-full>
           <div space-y-8 text-center pt-12 pb-6 px-6>
-            <div flex flex-col space-y-4 max-w-lg>
-              <h2 text-3xl text-white font-bold tracking-px>
+            <div flex flex-col space-y-3 max-w-lg>
+              <Heading type="h2" text-3xl text-white>
                 My Stack
-              </h2>
+              </Heading>
 
-              <p text-lg text-neutral-400 leading-relaxed tracking-wide>
+              <p text-lg text-zinc-400 leading-relaxed tracking-normal>
                 I’ve added a new section to the site that includes all of the
                 tools and stack that I use daily.
               </p>
@@ -55,8 +55,8 @@ refs.forEach((ref, i) => {
                   flex-col
                   transition
                   duration-250
-                  bg-neutral-600
-                  bg-opacity-70
+                  bg-white
+                  bg-opacity-5
                   rounded-3xl
                   highlight
                   px-8
@@ -65,24 +65,24 @@ refs.forEach((ref, i) => {
                   <div flex flex-col items-center gap-4>
                     <div flex items-center flex-none py-6>
                       <div inline-flex rounded-8 overflow-hidden>
-                        <img src="/stack/loom.webp" aspect-square max-w-20>
+                        <img src="/stack/linear.png" aspect-square max-w-20>
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
-                      <div bg-neutral-800 rounded-xl h-6 w-20 />
+                      <div bg-zinc-800 rounded-xl h-6 w-20 />
 
                       <div flex gap-1>
                         <div
                           v-for="i in 2"
                           flex
                           items-center
-                          bg-neutral-800
+                          bg-zinc-800
                           rounded-3xl
                           w-16
                           h-6
                           px-2
                         >
-                          <div bg-neutral-600 rounded-xl w-full h-2 />
+                          <div bg-white bg-opacity-12 rounded-xl w-full h-2 />
                         </div>
                       </div>
                     </div>
@@ -94,8 +94,8 @@ refs.forEach((ref, i) => {
                   flex-col
                   transition
                   duration-250
-                  bg-neutral-600
-                  bg-opacity-70
+                  bg-white
+                  bg-opacity-5
                   rounded-3xl
                   highlight
                   px-8
@@ -104,24 +104,24 @@ refs.forEach((ref, i) => {
                   <div flex flex-col items-center gap-4>
                     <div flex items-center flex-none py-6>
                       <div inline-flex rounded-8 overflow-hidden>
-                        <img src="/stack/contrast.webp" aspect-square max-w-20>
+                        <img src="/stack/raycast.png" aspect-square max-w-20>
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
-                      <div bg-neutral-800 rounded-xl h-6 w-20 />
+                      <div bg-zinc-800 rounded-xl h-6 w-20 />
 
                       <div flex gap-1>
                         <div
                           v-for="i in 2"
                           flex
                           items-center
-                          bg-neutral-800
+                          bg-zinc-800
                           rounded-3xl
                           w-16
                           h-6
                           px-2
                         >
-                          <div bg-neutral-600 rounded-xl w-full h-2 />
+                          <div bg-white bg-opacity-12 rounded-xl w-full h-2 />
                         </div>
                       </div>
                     </div>
@@ -134,8 +134,8 @@ refs.forEach((ref, i) => {
                   flex-col
                   transition
                   duration-250
-                  bg-neutral-600
-                  bg-opacity-70
+                  bg-white
+                  bg-opacity-5
                   rounded-3xl
                   highlight
                   px-8
@@ -144,24 +144,24 @@ refs.forEach((ref, i) => {
                   <div flex flex-col items-center gap-4>
                     <div flex items-center flex-none py-6>
                       <div inline-flex rounded-8 overflow-hidden>
-                        <img src="/stack/contrast.webp" aspect-square max-w-20>
+                        <img src="/stack/vercel.png" aspect-square max-w-20>
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
-                      <div bg-neutral-800 rounded-xl h-6 w-20 />
+                      <div bg-zinc-800 rounded-xl h-6 w-20 />
 
                       <div flex gap-1>
                         <div
                           v-for="i in 2"
                           flex
                           items-center
-                          bg-neutral-800
+                          bg-zinc-800
                           rounded-3xl
                           w-16
                           h-6
                           px-2
                         >
-                          <div bg-neutral-600 rounded-xl w-full h-2 />
+                          <div bg-white bg-opacity-12 rounded-xl w-full h-2 />
                         </div>
                       </div>
                     </div>
@@ -173,8 +173,8 @@ refs.forEach((ref, i) => {
                   flex-col
                   transition
                   duration-250
-                  bg-neutral-600
-                  bg-opacity-70
+                  bg-white
+                  bg-opacity-5
                   rounded-3xl
                   highlight
                   px-8
@@ -183,24 +183,24 @@ refs.forEach((ref, i) => {
                   <div flex flex-col items-center gap-4>
                     <div flex items-center flex-none py-6>
                       <div inline-flex rounded-8 overflow-hidden>
-                        <img src="/stack/loom.webp" aspect-square max-w-20>
+                        <img src="/stack/hybridly.png" aspect-square max-w-20>
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
-                      <div bg-neutral-800 rounded-xl h-6 w-20 />
+                      <div bg-zinc-800 rounded-xl h-6 w-20 />
 
                       <div flex gap-1>
                         <div
                           v-for="i in 2"
                           flex
                           items-center
-                          bg-neutral-800
+                          bg-zinc-800
                           rounded-3xl
                           w-16
                           h-6
                           px-2
                         >
-                          <div bg-neutral-600 rounded-xl w-full h-2 />
+                          <div bg-white bg-opacity-12 rounded-xl w-full h-2 />
                         </div>
                       </div>
                     </div>

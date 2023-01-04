@@ -1,8 +1,6 @@
 title: Fig
-description: Fig adds VSCode-style autocomplete to your existing terminal.
-category: tools
 website: https://fig.io/
-image: /stack/loom.webp
+image: /stack/fig.png
 tags:
   - Development
   - Terminal

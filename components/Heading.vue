@@ -10,10 +10,11 @@ defineProps({
 <template>
   <Component
     :is="type"
+    font-heading
     leading-tight
     tracking-normal
     text-white
-    font-bold
+    font-black
   >
     <slot />
   </Component>

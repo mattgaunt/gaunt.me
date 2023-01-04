@@ -1,5 +1,5 @@
 <template>
-  <h3 :id="id">
+  <h3 :id="id" text-xl>
     <a :href="`#${id}`" font-bold decoration-none>
       <slot />
     </a>

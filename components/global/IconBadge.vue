@@ -8,39 +8,31 @@ defineProps({
 </script>
 
 <template>
-  <div
-    inline-flex
-    shadow
-    shadow-black
-    shadow-opacity-5
-    rounded-8
-    transition
-  >
+  <div inline-flex>
     <div
       flex
-      justify-center
       items-center
-      relative
-      bg-gradient-to-b
-      from-white
-      from-opacity-3
-      to-white
-      to-opacity-5
-      rounded-8
-      w-20
-      h-20
-      text-neutral-400
-      before:mask
-      before:opacity-50
-      before:content-none
-      before:rounded-inherit
-      before:absolute
-      before:inset-none
-      before:pointer-events-none
-      before:select-none
-      before:p-px
+      justify-center
+      rounded-7
+      bg-white
+      bg-opacity-5
+      ring-1
+      ring-white
+      ring-opacity-10
+      backdrop-blur-2
+      transition
+      duration-300
+      w-18
+      h-18
     >
-      <Icon :name="name" size="40" />
+      <Icon
+        :name="name"
+        size="40"
+        fill-cyan
+        fill-opacity-10
+        stroke-cyan
+        stroke-opacity-80
+      />
     </div>
   </div>
 </template>

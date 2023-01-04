@@ -3,16 +3,9 @@ useHead({
   titleTemplate: 'Matthew Gaunt'
 })
 
-const first = ref<HTMLElement>()
-const m = ref<HTMLElement>()
-const a = ref<HTMLElement>()
-const g = ref<HTMLElement>()
-const i = ref<HTMLElement>()
-const c = ref<HTMLElement>()
+const magic = ref<HTMLElement>()
 
-const letters = [m, a, g, i, c]
-
-useMotion(first, {
+useMotion(magic, {
   initial: {
     opacity: 0,
     y: -20,
@@ -22,108 +15,87 @@ useMotion(first, {
     y: 0,
     transition: {
       type: 'spring',
-      stiffness: 200,
-      damping: 10,
-      delay: 100,
+      stiffness: 150,
+      damping: 8,
+      delay: 150,
     },
   },
-})
-
-letters.forEach((ref, i) => {
-  useMotion(ref, {
-    initial: {
-      opacity: 0,
-      y: -20,
-    },
-    enter: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: 'spring',
-        stiffness: 150,
-        damping: 8,
-        delay: 200 + 50 * i,
-      },
-    },
-  })
 })
 </script>
 
 <template>
-  <div flex bg-neutral-800 highlight lg:rounded-8 w-full relative>
+  <div flex bg-zinc-800 bg-opacity-40 highlight rounded-6 lg:rounded-l-6 lg:rounded-r-2 overflow-hidden w-full>
     <main id="main" relative flex flex-col lg:overflow-y-auto lg:max-h-page w-full>
-      <Container max-w-7xl pb-32>
-        <div flex flex-col space-y-16 relative>
-          <div absolute ambiance rotate-180>
-            <Magic absolute particles rotate-20 />
-          </div>
+      <HeroPattern />
 
-          <div grid grid-cols-8 gap-24 items-center>
-            <div col-span-6 col-start-2>
-              <div flex flex-col items-center space-y-16 py-32 relative>
-                <div flex flex-col items-center text-center max-w-172 space-y-10 relative>
-                  <h1 text-76px text-neutral-500 font-bold leading-20>
-                    <span ref="first" text-white transition>
-                      Development, with a little
-                      <span text="#F9FD33" inline-flex mr-4>
-                        <span ref="m" text="#42DC7F">M</span>
-                        <span ref="a" text="#5BE692">a</span>
-                        <span ref="g" text="#6BED9F">g</span>
-                        <span ref="i" text="#7DF4AC">i</span>
-                        <span ref="c" text="#84F7B1">c.</span>
-                      </span>
-                    </span>
+      <Container max-w-7xl py-24>
+        <div flex flex-col space-y-16 relative>
+          <div grid grid-cols-1 gap-24>
+            <div col-span-1>
+              <div flex flex-col items-center space-y-16 py-8 lg:py-32 relative>
+                <div flex flex-col items-center text-center max-w-178 space-y-8 relative>
+                  <h1 font-heading inline-block title-2xl lg:(title-3xl leading-20) text-white font-black>
+                    Development, with a little Magic.
                   </h1>
 
-                  <div max-w-40em px-2>
-                    <p text-para text-neutral-400 font-light leading-relaxed tracking-wide>
-                      I’m an all-stack developer, semi-capable designer and full
-                      time tinkerer. If you can’t find me writing code, or designing
-                      in Figma, I’ll likely be crying in AWS console.
+                  <div max-w-42em px-2>
+                    <p text-xl text-zinc-400 font-normal leading-relaxed>
+                      I’m a full-stack developer, semi-capable designer and notorious non-stop tinkerer.
+                      If you can’t find me writing code, or designing in Figma, I’ll
+                      probably be playing games.
                     </p>
                   </div>
                 </div>
 
                 <ButtonLink to="/projects" prefetch>
                   View Projects
+                  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="mt-0.5 h-6 w-6 -mr-2">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m11.5 6.5 3 3.5m0 0-3 3.5m3-3.5h-9" />
+                  </svg>
                 </ButtonLink>
               </div>
             </div>
           </div>
-          
-          <div grid grid-cols-8 gap-20>
-            <div col-span-8>
+
+          <div grid grid-cols-1 gap-12 lg:gap-20>
+            <div col-span-1>
               <div flex flex-col items-center gap-2>
-                <span text-base text-neutral-400 tracking-wide>
+                <span text-base text-zinc-400 tracking-wide>
                   Recent Updates
                 </span>
 
                 <Icon
                   name="ArrowDown"
                   size="24"
-                  text-neutral-400
+                  text-zinc-400
                 />
               </div>
             </div>
-            <div col-span-8>
-              <div grid grid-cols-8 gap-8>
-                <div col-span-3>
+            <div col-span-1>
+              <div grid grid-cols-1 gap-4 lg:grid-cols-8 lg:gap-8>
+                <div col-span-1 lg:col-span-3>
                   <RecentsNuxt3 />
                 </div>
-                <div col-span-5>
+                <div col-span-1 lg:col-span-5>
                   <RecentsAlwaysdead />
                 </div>
-                <div col-span-5>
+                <div col-span-1 lg:col-span-5>
                   <RecentsStack />
                 </div>
-                <div col-span-3>
+                <div col-span-1 lg:col-span-3>
                   <RecentsTweet />
                 </div>
-                <div col-span-3>
+                <div col-span-1 lg:col-span-3>
                   <RecentsPolywork />
                 </div>
-                <div col-span-5>
-                  <RecentsLoadout />
+                <div col-span-1 lg:col-span-5>
+                  <RecentsMouseskins />
+                </div>
+                <div col-span-1 lg:col-span-5>
+                  <RecentsCommandMenu />
+                </div>
+                <div col-span-1 lg:col-span-3>
+                  <RecentsPublish />
                 </div>
               </div>
             </div>

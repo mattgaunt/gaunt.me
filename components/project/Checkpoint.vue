@@ -1,11 +1,12 @@
 <template>
-  <div flex bg-neutral-900 bg-opacity-25 rounded-12>
+  <div flex bg-zinc-900 bg-opacity-25 rounded-10>
     <a href="https://checkpoint.live/" target="_blank" hover="-rotate-1 -translate-y-5" transition duration-250>
       <Card
         from="#168DFF/75"
         to="#168DFF/100"
         overflow-hidden
         p-none
+        min-h-112
         before:from-white
         before:from-opacity-15
         before:to-white
@@ -21,12 +22,12 @@
               />
             </div>
           </div>
-          <div flex flex-col space-y-2 py-2>
-            <h2 title-lg text-white>
+          <div flex flex-col space-y-2>
+            <Heading type="h2" text-3xl text-white>
               Checkpoint.live
-            </h2>
+            </Heading>
 
-            <p title-lg text-white text-opacity-70 font-medium>
+            <p text-xl md:text-2xl text-white text-opacity-70 leading-tight>
               Providing un-rivalled event experiences in gaming.
             </p>
           </div>

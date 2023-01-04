@@ -1,11 +1,13 @@
 <template>
-  <h2 :id="id">
+  <h2 :id="id" text-2xl>
     <a :href="`#${id}`" font-bold decoration-none>
       <slot />
     </a>
   </h2>
 </template>
 
-<script setup lang="ts">
-defineProps<{ id: string }>()
+<script lang="ts" setup>
+defineProps<{
+  id: string
+}>()
 </script>

@@ -26,11 +26,11 @@ useMotion(mobile, {
     <div grid items-stretch gap-4 h-full>
       <div col-span-12>
         <div flex flex-col gap-2 p-10 md:p-12>
-          <h2 title-lg text-white>
+          <Heading type="h2" text-3xl text-white>
             Digest on the go.
-          </h2>
+          </Heading>
 
-          <p title-lg text-neutral-400 font-medium>
+          <p text-xl md:text-2xl text-zinc-400 leading-tight>
             Great gaming content, at your fingertips.
           </p>
         </div>

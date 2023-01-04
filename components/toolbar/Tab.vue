@@ -9,17 +9,21 @@ defineProps({
 
 <template>
   <NuxtLink
-    active-class="text-white!"
+    active-class="fill-cyan/15! stroke-cyan/80!"
     inline-flex
     rounded-4
-    text-neutral-400
+    text-zinc-400
     transition
     duration-500
+    fill-zinc-800
+    stroke-zinc-600
     p-10px
   >
     <Icon
       :name="icon"
       size="24"
+      stroke-inherit
+      fill-inherit
     />
   </NuxtLink>
 </template>

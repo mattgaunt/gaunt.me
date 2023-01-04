@@ -9,29 +9,38 @@ useHead({
 const { data: posts } = await useAsyncData('notes', () => {
   return queryContent('notes').find()
 })
+
+const route = useRoute()
+const isNotesPage = computed(() => route.name === 'notes')
+const isNotePage = computed(() => route.name === 'notes-slug')
 </script>
 
 <template>
-  <div flex w-full gap-3>
-    <div flex>
+  <div flex w-full gap-2>
+    <div flex flex-1>
       <div
-        xl="w-106"
+        :class="{
+          'hidden xl:flex': isNotePage,
+        }"
         relative
-        bg-neutral-800
+        bg-zinc-800
+        bg-opacity-40
         highlight
-        rounded-8
+        rounded-6
         h-full
         max-h-page
         flex-none
         overflow-y-auto
-        w-90
+        w-full
+        lg:w-84
+        xl:w-100
       >
         <div flex-1 space-y-6 h-full p-3>
           <div flex flex-col gap-2>
             <div flex flex-col justify-center p-2>
               <div flex flex-none items-center justify-between>
                 <span flex items-center space-x-3 px-2>
-                  <h2 text-lg font-semibold tracking-wide line-clamp-1>
+                  <h2 text-lg font-semibold line-clamp-1>
                     Notes
                   </h2>
                 </span>
@@ -43,8 +52,8 @@ const { data: posts } = await useAsyncData('notes', () => {
                 <NuxtLink
                   :href="post._path"
                   :title="post.title"
-                  hover="before:bg-neutral-700 before:bg-opacity-50 before:scale-100"
-                  active-class="bg-neutral-700! bg-opacity-80"
+                  hover="before:bg-zinc-800 before:bg-opacity-30 before:scale-100"
+                  active-class="bg-zinc-800"
                   before:transition-all
                   before:scale-95
                   before:content-none
@@ -60,11 +69,11 @@ const { data: posts } = await useAsyncData('notes', () => {
                   transition
                 >
                   <div flex flex-1 flex-col justify-center space-y-1 relative>
-                    <div text-lg font-semibold line-clamp-3 text-neutral-100>
+                    <div text-base font-semibold line-clamp-3>
                       {{ post.title }}
                     </div>
 
-                    <div font-medium text-neutral-400 line-clamp-1>
+                    <div text-sm text-zinc-400 font-medium line-clamp-1>
                       {{ post.published }}
                     </div>
                   </div>
@@ -77,13 +86,19 @@ const { data: posts } = await useAsyncData('notes', () => {
     </div>
 
     <div
-      flex
-      bg-neutral-800
+      :class="{
+        'hidden lg:flex': isNotesPage,
+      }"
+      bg-zinc-800
+      bg-opacity-40
       highlight
-      rounded-8
-      overflow-y-auto
-      max-h-page
+      rounded-6
+      lg:rounded-l-6
+      lg:rounded-r-2
+      lg:overflow-y-auto
+      lg:max-h-page
       w-full
+      relative
     >
       <NuxtPage />
     </div>

@@ -14,21 +14,28 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    '@unocss/nuxt',
+    '@nuxt-themes/tokens',
     '@nuxt/content',
     '@nuxt/image-edge',
     '@vueuse/nuxt',
     '@vueuse/motion/nuxt',
-    '@unocss/nuxt',
   ],
-  content: {
-    highlight: {
-      theme: 'dracula',
-    },
+  unocss: {
+    preflight: true,
+  },
+  pinceau: {
+    configFileName: 'tokens.config',
   },
   image: {
     provider: 'vercel',
   },
-  unocss: {
-    preflight: true,
+  content: {
+    highlight: {
+      theme: 'dracula',
+      preload: [
+        'php',
+      ],
+    },
   },
 })

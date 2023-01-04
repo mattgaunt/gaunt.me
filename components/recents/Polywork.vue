@@ -15,7 +15,7 @@ refs.forEach((ref, i) => {
       opacity: 0,
       y: -30,
     },
-    visible: {
+    visibleOnce: {
       opacity: 1,
       y: 0,
       transition: {
@@ -30,7 +30,7 @@ refs.forEach((ref, i) => {
 </script>
 
 <template>
-  <div bg-neutral-900 bg-opacity-25 rounded-12 h-full>
+  <div bg-zinc-900 bg-opacity-25 rounded-10 h-full>
     <a :href="config.socials.polywork" target="_blank" hover="-rotate-1 -translate-y-5" block transition duration-250 h-full>
       <Card
         from="#7B61FF/80"
@@ -40,6 +40,7 @@ refs.forEach((ref, i) => {
         before:from-opacity-15
         before:to-white
         before:to-opacity-15
+        min-h-142
       >
         <div flex flex-col h-full gap-4>
           <div flex-1>
@@ -54,12 +55,12 @@ refs.forEach((ref, i) => {
           <div flex-initial>
             <div flex justify-center w-full>
               <div space-y-6 text-center py-8 px-6>
-                <div flex flex-col space-y-2 max-w-lg>
-                  <h2 text-28px text-white font-bold tracking-px>
+                <div flex flex-col space-y-3 max-w-lg>
+                  <Heading type="h2" text-3xl text-white>
                     I'm On Polywork
-                  </h2>
+                  </Heading>
 
-                  <p text-lg text-white text-opacity-75 tracking-wide>
+                  <p text-lg text-white text-opacity-75 tracking-normal>
                     I plan on keeping a regular changelog of what I'm building. Let's connect!
                   </p>
                 </div>

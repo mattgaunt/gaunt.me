@@ -33,11 +33,11 @@ refs.forEach((ref, index) => {
         <div flex justify-center w-full relative z-5>
           <div space-y-8 text-center py-16 md:py-20 px-6>
             <div flex flex-col space-y-6 max-w-lg>
-              <h2 text="#B3FF66" title-2xl tracking-px>
+              <Heading type="h2" text="#B3FF66" text-4xl lg:(text-5xl leading-14)>
                 Next level betting.
-              </h2>
+              </Heading>
 
-              <p text-lg text-neutral-400 leading-relaxed tracking-wide>
+              <p text-lg text-zinc-400 leading-relaxed tracking-normal>
                 Reimagining the traditional sportsbook for a new audience, with a focus on esports and
                 dynamic markets that reinvigorate players.
               </p>

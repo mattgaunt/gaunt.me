@@ -1,6 +1,22 @@
 <template>
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path opacity="32" d="M7.25 6C7.25 3.37665 9.37665 1.25 12 1.25C14.6234 1.25 16.75 3.37665 16.75 6C16.75 8.62335 14.6234 10.75 12 10.75C9.37665 10.75 7.25 8.62335 7.25 6Z" fill="currentColor" />
-    <path d="M8.95 13.25C5.80198 13.25 3.25 15.802 3.25 18.95V18.95C3.25 21.0487 4.95132 22.75 7.05 22.75H16.95C19.0487 22.75 20.75 21.0487 20.75 18.95V18.95C20.75 15.802 18.198 13.25 15.05 13.25H8.95Z" fill="currentColor" />
+  <svg viewBox="0 0 20 20" aria-hidden="true">
+    <path
+      stroke-width="0"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M10 .5a9.5 9.5 0 0 1 5.598 17.177C14.466 15.177 12.383 13.5 10 13.5s-4.466 1.677-5.598 4.177A9.5 9.5 0 0 1 10 .5ZM12.5 8a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"
+    />
+    <path
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M10 .5a9.5 9.5 0 0 1 5.598 17.177A9.458 9.458 0 0 1 10 19.5a9.458 9.458 0 0 1-5.598-1.823A9.5 9.5 0 0 1 10 .5Z"
+    />
+    <path
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M4.402 17.677C5.534 15.177 7.617 13.5 10 13.5s4.466 1.677 5.598 4.177M10 5.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+    />
   </svg>
 </template>

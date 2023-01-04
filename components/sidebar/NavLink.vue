@@ -4,6 +4,10 @@ defineProps({
     type: String,
     required: true,
   },
+  shortcut: {
+    type: String,
+    default: null,
+  },
   external: {
     type: Boolean,
     default: false,
@@ -18,12 +22,12 @@ export default {
 </script>
 
 <template>
-  <div flex items-stretch space-x-1 group>
+  <div flex gap-x-1 group>
     <NuxtLink
       prefetch
       v-bind="$attrs"
-      active-class="bg-white/8! border-white/4 text-white!"
-      hover="bg-neutral-700/20"
+      active-class="bg-zinc-800/70! text-white! stroke-cyan/80! fill-cyan/12!"
+      hover="bg-zinc-800/30"
       active="scale-98"
       transition
       flex
@@ -32,25 +36,41 @@ export default {
       gap-3
       border
       border-transparent
-      rounded-2xl
-      px-4
-      py-3
-      text-base
-      text-neutral-500
+      rounded-4
+      px-3
+      py-default
+      text-sm
+      text-zinc-400
+      fill-white
+      fill-opacity-10
+      stroke-zinc-500
       font-medium
     >
       <span flex items-center justify-center>
-        <Icon :name="icon" size="24" />
+        <Icon
+          :name="icon"
+          size="20"
+          stroke-inherit
+          fill-inherit
+        />
       </span>
       <span flex-1>
-        <span text-white font-medium tracking-wide>
+        <span text-inherit truncate>
           <slot />
         </span>
       </span>
 
+      <template v-if="shortcut">
+        <span flex items-center flex-none>
+          <span inline-flex justify-center shortcut>
+            <kbd text-2xs text-zinc-500 font-semibold>{{ shortcut }}</kbd>
+          </span>
+        </span>
+      </template>
+
       <template v-if="external">
         <span flex items-center flex-none>
-          <Icon name="External" />
+          <Icon name="External" size="18" opacity-40 />
         </span>
       </template>
     </NuxtLink>

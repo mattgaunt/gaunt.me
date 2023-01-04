@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const tabs = [
-  { path: '/', name: 'index', label: 'Recents', icon: 'House' },
+  { path: '/', name: 'index', label: 'Recents', icon: 'Shapes' },
   { path: '/about', name: 'about', label: 'About', icon: 'User' },
   { path: '/projects', name: 'projects', label: 'Projects', icon: 'Code' },
   { path: '/stack', name: 'stack', label: 'Stack', icon: 'Stack' },
@@ -10,9 +10,9 @@ const tabs = [
 
 const target = ref<HTMLElement>()
 const { transform } = useElementTransform(target)
-const route = useActiveRoute()
+const route = useRoute()
 const activeIdx = computed(() => {
-  return tabs.findIndex(t => t.name === route.name)
+  return tabs.findIndex(t => (route.name as string).startsWith(t.name))
 })
 
 watch(activeIdx, () => transform.x = 52 * activeIdx.value)
@@ -21,17 +21,18 @@ transform.x = 52 * activeIdx.value
 </script>
 
 <template>
-  <div flex lg:hidden justify-center items-center fixed inset-x-none bottom-8 z-100>
-    <div flex bg-neutral-900 rounded-3xl overflow-hidden relative shadow-lg shadow-opacity-10 h-15 px-4>
+  <div flex lg:hidden justify-center items-center fixed inset-x-none bottom-5 z-100>
+    <div flex bg-zinc-900 bg-opacity-92 backdrop-blur rounded-3xl overflow-hidden relative shadow-lg shadow-opacity-10 h-15 px-3>
       <div
         ref="target"
         transition
         duration-500
         absolute
-        left-4
+        left-3
         inset-y-2
         inline-flex
-        bg-neutral-700
+        bg-white
+        bg-opacity-3
         highlight
         rounded-2xl
         w-11

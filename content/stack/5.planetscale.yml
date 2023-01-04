@@ -1,7 +1,5 @@
 title: PlanetScale
-description: A modern database that makes it possible to build this site.
-category: development
 website: https://planetscale.com/
-image: /stack/loom.webp
+image: /stack/planetscale.png
 tags:
   - Database

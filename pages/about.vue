@@ -5,8 +5,8 @@ useHead({
 </script>
 
 <template>
-  <div flex bg-neutral-800 highlight lg:rounded-8 w-full relative>
-    <main id="main" relative flex flex-col lg:overflow-y-auto lg:max-h-page  w-full>
+  <div flex bg-zinc-800 bg-opacity-40 highlight rounded-6 lg:rounded-l-6 lg:rounded-r-2 w-full>
+    <main id="main" relative flex flex-col lg:overflow-y-auto lg:max-h-page w-full>
       <Container max-w-6xl py-20 lg:py-32>
         <ListDetailView
           title="About"
@@ -36,7 +36,5 @@ useHead({
         </ListDetailView>
       </Container>
     </main>
-
-    <LazyMask />
   </div>
 </template>

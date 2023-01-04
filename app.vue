@@ -46,18 +46,20 @@ useHead({
 }
 
 :root {
+  --body-background-color: #1c1c1c;
   --body-margin-left: max(24px, env(safe-area-inset-left));
   --body-margin-right: max(24px, env(safe-area-inset-right));
-  --body-background-color: #1c1c1c;
   --page-max-width: 1200px;
   --page-padding-default: 32px;
   --content-width: 640px;
-  --scrollbar-width: 12px;
-  --scrollbar-color: #333;
+  --scrollbar-color: theme('colors.zinc.800');
+  --scrollbar-color-hover: theme('colors.zinc.700');
+  --scrollbar-color-active: theme('colors.zinc.600');
+  --scrollbar-width: 16px;
 }
 
 body {
-  @apply bg-neutral-900;
+  @apply bg-zinc-900;
   @apply flex;
   @apply flex-col;
   @apply h-full;
@@ -68,28 +70,38 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: var(--scrollbar-width);
-  height: var(--scrollbar-width);
+  @apply w-[var(--scrollbar-width)];
+  @apply h-[var(--scrollbar-width)];
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-color);
-  border-radius: var(--scrollbar-width);
-  border: 3px solid transparent;
-  background-clip: content-box;
-  -webkit-transition: background .2s ease;
-  transition: background .2s ease;
+  @apply bg-[var(--scrollbar-color)];
+  @apply rounded-[var(--scrollbar-width)];
+  @apply border-5;
+  @apply border-transparent;
+  @apply bg-clip-content;
+  @apply transition-colors;
+  @apply transition-ease;
+  @apply duration-200;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  --scrollbar-color: #707070;
+  --scrollbar-color: var(--scrollbar-color-hover);
 }
 
 ::-webkit-scrollbar-thumb:active {
-  --scrollbar-color: #a0a0a0;
+  --scrollbar-color: var(--scrollbar-color-active);
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  @apply bg-transparent;
+  @apply border-l;
+  @apply border-white/5;
+}
+
+@keyframes magic {
+  to {
+    background-position: 200% center;
+  }
 }
 </style>

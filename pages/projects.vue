@@ -5,7 +5,7 @@ useHead({
 </script>
 
 <template>
-  <div flex bg-neutral-800 highlight lg:rounded-8 w-full relative>
+  <div flex bg-zinc-800 bg-opacity-40 highlight rounded-6 lg:rounded-l-6 lg:rounded-r-2 w-full>
     <main id="main" relative flex flex-col lg:overflow-y-auto lg:max-h-page w-full>
       <Container max-w-6xl py-20 lg:py-32>
         <ListDetailView
@@ -14,12 +14,12 @@ useHead({
           icon="Code"
         >
           <div flex flex-col space-y-3>
-            <div grid grid-cols-1 gap-6 md:gap-8>
+            <div grid grid-cols-1 gap-4 md:gap-8>
               <div col-span-1>
                 <ProjectAlwaysdead />
               </div>
               <div col-span-1>
-                <div grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8>
+                <div grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8>
                   <div col-span-1 flex>
                     <ProjectCheckpoint />
                   </div>
@@ -32,7 +32,7 @@ useHead({
                 <ProjectMidnite />
               </div>
               <div col-span-1>
-                <div grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8>
+                <div grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8>
                   <div col-span-1 flex>
                     <ProjectMidniteNft />
                   </div>
@@ -49,7 +49,5 @@ useHead({
         </ListDetailView>
       </Container>
     </main>
-
-    <LazyMask />
   </div>
 </template>

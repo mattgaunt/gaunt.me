@@ -13,7 +13,7 @@ gems.forEach((ref, i) => {
       y: -30,
       scale: 0.9,
     },
-    visible: {
+    visibleOnce: {
       opacity: 1,
       y: 0,
       scale: 1,
@@ -29,9 +29,9 @@ gems.forEach((ref, i) => {
 </script>
 
 <template>
-  <div bg-neutral-900 bg-opacity-25 rounded-12 h-full>
+  <div bg-zinc-900 bg-opacity-25 rounded-10 h-full>
     <NuxtLink to="/notes" hover="-rotate-1 -translate-y-5" block transition duration-250 h-full>
-      <Card from-opacity-4 to-opacity-6 overflow-hidden p-4>
+      <Card min-h-142 overflow-hidden p-4>
         <div flex flex-col h-full gap-4>
           <div flex-1>
             <div flex items-center relative>
@@ -44,16 +44,16 @@ gems.forEach((ref, i) => {
             </div>
           </div>
           <div flex-initial>
-            <div flex justify-center w-full>
-              <div space-y-8 text-left py-8 px-6>
-                <div flex flex-col space-y-3 max-w-lg>
-                  <p text-white text-opacity-75 tracking-wide>
+            <div flex justify-start w-full>
+              <div space-y-8 text-left p-6>
+                <div flex flex-col space-y-2 max-w-lg>
+                  <p text-sm text-zinc-400 font-medium tracking-normal>
                     17 Oct
                   </p> 
 
-                  <h2 title-lg text-white leading-snug>
+                  <Heading type="h2" text-3xl text-white>
                     Creating themes with Nuxt 3
-                  </h2>
+                  </Heading>
                 </div>
               </div>
             </div>

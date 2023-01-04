@@ -10,15 +10,15 @@ refs.forEach((ref, i) => {
   useMotion(ref, {
     initial: {
       opacity: 0,
-      y: -20,
+      scale: 0.5,
     },
-    visible: {
+    visibleOnce: {
       opacity: 1,
-      y: 0,
+      scale: 1,
       transition: {
         type: 'spring',
-        stiffness: 200,
-        damping: 10,
+        stiffness: 400,
+        damping: 8,
         delay: 100 * i,
       },
     },
@@ -27,7 +27,7 @@ refs.forEach((ref, i) => {
 </script>
 
 <template>
-  <div bg-neutral-900 bg-opacity-25 rounded-12 h-full>
+  <div bg-zinc-900 bg-opacity-25 rounded-10 h-full>
     <a href="https://twitter.com/mattgaunt" target="_blank" hover="rotate-1 -translate-y-5" block transition duration-250 h-full>
       <Card
         from="#3283FD/75"
@@ -37,27 +37,28 @@ refs.forEach((ref, i) => {
         before:from-opacity-15
         before:to-white
         before:to-opacity-15
+        min-h-142
       >
         <div flex flex-col h-full gap-4>
           <div flex-1>
             <div flex items-center relative>
-              <img ref="at" src="/recents/twitter/at.svg" class="absolute -left-8 top-4 max-w-42">
-              <img ref="retweet" src="/recents/twitter/retweet.svg" class="absolute right-12 top-none max-w-42">
-              <img ref="hashtag" src="/recents/twitter/hashtag.svg" class="absolute left-16 top-42 max-w-42">
-              <img ref="like" src="/recents/twitter/like.svg" class="absolute -right-8 top-48 max-w-42">
+              <img ref="at" src="/recents/twitter/at.svg" class="absolute -left-8 top-4 max-w-36">
+              <img ref="retweet" src="/recents/twitter/retweet.svg" class="absolute right-12 top-none max-w-36">
+              <img ref="hashtag" src="/recents/twitter/hashtag.svg" class="absolute left-16 top-42 max-w-36">
+              <img ref="like" src="/recents/twitter/like.svg" class="absolute -right-8 top-48 max-w-36">
             </div>
           </div>
           <div flex-initial>
             <div flex justify-center w-full>
-              <div space-y-8 text-left py-8 px-6>
-                <div flex flex-col space-y-3 max-w-lg>
-                  <p text-white text-opacity-75 tracking-wide>
+              <div space-y-8 text-left p-6>
+                <div flex flex-col space-y-2 max-w-lg>
+                  <p text-sm text-white text-opacity-75 font-medium tracking-normal>
                     18 Oct
                   </p> 
 
-                  <h2 title-lg text-white>
+                  <Heading type="h2" text-3xl text-white>
                     Livewire 3 has me very excited for building Loadout.co
-                  </h2>
+                  </Heading>
                 </div>
               </div>
             </div>

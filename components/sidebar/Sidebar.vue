@@ -5,22 +5,24 @@ const { open } = useContactModal()
 
 <template>
   <aside
-    absolute
-    lg:relative
-    lg:inset-y-none
-    flex
+    relative
+    contents
+    inset-y-none
+    left-none
+    hidden
+    lg:flex
     flex-col
     flex-none
     overflow-y-auto
     transition
     duration-200
     ease-in-out
-    w-58
-    xl:w-70
+    w-52
+    xl:w-62
     z-auto
   >
-    <div flex-1 space-y-6 h-full p-3>
-      <div flex flex-col gap-2>
+    <div flex-1 space-y-6 h-full p-1>
+      <div flex flex-col gap-4>
         <div flex flex-col justify-center p-2>
           <div flex flex-none items-center justify-between>
             <span flex items-center space-x-3>
@@ -31,33 +33,33 @@ const { open } = useContactModal()
           </div>
         </div>
 
-        <nav flex flex-col gap-6>
+        <nav flex flex-col gap-4>
           <SidebarSection>
-            <SidebarNavLink icon="House" href="/">
+            <SidebarNavLink icon="Shapes" href="/" shortcut="1">
               Recents
             </SidebarNavLink>
-            <SidebarNavLink icon="User" href="/about">
+            <SidebarNavLink icon="User" href="/about" shortcut="2">
               About
             </SidebarNavLink>
-            <SidebarNavLink icon="Code" href="/projects">
+            <SidebarNavLink icon="Code" href="/projects" shortcut="3">
               Projects
             </SidebarNavLink>
           </SidebarSection>
 
           <SidebarSection label="Resources">
-            <SidebarNavLink icon="Stack" href="/stack">
+            <SidebarNavLink icon="Stack" href="/stack" shortcut="4">
               Stack
             </SidebarNavLink>
-            <SidebarNavLink icon="Bookmark" href="/bookmarks">
+            <SidebarNavLink icon="Bookmark" href="/bookmarks" shortcut="5">
               Bookmarks
             </SidebarNavLink>
-            <SidebarNavLink icon="Notes" href="/notes">
+            <SidebarNavLink icon="Notes" href="/notes" shortcut="6">
               Notes
             </SidebarNavLink>
           </SidebarSection>
 
           <SidebarSection label="Stay in touch">
-            <SidebarNavButton icon="Chat" @click.prevent="open">
+            <SidebarNavButton icon="Chat" shortcut="/" @click.prevent="open">
               Contact
             </SidebarNavButton>
             <SidebarNavLink
@@ -67,14 +69,6 @@ const { open } = useContactModal()
               target="_blank"
             >
               Twitter
-            </SidebarNavLink>
-            <SidebarNavLink
-              icon="Polywork"
-              external
-              :to="config.socials.polywork"
-              target="_blank"
-            >
-              Polywork
             </SidebarNavLink>
             <SidebarNavLink
               icon="Github"
