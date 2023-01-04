@@ -98,17 +98,6 @@ const groups = computed(() => map(groupBy(results.value, command => command.item
 
 function onSelect(option: CommandPaletteCommand): void {
   $emit('update:modelValue', option, { query: query.value })
-
-  // @todo
-  // listen for this event
-  // implement handler based on action type
-  // either dispatch action
-  // or redirect to route
-  // or do some other custom logic
-}
-
-function onClear(): void {
-  $emit('close')
 }
 
 defineExpose({

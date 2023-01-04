@@ -1,12 +1,6 @@
 import type { UseFuseOptions } from '@vueuse/integrations/useFuse'
 import { get, set } from '@vueuse/shared'
 
-export enum CommandPaletteActionType {
-  setQuery = 'setQuery',
-  open = 'open',
-  close = 'close',
-}
-
 export interface CommandPaletteGroup {
   key: string
   active?: string
