@@ -49,7 +49,7 @@ refs.forEach((ref, i) => {
         </div>
       </div>
       <div col-span-2>
-        <div max-h-70 h-full px-8>
+        <div max-h-68 h-full px-8>
           <div flex justify-center items-center relative>
             <CommandPalette
               ref="commandPalette"
