@@ -1,5 +1,6 @@
 <template>
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1887 5.50792C19.126 5.35628 19.033 5.2142 18.9097 5.09093C18.6586 4.83988 18.3296 4.71436 18.0006 4.71436H8.25056C7.54048 4.71436 6.96484 5.28999 6.96484 6.00007C6.96484 6.71015 7.54048 7.28578 8.25056 7.28578H14.8966L5.09142 17.0909C4.58932 17.593 4.58932 18.4071 5.09142 18.9092C5.59352 19.4113 6.40759 19.4113 6.9097 18.9092L16.7148 9.10406V15.7501C16.7148 16.4601 17.2905 17.0358 18.0006 17.0358C18.7106 17.0358 19.2863 16.4601 19.2863 15.7501V6.00007C19.2863 5.82574 19.2516 5.65951 19.1887 5.50792Z" fill="currentColor" />
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.25 15.25V6.75H8.75"></path>
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 7L6.75 17.25"></path>
   </svg>
 </template>

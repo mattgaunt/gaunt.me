@@ -4,6 +4,10 @@ defineProps({
     type: String,
     required: true,
   },
+  shortcut: {
+    type: String,
+    default: null,
+  },
 })
 </script>
 
@@ -46,6 +50,14 @@ export default {
           <slot />
         </span>
       </span>
+
+      <template v-if="shortcut">
+        <span flex items-center flex-none>
+          <span inline-flex justify-center shortcut>
+            <kbd text-2xs text-zinc-500 font-semibold>{{ shortcut }}</kbd>
+          </span>
+        </span>
+      </template>
     </button>
   </div>
 </template>

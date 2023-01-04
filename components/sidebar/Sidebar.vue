@@ -35,31 +35,31 @@ const { open } = useContactModal()
 
         <nav flex flex-col gap-4>
           <SidebarSection>
-            <SidebarNavLink icon="Shapes" href="/">
+            <SidebarNavLink icon="Shapes" href="/" shortcut="1">
               Recents
             </SidebarNavLink>
-            <SidebarNavLink icon="User" href="/about">
+            <SidebarNavLink icon="User" href="/about" shortcut="2">
               About
             </SidebarNavLink>
-            <SidebarNavLink icon="Code" href="/projects">
+            <SidebarNavLink icon="Code" href="/projects" shortcut="3">
               Projects
             </SidebarNavLink>
           </SidebarSection>
 
           <SidebarSection label="Resources">
-            <SidebarNavLink icon="Stack" href="/stack">
+            <SidebarNavLink icon="Stack" href="/stack" shortcut="4">
               Stack
             </SidebarNavLink>
-            <SidebarNavLink icon="Bookmark" href="/bookmarks">
+            <SidebarNavLink icon="Bookmark" href="/bookmarks" shortcut="5">
               Bookmarks
             </SidebarNavLink>
-            <SidebarNavLink icon="Notes" href="/notes">
+            <SidebarNavLink icon="Notes" href="/notes" shortcut="6">
               Notes
             </SidebarNavLink>
           </SidebarSection>
 
           <SidebarSection label="Stay in touch">
-            <SidebarNavButton icon="Chat" @click.prevent="open">
+            <SidebarNavButton icon="Chat" shortcut="/" @click.prevent="open">
               Contact
             </SidebarNavButton>
             <SidebarNavLink

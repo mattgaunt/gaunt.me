@@ -18,6 +18,7 @@ export default defineConfig({
     ['glow', '[background:radial-gradient(ellipse_at_center,var(--un-gradient-stops))]'],
     ['highlight', 'shadow-px shadow-inset shadow-white/5'],
     ['py-default', 'py-2.5'],
+    ['shortcut', 'bg-white bg-opacity-4 rounded-md w-4.5'],
   ],
   theme: {
     fontFamily: {

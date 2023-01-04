@@ -4,6 +4,10 @@ defineProps({
     type: String,
     required: true,
   },
+  shortcut: {
+    type: String,
+    default: null,
+  },
   external: {
     type: Boolean,
     default: false,
@@ -56,9 +60,17 @@ export default {
         </span>
       </span>
 
+      <template v-if="shortcut">
+        <span flex items-center flex-none>
+          <span inline-flex justify-center shortcut>
+            <kbd text-2xs text-zinc-500 font-semibold>{{ shortcut }}</kbd>
+          </span>
+        </span>
+      </template>
+
       <template v-if="external">
         <span flex items-center flex-none>
-          <Icon name="External" size="14" opacity-50 />
+          <Icon name="External" size="18" opacity-40 />
         </span>
       </template>
     </NuxtLink>
