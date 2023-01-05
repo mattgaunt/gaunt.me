@@ -35,10 +35,10 @@ gems.forEach((ref, i) => {
         <div flex flex-col h-full gap-4>
           <div flex-1>
             <div flex items-center relative>
-              <img ref="gem1" loading="lazy" src="/recents/nuxt/gem-1.svg" absolute left-36 top-38 max-w-46>
-              <img ref="gem2" loading="lazy" src="/recents/nuxt/gem-2.svg" absolute right-12 top-24 max-w-24>
-              <img ref="gem3" loading="lazy" src="/recents/nuxt/gem-3.svg" absolute left-12 top-64 max-w-36>
-              <img ref="gem4" loading="lazy" src="/recents/nuxt/gem-4.svg" absolute left-12 top-8 max-w-60>
+              <img ref="gem1" loading="lazy" alt="Gem" src="/recents/nuxt/gem-1.svg" absolute left-36 top-38 max-w-46>
+              <img ref="gem2" loading="lazy" alt="Gem" src="/recents/nuxt/gem-2.svg" absolute right-12 top-24 max-w-24>
+              <img ref="gem3" loading="lazy" alt="Gem" src="/recents/nuxt/gem-3.svg" absolute left-12 top-64 max-w-36>
+              <img ref="gem4" loading="lazy" alt="Gem" src="/recents/nuxt/gem-4.svg" absolute left-12 top-8 max-w-60>
             
               <div from="#53E8AA/60" block absolute top-30 left-18 glow via-transparent blur-48 w-72 h-72 />
             </div>
