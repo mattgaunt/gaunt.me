@@ -2,7 +2,7 @@
 useHead({
   title: 'Stack',
   meta: [
-    { name: 'og:image', content: 'https://gaunt.me/og/stack.png' },
+    { property: 'og:image', content: 'https://gaunt.me/og/stack.png' },
     { name: 'twitter:image', content: 'https://gaunt.me/og/stack.png' },
   ],
 })
