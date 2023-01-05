@@ -3,23 +3,29 @@ useHead({
   titleTemplate: 'Matthew Gaunt'
 })
 
-const magic = ref<HTMLElement>()
+const title = ref<HTMLElement>()
+const text = ref<HTMLElement>()
+const button = ref<HTMLElement>()
 
-useMotion(magic, {
-  initial: {
-    opacity: 0,
-    y: -20,
-  },
-  enter: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: 'spring',
-      stiffness: 150,
-      damping: 8,
-      delay: 150,
+const refs = [title, text, button]
+
+refs.forEach((ref, i) => {
+  useMotion(ref, {
+    initial: {
+      opacity: 0,
+      y: 40,
     },
-  },
+    enter: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: 'spring',
+        stiffness: 40,
+        damping: 6,
+        delay: 150 * i,
+      },
+    },
+  })
 })
 </script>
 
@@ -34,12 +40,12 @@ useMotion(magic, {
             <div col-span-1>
               <div flex flex-col items-center space-y-16 py-8 lg:py-32 relative>
                 <div flex flex-col items-center text-center max-w-178 space-y-8 relative>
-                  <h1 font-heading text-5xl leading-tight lg:text-7xl lg:leading-20 text-white font-black>
+                  <h1 ref="title" font-heading text-5xl leading-tight lg:text-7xl lg:leading-20 text-white font-black>
                     Development, with a little Magic.
                   </h1>
 
                   <div max-w-42em px-2>
-                    <p text-xl text-zinc-400 font-normal leading-relaxed>
+                    <p ref="text" text-xl text-zinc-400 font-normal leading-relaxed>
                       I’m a full-stack developer, semi-capable designer and notorious non-stop tinkerer.
                       If you can’t find me writing code, or designing in Figma, I’ll
                       probably be playing games.
@@ -47,7 +53,7 @@ useMotion(magic, {
                   </div>
                 </div>
 
-                <ButtonLink to="/projects" prefetch>
+                <ButtonLink ref="button" to="/projects" prefetch>
                   View Projects
                   <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="mt-0.5 h-6 w-6 -mr-2">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m11.5 6.5 3 3.5m0 0-3 3.5m3-3.5h-9" />
