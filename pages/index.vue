@@ -34,7 +34,7 @@ useMotion(magic, {
             <div col-span-1>
               <div flex flex-col items-center space-y-16 py-8 lg:py-32 relative>
                 <div flex flex-col items-center text-center max-w-178 space-y-8 relative>
-                  <h1 font-heading inline-block title-2xl lg:(title-3xl leading-20) text-white font-black>
+                  <h1 font-heading text-5xl leading-tight lg:text-7xl lg:leading-20 text-white font-black>
                     Development, with a little Magic.
                   </h1>
 
