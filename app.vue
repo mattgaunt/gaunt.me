@@ -58,50 +58,46 @@ useHead({
   --scrollbar-width: 16px;
 }
 
-body {
-  @apply bg-zinc-900;
-  @apply flex;
-  @apply flex-col;
-  @apply h-full;
-  @apply min-h-screen;
-  @apply antialiased;
-  @apply font-sans;
-  @apply text-white;
-}
+@layer base {
+  body {
+    @apply bg-zinc-900;
+    @apply flex;
+    @apply flex-col;
+    @apply h-full;
+    @apply min-h-screen;
+    @apply antialiased;
+    @apply font-sans;
+    @apply text-white;
+  }
 
-::-webkit-scrollbar {
-  @apply w-[var(--scrollbar-width)];
-  @apply h-[var(--scrollbar-width)];
-}
+  ::-webkit-scrollbar {
+    @apply w-[var(--scrollbar-width)];
+    @apply h-[var(--scrollbar-width)];
+  }
 
-::-webkit-scrollbar-thumb {
-  @apply bg-[var(--scrollbar-color)];
-  @apply rounded-[var(--scrollbar-width)];
-  @apply border-5;
-  @apply border-transparent;
-  @apply bg-clip-content;
-  @apply transition-colors;
-  @apply transition-ease;
-  @apply duration-200;
-}
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[var(--scrollbar-color)];
+    @apply rounded-[var(--scrollbar-width)];
+    @apply border-5;
+    @apply border-transparent;
+    @apply bg-clip-content;
+    @apply transition-colors;
+    @apply transition-ease;
+    @apply duration-200;
+  }
 
-::-webkit-scrollbar-thumb:hover {
-  --scrollbar-color: var(--scrollbar-color-hover);
-}
+  ::-webkit-scrollbar-thumb:hover {
+    --scrollbar-color: var(--scrollbar-color-hover);
+  }
 
-::-webkit-scrollbar-thumb:active {
-  --scrollbar-color: var(--scrollbar-color-active);
-}
+  ::-webkit-scrollbar-thumb:active {
+    --scrollbar-color: var(--scrollbar-color-active);
+  }
 
-::-webkit-scrollbar-track {
-  @apply bg-transparent;
-  @apply border-l;
-  @apply border-white/5;
-}
-
-@keyframes magic {
-  to {
-    background-position: 200% center;
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+    @apply border-l;
+    @apply border-white/5;
   }
 }
 </style>
