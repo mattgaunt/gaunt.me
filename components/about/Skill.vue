@@ -19,7 +19,7 @@ const opacity = computed(() => 1 - Math.abs(relativePos.value) / 4)
     flex
     items-center
     absolute
-    title-xl
+    text-4xl
     transform
     transition
     duration-500
