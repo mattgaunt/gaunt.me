@@ -39,7 +39,7 @@ export default {
       <span flex items-center justify-center>
         <Icon
           :name="icon"
-          size="18"
+          size="20"
           fill-white
           fill-opacity-10
           stroke-zinc-500
