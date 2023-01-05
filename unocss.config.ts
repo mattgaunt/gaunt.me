@@ -10,15 +10,11 @@ import {
 export default defineConfig({
   shortcuts: [
     ['max-h-page', 'max-h-[calc(100vh_-_16px)]'],
-    ['title-lg', 'text-1.75rem font-bold leading-tight'],
-    ['title-xl', 'text-2.25rem font-bold leading-tight'],
-    ['title-2xl', 'text-2.625rem font-bold leading-tight'],
-    ['title-3xl', 'text-4.75rem font-bold leading-tight'],
     ['mask', '[mask-composite:xor] [mask:linear-gradient(black,black)_content-box_content-box,linear-gradient(black,black)] bg-gradient-to-b bg-gradient-from-white/5 bg-gradient-to-white/5'],
     ['glow', '[background:radial-gradient(ellipse_at_center,var(--un-gradient-stops))]'],
     ['highlight', 'shadow-px shadow-inset shadow-white/5'],
-    ['py-default', 'py-2.5'],
     ['shortcut', 'bg-white bg-opacity-4 rounded-md w-4.5'],
+    ['py-default', 'py-2.5'],
   ],
   theme: {
     fontFamily: {
