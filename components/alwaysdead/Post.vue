@@ -36,6 +36,7 @@ defineProps({
             <figure group-hover="opacity-80" flex-initial duration-250>
               <img
                 :src="image"
+                :alt="title"
                 inline-flex
                 items-center
                 image-render-auto
