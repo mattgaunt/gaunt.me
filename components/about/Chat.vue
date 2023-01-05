@@ -6,7 +6,7 @@ const reply = ref<HTMLElement>()
 
 const refs = [message, reply]
 
-refs.forEach((ref, index) => {
+refs.forEach((ref, i) => {
   useMotion(ref, {
     initial: {
       y: 80,
@@ -21,7 +21,7 @@ refs.forEach((ref, index) => {
         type: 'spring',
         stiffness: 200,
         damping: 15,
-        delay: 200 * index,
+        delay: 200 * i,
       },
     },
   })

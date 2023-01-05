@@ -7,7 +7,7 @@ const five = ref<HTMLElement>()
 
 const refs = [one, two, three, four, five]
 
-refs.forEach((ref, index) => {
+refs.forEach((ref, i) => {
   useMotion(ref, {
     initial: {
       y: -20,
@@ -20,7 +20,7 @@ refs.forEach((ref, index) => {
         type: 'spring',
         stiffness: 200,
         damping: 8,
-        delay: 200 * index,
+        delay: 200 * i,
       },
     }
   })
