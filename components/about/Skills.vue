@@ -10,7 +10,10 @@ const skills = [
   'Node',
   'Tailwind CSS',
   'React',
-  'Livewire'
+  'Livewire',
+  'Figma',
+  'Webflow',
+  'Framer',
 ]
 
 const el = ref<HTMLElement>()
