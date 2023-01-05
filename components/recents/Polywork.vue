@@ -45,11 +45,11 @@ refs.forEach((ref, i) => {
         <div flex flex-col h-full gap-4>
           <div flex-1>
             <div flex items-center relative>
-              <img ref="spring" src="/recents/polywork/spring.png" class="absolute -right-4 top-38 max-w-46">
-              <img ref="headphones" src="/recents/polywork/headphones.png" class="absolute left-32 top-64 max-w-24">
-              <img ref="beard" src="/recents/polywork/beard.png" class="absolute -left-4 top-24 max-w-36">
-              <img ref="wave" src="/recents/polywork/wave.png" class="absolute left-none -top-24 max-w-60">
-              <img ref="robot" src="/recents/polywork/robot.png" class="absolute -right-6 -top-4 max-w-56">
+              <img ref="spring" alt="Spring" src="/recents/polywork/spring.png" class="absolute -right-4 top-38 max-w-46">
+              <img ref="headphones" alt="Headphones" src="/recents/polywork/headphones.png" class="absolute left-32 top-64 max-w-24">
+              <img ref="beard" alt="Beard" src="/recents/polywork/beard.png" class="absolute -left-4 top-24 max-w-36">
+              <img ref="wave" alt="Wave" src="/recents/polywork/wave.png" class="absolute left-none -top-24 max-w-60">
+              <img ref="robot" alt="Robot" src="/recents/polywork/robot.png" class="absolute -right-6 -top-4 max-w-56">
             </div>
           </div>
           <div flex-initial>
