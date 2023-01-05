@@ -71,18 +71,18 @@ useHead({
   }
 
   ::-webkit-scrollbar {
-    @apply w-[var(--scrollbar-width)];
-    @apply h-[var(--scrollbar-width)];
+    width: var(--scrollbar-width);
+    height: var(--scrollbar-width);
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-[var(--scrollbar-color)];
-    @apply rounded-[var(--scrollbar-width)];
-    @apply border-5;
-    @apply border-transparent;
-    @apply bg-clip-content;
-    @apply transition-colors;
+    background-color: var(--scrollbar-color);
+    border-radius: var(--scrollbar-width);
+    border: 5px solid;
+    border-color: transparent;
+    background-clip: content-box;
     @apply transition-ease;
+    @apply transition-colors;
     @apply duration-200;
   }
 
@@ -95,9 +95,9 @@ useHead({
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-transparent;
-    @apply border-l;
-    @apply border-white/5;
+    background-color: transparent;
+    border-left: 1px solid;
+    border-color: rgba(255, 255, 255, .05);
   }
 }
 </style>
