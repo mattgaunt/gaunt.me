@@ -1,5 +1,5 @@
 <template>
-  <div flex bg-zinc-800 highlight lg:rounded-8 w-full relative>
+  <div flex bg-zinc-800 bg-opacity-40 highlight rounded-6 w-full relative>
     <main id="main" relative flex flex-col lg:overflow-y-auto lg:max-h-page w-full>
       <Container max-w-5xl py-20 lg:py-32 h-screen>
         <ContentDoc>
@@ -8,9 +8,9 @@
               <div col-span-6 col-start-2>
                 <div flex flex-col items-center space-y-8 py-32>
                   <div flex flex-col items-center text-center space-y-4>
-                    <h1 title-2xl text-white>
+                    <Heading type="h1" text-5xl text-white>
                       You're lost.
-                    </h1>
+                    </Heading>
 
                     <div max-w-xl>
                       <p text-xl text-zinc-400 leading-relaxed tracking-wide>
