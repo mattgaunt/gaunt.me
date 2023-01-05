@@ -3,6 +3,7 @@ useHead({
   title: 'Bookmarks',
   meta: [
     { name: 'og:image', content: 'https://gaunt.me/og/bookmarks.png' },
+    { name: 'twitter:image', content: 'https://gaunt.me/og/bookmarks.png' },
   ],
 })
 

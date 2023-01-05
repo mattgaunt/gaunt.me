@@ -3,6 +3,7 @@ useHead({
   title: 'Notes',
   meta: [
     { name: 'og:image', content: 'https://gaunt.me/og/notes.png' },
+    { name: 'twitter:image', content: 'https://gaunt.me/og/notes.png' },
   ],
 })
 

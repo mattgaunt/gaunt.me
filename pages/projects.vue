@@ -1,6 +1,10 @@
 <script lang="ts" setup>
 useHead({
   title: 'Projects',
+  meta: [
+    { name: 'og:image', content: 'https://gaunt.me/og/projects.png' },
+    { name: 'twitter:image', content: 'https://gaunt.me/og/projects.png' },
+  ],
 })
 </script>
 
