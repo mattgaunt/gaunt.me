@@ -65,7 +65,7 @@ refs.forEach((ref, i) => {
                   <div flex flex-col items-center gap-4>
                     <div flex items-center flex-none py-6>
                       <div inline-flex rounded-8 overflow-hidden>
-                        <img src="/stack/linear.png" aspect-square max-w-20>
+                        <img alt="Linear" src="/stack/linear.png" aspect-square max-w-20>
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
@@ -104,7 +104,7 @@ refs.forEach((ref, i) => {
                   <div flex flex-col items-center gap-4>
                     <div flex items-center flex-none py-6>
                       <div inline-flex rounded-8 overflow-hidden>
-                        <img src="/stack/raycast.png" aspect-square max-w-20>
+                        <img alt="Raycast" src="/stack/raycast.png" aspect-square max-w-20>
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
@@ -144,7 +144,7 @@ refs.forEach((ref, i) => {
                   <div flex flex-col items-center gap-4>
                     <div flex items-center flex-none py-6>
                       <div inline-flex rounded-8 overflow-hidden>
-                        <img src="/stack/vercel.png" aspect-square max-w-20>
+                        <img alt="Vercel" src="/stack/vercel.png" aspect-square max-w-20>
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
@@ -183,7 +183,7 @@ refs.forEach((ref, i) => {
                   <div flex flex-col items-center gap-4>
                     <div flex items-center flex-none py-6>
                       <div inline-flex rounded-8 overflow-hidden>
-                        <img src="/stack/hybridly.png" aspect-square max-w-20>
+                        <img alt="Hybridly" src="/stack/hybridly.png" aspect-square max-w-20>
                       </div>
                     </div>
                     <div flex flex-1 justify-between w-full>
