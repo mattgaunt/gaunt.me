@@ -37,7 +37,7 @@ defineProps({
         :disabled="command.disabled"
       >
         <li :class="[{ 'bg-white/8 text-zinc-200': active }, command.disabled ? 'cursor-not-allowed' : 'cursor-pointer']" flex justify-between items-center gap-3 select-none rounded-xl relative p-3>
-          <div flex items-center gap-2>
+          <div flex items-center gap-3>
             <template v-if="command.icon">
               <Icon
                 :name="command.icon"
@@ -46,8 +46,7 @@ defineProps({
                 flex-shrink-none
                 text-lg
                 text-white
-                stroke-zinc-400
-                fill-zinc-600
+                fill-zinc-500
               />
             </template>
 
