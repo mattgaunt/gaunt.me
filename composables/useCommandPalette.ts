@@ -37,7 +37,7 @@ export function useCommandPalette() {
           {
             id: 100,
             name: 'ngine',
-            label: 'ngine/bits',
+            label: '@nuxt-modules/cmdk',
             to: {
               name: 'repository',
             },
@@ -49,10 +49,20 @@ export function useCommandPalette() {
         label: 'Actions',
         commands: [
           {
+            id: 'theme',
+            label: 'Toggle theme',
+            disabled: false,
+            icon: 'Sun',
+            iconClass: 'text-white',
+            click: () => {
+              console.log('toggle theme')
+            },
+          },
+          {
             id: 'delete-all',
             label: 'Delete all',
             disabled: false,
-            icon: 'Bookmark',
+            icon: 'Trash',
             iconClass: 'text-white',
             shortcuts: [
               '⌘', 'U',
@@ -62,21 +72,11 @@ export function useCommandPalette() {
             id: 'filters',
             label: 'Open filters',
             disabled: false,
-            icon: 'Bookmark',
+            icon: 'Filter',
             iconClass: 'text-white',
             shortcuts: [
               'F',
             ],
-          },
-          {
-            id: 'theme',
-            label: 'Toggle theme',
-            disabled: false,
-            icon: 'Bookmark',
-            iconClass: 'text-white',
-            click: () => {
-              console.log('toggle theme')
-            },
           },
         ],
       }
