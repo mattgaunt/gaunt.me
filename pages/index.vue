@@ -83,7 +83,7 @@ refs.forEach((ref, i) => {
                   <RecentsNuxt3 />
                 </div>
                 <div col-span-1 lg:col-span-5>
-                  <RecentsAlwaysdead />
+                  <RecentsMouseskins />
                 </div>
                 <div col-span-1 lg:col-span-5>
                   <RecentsStack />
@@ -95,10 +95,10 @@ refs.forEach((ref, i) => {
                   <RecentsPolywork />
                 </div>
                 <div col-span-1 lg:col-span-5>
-                  <RecentsMouseskins />
+                  <RecentsCommandMenu />
                 </div>
                 <div col-span-1 lg:col-span-5>
-                  <RecentsCommandMenu />
+                  <RecentsAlwaysdead />
                 </div>
                 <div col-span-1 lg:col-span-3>
                   <RecentsPublish />
