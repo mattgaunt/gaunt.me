@@ -35,7 +35,7 @@ refs.forEach((ref, i) => {
           <div space-y-8 text-center pt-12 pb-6 px-6>
             <div flex flex-col space-y-3 max-w-lg>
               <div flex flex-col items-center gap-y-3>
-                <kbd font="Inter" inline-flex items-center justify-center bg-zinc-900 highlight shadow-white shadow-opacity-9 rounded-xl h-9 w-14 text-xl>⌘K</kbd>
+                <kbd font-sans inline-flex items-center justify-center bg-zinc-900 highlight shadow-white shadow-opacity-9 rounded-xl h-9 w-14 text-xl>⌘K</kbd>
                 <Heading type="h2" text-3xl text-white>
                   Command Palette for Vue
                 </Heading>
