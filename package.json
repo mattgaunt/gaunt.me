@@ -21,6 +21,7 @@
     "@nuxt/image-edge": "1.0.0-27840416.dc1ed65",
     "@types/lodash-es": "^4.17.6",
     "@unocss/nuxt": "^0.45.30",
+    "@vue-macros/nuxt": "^0.2.14",
     "@vueuse/core": "^9.10.0",
     "@vueuse/math": "^9.4.0",
     "@vueuse/motion": "2.0.0-beta.25",

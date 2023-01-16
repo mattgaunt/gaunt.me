@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     '@vueuse/nuxt',
     '@vueuse/motion/nuxt',
+    '@vue-macros/nuxt',
   ],
   unocss: {
     preflight: true,
