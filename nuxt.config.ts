@@ -38,6 +38,12 @@ export default defineNuxtConfig({
       theme: 'dracula',
       preload: [
         'php',
+        'js',
+        'ts',
+        'html',
+        'css',
+        'vue',
+        'diff',
       ],
     },
   },
