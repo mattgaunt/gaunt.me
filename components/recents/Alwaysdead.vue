@@ -5,7 +5,7 @@ const right = ref<HTMLElement>()
 useMotion(left, {
   initial: {
     rotate: 0,
-    scale: .95,
+    scale: 0.95,
     x: 25,
   },
   visibleOnce: {
@@ -23,7 +23,7 @@ useMotion(left, {
 useMotion(right, {
   initial: {
     rotate: 0,
-    scale: .95,
+    scale: 0.95,
     x: -25,
   },
   visibleOnce: {

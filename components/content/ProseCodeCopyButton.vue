@@ -6,12 +6,12 @@ import { useAppConfig } from '#imports'
 const props = defineProps({
   content: {
     type: String,
-    default: ''
+    default: '',
   },
   show: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 })
 
 const { copy: copyToClipboard } = useClipboard()
@@ -27,14 +27,13 @@ const copy = (_e: MouseEvent) => {
       }, 1000)
     })
     .catch((err) => {
-      // eslint-disable-next-line no-console
-      console.warn("Couldn't copy to clipboard!", err)
+      console.warn('Couldn\'t copy to clipboard!', err)
     })
 }
 </script>
 
 <template>
-  <button :class="[(show || state === 'copied') && 'show' ]" @click="copy">
+  <button :class="[(show || state === 'copied') && 'show']" @click="copy">
     <span class="sr-only">Copy to clipboard</span>
     <span class="icon-wrapper">
       <Transition name="fade">

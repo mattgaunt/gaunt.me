@@ -25,7 +25,7 @@ useMotion(one, {
       damping: 40,
       delay: 200,
     },
-  }
+  },
 })
 
 useMotion(two, {
@@ -48,7 +48,7 @@ useMotion(two, {
       damping: 40,
       delay: 300,
     },
-  }
+  },
 })
 
 useMotion(three, {
@@ -90,7 +90,7 @@ useMotion(four, {
       damping: 40,
       delay: 500,
     },
-  }
+  },
 })
 
 useMotion(five, {
@@ -113,7 +113,7 @@ useMotion(five, {
       damping: 40,
       delay: 400,
     },
-  }
+  },
 })
 </script>
 

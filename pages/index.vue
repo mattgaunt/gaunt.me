@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 useHead({
-  titleTemplate: 'Matthew Gaunt'
+  titleTemplate: 'Matthew Gaunt',
 })
 
 const title = ref<HTMLElement>()
@@ -48,7 +48,7 @@ refs.forEach((ref, i) => {
                     <p ref="text" text-xl text-zinc-400 font-normal leading-relaxed>
                       I’m a full-stack developer, semi-capable designer and notorious non-stop tinkerer.
                       If you can’t find me writing code, or designing in Figma, I’ll
-                      probably be playing games.
+                      be toying with game development.
                     </p>
                   </div>
                 </div>
@@ -83,7 +83,7 @@ refs.forEach((ref, i) => {
                   <RecentsNuxt3 />
                 </div>
                 <div col-span-1 lg:col-span-5>
-                  <RecentsMouseskins />
+                  <RecentsCommandMenu />
                 </div>
                 <div col-span-1 lg:col-span-5>
                   <RecentsStack />
@@ -95,10 +95,10 @@ refs.forEach((ref, i) => {
                   <RecentsPolywork />
                 </div>
                 <div col-span-1 lg:col-span-5>
-                  <RecentsCommandMenu />
+                  <RecentsAlwaysdead />
                 </div>
                 <div col-span-1 lg:col-span-5>
-                  <RecentsAlwaysdead />
+                  <RecentsLoadout />
                 </div>
                 <div col-span-1 lg:col-span-3>
                   <RecentsPublish />

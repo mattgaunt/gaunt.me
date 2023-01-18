@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 defineProps<{
-  width: number,
-  height: number,
-  x: number,
-  y: number,
-  squares: any,
+  width: number
+  height: number
+  x: number
+  y: number
+  squares: any
 }>()
 
 const patternId = useId()
@@ -33,13 +33,13 @@ const patternId = useId()
 
     <template v-if="squares">
       <svg :x="x" :y="y" class="overflow-visible">
-        <template v-for="[x, y] in squares" :key="`${x}-${y}`">
+        <template v-for="[sx, sy] in squares" :key="`${sx}-${sy}`">
           <rect
             strokeWidth="0"
             :width="width + 1"
             :height="height + 1"
-            :x="x * width"
-            :y="y * height"
+            :x="sx * width"
+            :y="sy * height"
           />
         </template>
       </svg>

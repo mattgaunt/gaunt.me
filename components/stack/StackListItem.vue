@@ -45,6 +45,7 @@ defineProps({
         <div flex gap-1>
           <span
             v-for="tag in item.tags"
+            :key="tag"
             py="1.5"
             bg-zinc-500
             bg-opacity-10

@@ -6,16 +6,16 @@ const isTag = (slot: any, tag: string) => {
 }
 
 export default defineComponent({
-  data () {
+  data() {
     return {
       activeTabIndex: 0,
       /**
        * A simple number that increases on every changes
        */
-      counter: 0
+      counter: 0,
     }
   },
-  render () {
+  render() {
     const slots = this.$slots?.default?.() || []
     const tabs = slots
       .filter(slot => isTag(slot, 'code-block') || isTag(slot, 'code'))
@@ -23,7 +23,7 @@ export default defineComponent({
         return {
           label: slot?.props?.filename || slot?.props?.label || `${index}`,
           active: slot?.props?.active || false,
-          component: slot
+          component: slot,
         }
       })
 
@@ -32,21 +32,21 @@ export default defineComponent({
       {
         class: {
           'code-group': true,
-          'first-tab': this.activeTabIndex === 0
-        }
+          'first-tab': this.activeTabIndex === 0,
+        },
       },
       [
         h(TabsHeader, {
-          ref: 'tabs-header',
-          activeTabIndex: this.activeTabIndex,
+          'ref': 'tabs-header',
+          'activeTabIndex': this.activeTabIndex,
           tabs,
-          'onUpdate:activeTabIndex': $event => (this.activeTabIndex = $event)
+          'onUpdate:activeTabIndex': $event => (this.activeTabIndex = $event),
         }),
         h(
           'div',
           {
             class: 'code-group-content',
-            text: this.activeTabIndex
+            text: this.activeTabIndex,
           },
           // Map slots to content children
           slots.map((slot, index) =>
@@ -55,11 +55,11 @@ export default defineComponent({
               {
                 // Current slot is displayed, others are hidden
                 style: {
-                  display: index === this.activeTabIndex ? 'block' : 'none'
+                  display: index === this.activeTabIndex ? 'block' : 'none',
                 },
                 class: {
-                  '': !isTag(slot, 'code')
-                }
+                  '': !isTag(slot, 'code'),
+                },
               },
               // Display direct children if not a ```code``` block
               [
@@ -69,18 +69,18 @@ export default defineComponent({
                     'div',
                     {
                       class: {
-                        'preview-canvas': true
-                      }
+                        'preview-canvas': true,
+                      },
                     },
-                    [(slot.children as any)?.default?.() || h('div')]
-                  )
-              ]
-            )
-          )
-        )
-      ]
+                    [(slot.children as any)?.default?.() || h('div')],
+                  ),
+              ],
+            ),
+          ),
+        ),
+      ],
     )
-  }
+  },
 })
 </script>
 

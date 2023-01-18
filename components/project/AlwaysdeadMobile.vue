@@ -42,7 +42,7 @@ useMotion(mobile, {
             src="/projects/alwaysdead/mobile.png"
             alt="Alwaysdead Mobile"
             w-full
-          />
+          >
         </div>
       </div>
     </div>

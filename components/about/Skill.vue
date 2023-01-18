@@ -25,7 +25,7 @@ const opacity = computed(() => 1 - Math.abs(relativePos.value) / 4)
     duration-500
     :style="{
       transform: `translate(0, ${y}px)`,
-      opacity: opacity,
+      opacity,
     }"
   >
     <h3 text-white font-medium>

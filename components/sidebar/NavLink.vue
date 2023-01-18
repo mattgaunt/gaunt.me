@@ -1,8 +1,4 @@
 <script lang="ts" setup>
-defineOptions({
-  inheritAttrs: false,
-})
-
 defineProps({
   icon: {
     type: String,
@@ -16,6 +12,10 @@ defineProps({
     type: Boolean,
     default: false,
   },
+})
+
+defineOptions({
+  inheritAttrs: false,
 })
 </script>
 

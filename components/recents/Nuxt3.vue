@@ -39,7 +39,7 @@ gems.forEach((ref, i) => {
               <img ref="gem2" loading="lazy" alt="Gem" src="/recents/nuxt/gem-2.svg" absolute right-12 top-24 max-w-24>
               <img ref="gem3" loading="lazy" alt="Gem" src="/recents/nuxt/gem-3.svg" absolute left-12 top-64 max-w-36>
               <img ref="gem4" loading="lazy" alt="Gem" src="/recents/nuxt/gem-4.svg" absolute left-12 top-8 max-w-60>
-            
+
               <div from="#53E8AA/60" block absolute top-30 left-18 glow via-transparent blur-48 w-72 h-72 />
             </div>
           </div>
@@ -49,7 +49,7 @@ gems.forEach((ref, i) => {
                 <div flex flex-col space-y-2 max-w-lg>
                   <p text-sm text-zinc-400 font-medium tracking-normal>
                     17 Oct
-                  </p> 
+                  </p>
 
                   <Heading type="h2" text-3xl text-white>
                     Creating themes with Nuxt 3

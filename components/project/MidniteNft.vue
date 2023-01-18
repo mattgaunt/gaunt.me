@@ -78,7 +78,7 @@ second.forEach((ref, index) => {
                   object-cover
                   w-full
                   h-full
-                />
+                >
               </figure>
             </div>
             <div col-span-1>
@@ -90,7 +90,7 @@ second.forEach((ref, index) => {
                   object-cover
                   w-full
                   h-full
-                />
+                >
               </figure>
             </div>
             <div col-span-1>
@@ -102,7 +102,7 @@ second.forEach((ref, index) => {
                   object-cover
                   w-full
                   h-full
-                />
+                >
               </figure>
             </div>
             <div col-span-1>
@@ -114,7 +114,7 @@ second.forEach((ref, index) => {
                   object-cover
                   w-full
                   h-full
-                />              
+                >
               </figure>
             </div>
             <div col-span-1>
@@ -126,7 +126,7 @@ second.forEach((ref, index) => {
                   object-cover
                   w-full
                   h-full
-                />              
+                >
               </figure>
             </div>
             <div col-span-1>
@@ -138,7 +138,7 @@ second.forEach((ref, index) => {
                   object-cover
                   w-full
                   h-full
-                />
+                >
               </figure>
             </div>
           </div>

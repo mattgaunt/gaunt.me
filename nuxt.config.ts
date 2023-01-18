@@ -6,8 +6,8 @@ export default defineNuxtConfig({
     head: {
       script: [
         {
-          defer: true,
-          src: 'https://plausible.io/js/script.js',
+          'defer': true,
+          'src': 'https://plausible.io/js/script.js',
           'data-domain': 'gaunt.me',
         },
       ],

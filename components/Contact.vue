@@ -1,16 +1,16 @@
 <script lang="ts" setup>
 import {
-  TransitionRoot,
-  TransitionChild,
   Dialog,
-  DialogTitle,
   DialogPanel,
+  DialogTitle,
+  TransitionChild,
+  TransitionRoot,
 } from '@headlessui/vue'
 
 const config = useAppConfig()
 const { isOpen, closeContactModal } = useContactModal()
 
-const links: { label: string, href: string, icon: string }[] = [
+const links: { label: string; href: string; icon: string }[] = [
   { label: 'Email me', href: `mailto:${config.email}`, icon: 'Mail' },
   { label: 'Book time', href: 'https://calendly.com/matthew.gaunt', icon: 'Calendar' },
   { label: 'Follow me', href: config.socials.twitter, icon: 'Twitter' },
@@ -20,7 +20,7 @@ const links: { label: string, href: string, icon: string }[] = [
 
 <template>
   <TransitionRoot appear :show="isOpen" as="template">
-    <Dialog as="div" @close="closeContactModal" relative z-10>
+    <Dialog as="div" relative z-10 @close="closeContactModal">
       <TransitionChild
         as="template"
         enter="duration-200 ease-out"
@@ -92,7 +92,7 @@ const links: { label: string, href: string, icon: string }[] = [
                 </div>
                 <div flex flex-col gap-2>
                   <div grid grid-cols-2 gap-4>
-                    <template v-for="link, idx in links">
+                    <template v-for="link, idx in links" :key="idx">
                       <div>
                         <a
                           :href="link.href"

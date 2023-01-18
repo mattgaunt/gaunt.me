@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import type { PropType } from 'vue'
 import { ComboboxOption } from '@headlessui/vue'
-import type { CommandPaletteGroup } from '~/composables/useCommandPalette'
+import type { CommandGroup } from '~/composables/useCommandPalette'
 
 defineProps({
   group: {
-    type: Object as PropType<CommandPaletteGroup>,
+    type: Object as PropType<CommandGroup>,
     required: true,
   },
   groupAttribute: {
@@ -30,9 +30,9 @@ defineProps({
     <ul text-sm text-zinc-200>
       <ComboboxOption
         v-for="(command, idx) of group.commands"
-        v-slot="{ active, selected }"
-        as="template"
+        v-slot="{ active }"
         :key="`${group.key}-${idx}`"
+        as="template"
         :value="command"
         :disabled="command.disabled"
       >
@@ -62,7 +62,7 @@ defineProps({
           <slot :name="`${group.key}-inactive`" :group="group" :command="command">
             <template v-if="command.shortcuts?.length">
               <span flex-shrink-none text-xs font-semibold text-zinc-400>
-                <kbd v-for="shortcut of command.shortcuts" font-sans>
+                <kbd v-for="shortcut of command.shortcuts" :key="shortcut" font-sans>
                   {{ shortcut }}
                 </kbd>
               </span>

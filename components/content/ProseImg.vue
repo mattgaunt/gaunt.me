@@ -1,12 +1,3 @@
-<template>
-  <img
-    :src="src"
-    :alt="alt"
-    :width="width"
-    :height="height"
-  >
-</template>
-
 <script setup lang="ts">
 defineProps({
   src: {
@@ -24,6 +15,15 @@ defineProps({
   height: {
     type: [String, Number],
     default: undefined,
-  }
+  },
 })
 </script>
+
+<template>
+  <img
+    :src="src"
+    :alt="alt"
+    :width="width"
+    :height="height"
+  >
+</template>

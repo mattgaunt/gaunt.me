@@ -1,13 +1,13 @@
 <script lang="ts" setup>
-defineOptions({
-  inheritAttrs: false,
-})
-
 defineProps({
   component: {
     type: String,
     default: 'button',
   },
+})
+
+defineOptions({
+  inheritAttrs: false,
 })
 </script>
 

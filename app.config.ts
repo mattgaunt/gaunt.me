@@ -12,7 +12,7 @@ export default defineAppConfig({
 declare module '@nuxt/schema' {
   interface AppConfigInput {
     name: string
-    email: string,
+    email: string
     socials?: {
       twitter?: string
       github?: string

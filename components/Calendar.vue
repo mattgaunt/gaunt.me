@@ -8,7 +8,9 @@
             <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
           </svg>
         </button>
-        <div class="flex-auto text-center text-white font-semibold">November</div>
+        <div class="flex-auto text-center text-white font-semibold">
+          November
+        </div>
         <button type="button" class="-m-1.5 flex flex-none items-center justify-center p-1.5 text-zinc-500 hover:text-gray-500">
           <span class="sr-only">Next month</span>
           <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -18,13 +20,27 @@
       </div>
       <div class="flex flex-col gap-2 max-h-48 overflow-hidden relative p-px">
         <div class="grid grid-cols-7 text-center text-zinc-500">
-          <div class="text-xs font-medium leading-6">M</div>
-          <div class="text-xs font-medium leading-6">T</div>
-          <div class="text-xs font-medium leading-6">W</div>
-          <div class="text-xs font-medium leading-6">T</div>
-          <div class="text-xs font-medium leading-6">F</div>
-          <div class="text-xs font-medium leading-6">S</div>
-          <div class="text-xs font-medium leading-6">S</div>
+          <div class="text-xs font-medium leading-6">
+            M
+          </div>
+          <div class="text-xs font-medium leading-6">
+            T
+          </div>
+          <div class="text-xs font-medium leading-6">
+            W
+          </div>
+          <div class="text-xs font-medium leading-6">
+            T
+          </div>
+          <div class="text-xs font-medium leading-6">
+            F
+          </div>
+          <div class="text-xs font-medium leading-6">
+            S
+          </div>
+          <div class="text-xs font-medium leading-6">
+            S
+          </div>
         </div>
         <div class="isolate grid grid-cols-7 gap-px rounded-lg bg-white bg-opacity-8 ring-1 ring-white ring-opacity-8 text-sm">
           <button type="button" class="rounded-tl-lg bg-[#313134] py-1.5 text-zinc-500 text-opacity-70 font-medium hover:bg-[#48484A] focus:z-10">
@@ -157,6 +173,7 @@
 
         <div class="absolute inset-x-none bottom-none min-h-24 select-none pointer-events-none bg-gradient-to-b from-transparent/100 to-[#38383B]/100 z-100" />
       </div>
+
       <Button
         type="button"
         bg="cyan/100"

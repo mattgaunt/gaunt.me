@@ -22,7 +22,7 @@ refs.forEach((ref, i) => {
         damping: 8,
         delay: 200 * i,
       },
-    }
+    },
   })
 })
 </script>

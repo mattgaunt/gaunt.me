@@ -30,7 +30,7 @@ const config = useAppConfig()
                 <div flex flex-col space-y-2 max-w-lg>
                   <p text-sm text-white text-opacity-75 font-medium>
                     18 Oct
-                  </p> 
+                  </p>
 
                   <Heading type="h2" text-3xl text-white>
                     Livewire 3 has me very excited for building Loadout.co

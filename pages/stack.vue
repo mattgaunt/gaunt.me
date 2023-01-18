@@ -26,7 +26,7 @@ const { data: stack } = await useAsyncData('stack', () => {
               v-motion="{
                 initial: {
                   y: 20,
-                  opacity: 0
+                  opacity: 0,
                 },
                 enter: {
                   y: 0,

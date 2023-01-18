@@ -42,6 +42,7 @@ transform.x = 52 * activeIdx.value
       <div flex items-center w-full h-full relative gap-2>
         <ToolbarTab
           v-for="tab in tabs"
+          :key="tab.name"
           :aria-label="tab.label"
           :icon="tab.icon"
           :href="tab.path"

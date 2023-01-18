@@ -26,7 +26,7 @@ const { data: bookmarks } = await useAsyncData('bookmarks', () => {
               v-motion="{
                 initial: {
                   y: 20,
-                  opacity: 0
+                  opacity: 0,
                 },
                 enter: {
                   y: 0,

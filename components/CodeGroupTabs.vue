@@ -1,16 +1,15 @@
 <script setup lang="ts">
-import { nextTick, ref, watch } from 'vue'
 import type { PropType } from 'vue'
 
 const props = defineProps({
   tabs: {
     type: Array as PropType<{ label: string }[]>,
-    required: true
+    required: true,
   },
   activeTabIndex: {
     type: Number,
-    required: true
-  }
+    required: true,
+  },
 })
 
 const emit = defineEmits(['update:activeTabIndex'])
@@ -20,9 +19,8 @@ const tabsRef = ref()
 const highlightUnderline = ref()
 
 const updateHighlightUnderlinePosition = (activeTab: any) => {
-  if (!activeTab) {
+  if (!activeTab)
     return
-  }
 
   highlightUnderline.value.style.left = `${activeTab.offsetLeft}px`
   highlightUnderline.value.style.width = `${activeTab.clientWidth}px`
@@ -36,17 +34,16 @@ const updateTabs = ($event: any, i: any) => {
 watch(
   tabsRef,
   (newVal) => {
-    if (!newVal) {
+    if (!newVal)
       return
-    }
 
     setTimeout(() => {
       updateHighlightUnderlinePosition(tabsRef.value.children[props.activeTabIndex])
     }, 50)
   },
   {
-    immediate: true
-  }
+    immediate: true,
+  },
 )
 </script>
 

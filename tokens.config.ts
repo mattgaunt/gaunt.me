@@ -1,7 +1,6 @@
 import { defineTheme } from 'pinceau'
 
 export default defineTheme({
-  // @ts-ignore
   color: {
     primary: {
       50: '#f0fdfa',
@@ -48,7 +47,7 @@ export default defineTheme({
         primary: {
           default: {
             initial: '{color.gray.900}',
-            dark: '{color.gray.50}'
+            dark: '{color.gray.50}',
           },
           hover: {
             //
@@ -57,14 +56,14 @@ export default defineTheme({
         secondary: {
           default: {
             initial: '{color.gray.500}',
-            dark: '{color.gray.400}'
+            dark: '{color.gray.400}',
           },
           hover: {
             initial: '{color.gray.700}',
-            dark: '{color.gray.200}'
-          }
+            dark: '{color.gray.200}',
+          },
         },
-      }
+      },
     },
 
     container: {
@@ -73,16 +72,16 @@ export default defineTheme({
         tags: [
           '@studio-input design-token',
           '@studio-input-token-type size',
-          '@studio-icon material-symbols:width-full-outline'
-        ]
+          '@studio-icon material-symbols:width-full-outline',
+        ],
       },
       maxWidth: '80rem',
       padding: {
         mobile: '{space.4}',
         xs: '{space.4}',
         sm: '{space.6}',
-        md: '{space.6}'
-      }
+        md: '{space.6}',
+      },
     },
 
     backdrop: {
@@ -91,14 +90,14 @@ export default defineTheme({
         tags: [
           '@studio-input design-token',
           '@studio-input-token-type size',
-          '@studio-icon material-symbols:blur-circular'
-        ]
+          '@studio-icon material-symbols:blur-circular',
+        ],
       },
       filter: 'saturate(200%) blur(20px)',
       background: {
         initial: '#fffc',
-        dark: '#0c0d0ccc'
-      }
+        dark: '#0c0d0ccc',
+      },
     },
 
     border: {
@@ -107,28 +106,28 @@ export default defineTheme({
         tags: [
           '@studio-input design-token',
           '@studio-input-token-type color',
-          "@studio-icon material-symbols:border-all-outline-rounded"
-        ]
+          '@studio-icon material-symbols:border-all-outline-rounded',
+        ],
       },
       primary: {
         default: {
           initial: '{color.gray.100}',
-          dark: '{color.gray.900}'
+          dark: '{color.gray.900}',
         },
         hover: {
           initial: '{color.gray.200}',
-          dark: '{color.gray.800}'
-        }
+          dark: '{color.gray.800}',
+        },
       },
       secondary: {
         default: {
           initial: '{color.gray.200}',
-          dark: '{color.gray.800}'
+          dark: '{color.gray.800}',
         },
         hover: {
           initial: '',
-          dark: ''
-        }
+          dark: '',
+        },
       },
     },
 
@@ -138,15 +137,15 @@ export default defineTheme({
         tags: [
           '@studio-input design-token',
           '@studio-input-token-type color',
-          "@studio-icon fluent:surface-hub-20-filled"
-        ]
+          '@studio-icon fluent:surface-hub-20-filled',
+        ],
       },
       background: {
         base: {
           initial: '{color.gray.100}',
-          dark: '{color.gray.900}'
-        }
-      }
+          dark: '{color.gray.900}',
+        },
+      },
     },
 
     state: {
@@ -155,154 +154,154 @@ export default defineTheme({
         tags: [
           '@studio-input design-token',
           '@studio-input-token-type color',
-          "@studio-icon mdi:palette-advanced"
-        ]
+          '@studio-icon mdi:palette-advanced',
+        ],
       },
       primary: {
         color: {
           primary: {
             initial: '{color.primary.600}',
-            dark: '{color.primary.400}'
+            dark: '{color.primary.400}',
           },
           secondary: {
             initial: '{color.primary.700}',
-            dark: '{color.primary.200}'
-          }
+            dark: '{color.primary.200}',
+          },
         },
         backgroundColor: {
           primary: {
             initial: '{color.primary.50}',
-            dark: '{color.primary.900}'
+            dark: '{color.primary.900}',
           },
           secondary: {
             initial: '{color.primary.100}',
-            dark: '{color.primary.800}'
-          }
+            dark: '{color.primary.800}',
+          },
         },
         borderColor: {
           primary: {
             initial: '{color.primary.100}',
-            dark: '{color.primary.800}'
+            dark: '{color.primary.800}',
           },
-          secondary: {}
-        }
+          secondary: {},
+        },
       },
       info: {
         color: {
           primary: {
             initial: '{color.blue.500}',
-            dark: '{color.blue.400}'
+            dark: '{color.blue.400}',
           },
           secondary: {
             initial: '{color.blue.600}',
-            dark: '{color.blue.200}'
-          }
+            dark: '{color.blue.200}',
+          },
         },
         backgroundColor: {
           primary: {
             initial: '{color.blue.50}',
-            dark: '{color.blue.900}'
+            dark: '{color.blue.900}',
           },
           secondary: {
             initial: '{color.blue.100}',
-            dark: '{color.blue.800}'
-          }
+            dark: '{color.blue.800}',
+          },
         },
         borderColor: {
           primary: {
             initial: '{color.blue.100}',
-            dark: '{color.blue.800}'
+            dark: '{color.blue.800}',
           },
-          secondary: {}
-        }
+          secondary: {},
+        },
       },
       success: {
         color: {
           primary: {
             initial: '{color.green.500}',
-            dark: '{color.green.400}'
+            dark: '{color.green.400}',
           },
           secondary: {
             initial: '{color.green.600}',
-            dark: '{color.green.200}'
-          }
+            dark: '{color.green.200}',
+          },
         },
         backgroundColor: {
           primary: {
             initial: '{color.green.50}',
-            dark: '{color.green.900}'
+            dark: '{color.green.900}',
           },
           secondary: {
             initial: '{color.green.100}',
-            dark: '{color.green.800}'
-          }
+            dark: '{color.green.800}',
+          },
         },
         borderColor: {
           primary: {
             initial: '{color.green.100}',
-            dark: '{color.green.800}'
+            dark: '{color.green.800}',
           },
-          secondary: {}
-        }
+          secondary: {},
+        },
       },
       warning: {
         color: {
           primary: {
             initial: '{color.yellow.600}',
-            dark: '{color.yellow.400}'
+            dark: '{color.yellow.400}',
           },
           secondary: {
             initial: '{color.yellow.700}',
-            dark: '{color.yellow.200}'
-          }
+            dark: '{color.yellow.200}',
+          },
         },
         backgroundColor: {
           primary: {
             initial: '{color.yellow.50}',
-            dark: '{color.yellow.900}'
+            dark: '{color.yellow.900}',
           },
           secondary: {
             initial: '{color.yellow.100}',
-            dark: '{color.yellow.800}'
-          }
+            dark: '{color.yellow.800}',
+          },
         },
         borderColor: {
           primary: {
             initial: '{color.yellow.100}',
-            dark: '{color.yellow.800}'
+            dark: '{color.yellow.800}',
           },
-          secondary: {}
-        }
+          secondary: {},
+        },
       },
       danger: {
         color: {
           primary: {
             initial: '{color.red.500}',
-            dark: '{color.red.300}'
+            dark: '{color.red.300}',
           },
           secondary: {
             initial: '{color.red.600}',
-            dark: '{color.red.200}'
-          }
+            dark: '{color.red.200}',
+          },
         },
         backgroundColor: {
           primary: {
             initial: '{color.red.50}',
-            dark: '{color.red.900}'
+            dark: '{color.red.900}',
           },
           secondary: {
             initial: '{color.red.100}',
-            dark: '{color.red.800}'
-          }
+            dark: '{color.red.800}',
+          },
         },
         borderColor: {
           primary: {
             initial: '{color.red.100}',
-            dark: '{color.red.800}'
+            dark: '{color.red.800}',
           },
-          secondary: {}
-        }
-      }
+          secondary: {},
+        },
+      },
     },
   },
   typography: {
@@ -324,7 +323,7 @@ export default defineTheme({
         ],
       },
       sm: '16px',
-      base: '32px'
+      base: '32px',
     },
     letterSpacing: {
       $schema: {
@@ -339,7 +338,7 @@ export default defineTheme({
       wide: '0.025em',
     },
     fontSize: {
-      $schema: {
+      '$schema': {
         title: 'Horizontal spacings between letters.',
         tags: [
           '@studio-input design-token',
@@ -347,11 +346,11 @@ export default defineTheme({
           '@studio-icon mingcute:font-size-fill',
         ],
       },
-      xs: '12px',
-      sm: '14px',
-      base: '16px',
-      lg: '18px',
-      xl: '20px',
+      'xs': '12px',
+      'sm': '14px',
+      'base': '16px',
+      'lg': '18px',
+      'xl': '20px',
       '2xl': '24px',
       '3xl': '30px',
       '4xl': '36px',
@@ -429,16 +428,16 @@ export default defineTheme({
       tags: [
         '@studio-input design-token',
         '@studio-input-token-type font-size',
-        '@studio-icon lucide:component'
-      ]
+        '@studio-icon lucide:component',
+      ],
     },
     p: {
       fontSize: '{typography.fontSize.base}',
       lineHeight: '{typography.lead.normal}',
       margin: '{typography.verticalMargin.base} 0',
       br: {
-        margin: '{typography.verticalMargin.base} 0 0 0'
-      }
+        margin: '{typography.verticalMargin.base} 0 0 0',
+      },
     },
     h1: {
       margin: '0 0 2rem',
@@ -446,7 +445,7 @@ export default defineTheme({
       lineHeight: '{typography.lead.tight}',
       fontWeight: '{typography.fontWeight.bold}',
       letterSpacing: '{typography.letterSpacing.tight}',
-      iconSize: '{typography.fontSize.3xl}'
+      iconSize: '{typography.fontSize.3xl}',
     },
     h2: {
       margin: '3rem 0 2rem',
@@ -454,7 +453,7 @@ export default defineTheme({
       lineHeight: '{typography.lead.tight}',
       fontWeight: '{typography.fontWeight.semibold}',
       letterSpacing: '{typography.letterSpacing.tight}',
-      iconSize: '{typography.fontSize.2xl}'
+      iconSize: '{typography.fontSize.2xl}',
     },
     h3: {
       margin: '3rem 0 2rem',
@@ -462,7 +461,7 @@ export default defineTheme({
       lineHeight: '{typography.lead.snug}',
       fontWeight: '{typography.fontWeight.semibold}',
       letterSpacing: '{typography.letterSpacing.tight}',
-      iconSize: '{typography.fontSize.xl}'
+      iconSize: '{typography.fontSize.xl}',
     },
     h4: {
       margin: '3rem 0 2rem',
@@ -470,104 +469,104 @@ export default defineTheme({
       lineHeight: '{typography.lead.snug}',
       fontWeight: '{typography.fontWeight.semibold}',
       letterSpacing: '{typography.letterSpacing.tight}',
-      iconSize: '{typography.fontSize.lg}'
+      iconSize: '{typography.fontSize.lg}',
     },
     h5: {
       margin: '3rem 0 2rem',
       fontSize: '{typography.fontSize.xl}',
       lineHeight: '{typography.lead.snug}',
       fontWeight: '{typography.fontWeight.semibold}',
-      iconSize: '{typography.fontSize.lg}'
+      iconSize: '{typography.fontSize.lg}',
     },
     h6: {
       margin: '3rem 0 2rem',
       fontSize: '{typography.fontSize.lg}',
       lineHeight: '{typography.lead.normal}',
       fontWeight: '{typography.fontWeight.semibold}',
-      iconSize: '{typography.fontSize.base}'
+      iconSize: '{typography.fontSize.base}',
     },
     strong: {
-      fontWeight: '{typography.fontWeight.semibold}'
+      fontWeight: '{typography.fontWeight.semibold}',
     },
     img: {
-      margin: '{typography.verticalMargin.base} 0'
+      margin: '{typography.verticalMargin.base} 0',
     },
     a: {
       textDecoration: 'none',
       color: {
         light: {
           default: 'inherit',
-          hover: '{typography.color.primary.500}'
+          hover: '{typography.color.primary.500}',
         },
         dark: {
           default: 'inherit',
-          hover: '{typography.color.primary.400}'
-        }
+          hover: '{typography.color.primary.400}',
+        },
       },
       borderBottom: '{prose.a.borderWidth} {prose.a.borderStyle.default} {prose.a.borderColor.light.default}',
       borderWidth: '1px',
       borderColor: {
         light: {
           default: '{typography.color.secondary.400}',
-          hover: '{typography.color.primary.500}'
+          hover: '{typography.color.primary.500}',
         },
         dark: {
           default: '{typography.color.secondary.400}',
-          hover: '{typography.color.primary.500}'
-        }
+          hover: '{typography.color.primary.500}',
+        },
       },
       borderStyle: {
         default: 'dashed',
-        hover: 'solid'
+        hover: 'solid',
       },
       borderDistance: '2px',
       fontWeight: '{typography.fontWeight.medium}',
       hasCode: {
-        borderBottom: 'none'
+        borderBottom: 'none',
       },
       code: {
         border: '{prose.a.borderWidth} {prose.a.borderStyle} {prose.a.code.borderColor.light.default}',
         borderColor: {
           light: {
             default: '{typography.color.secondary.400}',
-            hover: '{typography.color.primary.500}'
+            hover: '{typography.color.primary.500}',
           },
           dark: {
             default: '{typography.color.secondary.600}',
-            hover: '{typography.color.primary.600}'
-          }
+            hover: '{typography.color.primary.600}',
+          },
         },
         color: {
           light: {
-            hover: '{typography.color.primary.500}'
+            hover: '{typography.color.primary.500}',
           },
           dark: {
-            hover: '{typography.color.primary.300}'
-          }
+            hover: '{typography.color.primary.300}',
+          },
         },
         background: {
           light: {
-            hover: '{typography.color.primary.50}'
+            hover: '{typography.color.primary.50}',
           },
           dark: {
-            hover: '{typography.color.primary.900}'
-          }
-        }
-      }
+            hover: '{typography.color.primary.900}',
+          },
+        },
+      },
     },
     blockquote: {
       margin: '{typography.verticalMargin.base} 0',
       padding: '0 0 0 24px',
-      quotes: "'201C' '201D' '2018' '2019'",
+      quotes: '\'201C\' \'201D\' \'2018\' \'2019\'',
       color: {
         light: '{typography.color.secondary.500}',
-        dark: '{typography.color.secondary.400}'
+        dark: '{typography.color.secondary.400}',
       },
       borderLeft: '1px solid {prose.blockquote.borderColor.light}',
       borderColor: {
         light: '{typography.color.secondary.200}',
-        dark: '{typography.color.secondary.700}'
-      }
+        dark: '{typography.color.secondary.700}',
+      },
     },
     ul: {
       listStyleType: 'disc',
@@ -576,9 +575,9 @@ export default defineTheme({
       li: {
         markerColor: {
           light: '{typography.color.secondary.300}',
-          dark: '{typography.color.secondary.800}'
-        }
-      }
+          dark: '{typography.color.secondary.800}',
+        },
+      },
     },
     ol: {
       listStyleType: 'decimal',
@@ -587,13 +586,13 @@ export default defineTheme({
       li: {
         markerColor: {
           light: '{typography.color.secondary.500}',
-          dark: '{typography.color.secondary.500}'
-        }
-      }
+          dark: '{typography.color.secondary.500}',
+        },
+      },
     },
     li: {
       margin: '{typography.verticalMargin.sm} 0',
-      listStylePosition: 'outside'
+      listStylePosition: 'outside',
     },
     hr: {
       margin: '{typography.verticalMargin.base} 0',
@@ -601,47 +600,47 @@ export default defineTheme({
       width: '1px',
       color: {
         light: '{typography.color.secondary.200}',
-        dark: '{typography.color.secondary.800}'
-      }
+        dark: '{typography.color.secondary.800}',
+      },
     },
     table: {
       margin: '{typography.verticalMargin.base} 0',
       textAlign: 'left',
       fontSize: '{typography.fontSize.sm}',
-      lineHeight: 'inherit'
+      lineHeight: 'inherit',
     },
     thead: {
       border: 'none',
       borderBottom: '1px solid {prose.thead.borderColor.light}',
       borderColor: {
         light: '{typography.color.secondary.300}',
-        dark: '{typography.color.secondary.600}'
-      }
+        dark: '{typography.color.secondary.600}',
+      },
     },
     th: {
       color: {
         light: '{typography.color.secondary.600}',
-        dark: '{typography.color.secondary.400}'
+        dark: '{typography.color.secondary.400}',
       },
       padding: '0 {typography.verticalMargin.sm} {typography.verticalMargin.sm} {typography.verticalMargin.sm}',
-      fontWeight: '{typography.fontWeight.semibold}'
+      fontWeight: '{typography.fontWeight.semibold}',
     },
     tbody: {
       tr: {
         borderBottom: '1px dashed {prose.tbody.tr.borderColor.light}',
         borderColor: {
           light: '{typography.color.secondary.300}',
-          dark: '{typography.color.secondary.700}'
-        }
+          dark: '{typography.color.secondary.700}',
+        },
       },
       td: {
-        padding: '{typography.verticalMargin.sm}'
+        padding: '{typography.verticalMargin.sm}',
       },
       code: {
         inline: {
-          fontSize: '{typography.fontSize.sm}'
-        }
-      }
+          fontSize: '{typography.fontSize.sm}',
+        },
+      },
     },
     code: {
       block: {
@@ -649,19 +648,19 @@ export default defineTheme({
         margin: '{typography.verticalMargin.base} 0',
         borderColor: {
           light: '{typography.color.secondary.200}',
-          dark: '{typography.color.secondary.800}'
+          dark: '{typography.color.secondary.800}',
         },
         color: {
           light: '{typography.color.secondary.700}',
-          dark: '{typography.color.secondary.200}'
+          dark: '{typography.color.secondary.200}',
         },
         backgroundColor: {
           light: '{typography.color.secondary.100}',
-          dark: '{typography.color.secondary.900}'
+          dark: '{typography.color.secondary.900}',
         },
         pre: {
-          padding: '{typography.verticalMargin.sm}'
-        }
+          padding: '{typography.verticalMargin.sm}',
+        },
       },
       inline: {
         borderRadius: '0.375rem',
@@ -670,13 +669,13 @@ export default defineTheme({
         fontWeight: '{typography.fontWeight.normal}',
         color: {
           light: '{typography.color.secondary.700}',
-          dark: '{typography.color.secondary.200}'
+          dark: '{typography.color.secondary.200}',
         },
         backgroundColor: {
           light: '{typography.color.secondary.100}',
-          dark: '{typography.color.secondary.800}'
-        }
-      }
-    }
+          dark: '{typography.color.secondary.800}',
+        },
+      },
+    },
   },
 })

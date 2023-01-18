@@ -1,5 +1,4 @@
-<script setup>
-const nuxtApp = useNuxtApp()
+<script lang="ts" setup>
 const props = defineProps({
   name: {
     type: String,
@@ -10,12 +9,13 @@ const props = defineProps({
     default: null,
   },
 })
+
+const nuxtApp = useNuxtApp()
 const component = computed(() => nuxtApp.vueApp.component(`Icons${props.name}`))
 const sSize = computed(() => {
   const size = props.size || '1em'
-  if (String(Number(size)) === size) {
+  if (String(Number(size)) === size)
     return `${size}px`
-  }
 
   return size
 })

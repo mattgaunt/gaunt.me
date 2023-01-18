@@ -38,7 +38,7 @@ defineProps({
         </div>
       </div>
     </div>
-    
+
     <div flex flex-col w-full>
       <div id="list" min-h-full w-full>
         <slot />

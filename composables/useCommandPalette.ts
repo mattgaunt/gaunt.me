@@ -1,16 +1,7 @@
 import type { UseFuseOptions } from '@vueuse/integrations'
 import { get, set } from '@vueuse/shared'
 
-export interface CommandPaletteGroup {
-  key: string
-  active?: string
-  inactive?: string
-  commands: CommandPaletteCommand[]
-  options?: Partial<UseFuseOptions<CommandPaletteCommand>>
-  [key: string]: unknown
-}
-
-export interface CommandPaletteCommand {
+export interface Command {
   id: string | number
   prefix?: string
   suffix?: string
@@ -21,6 +12,15 @@ export interface CommandPaletteCommand {
   shortcuts?: string[]
   group?: string
   score?: number
+  [key: string]: unknown
+}
+
+export interface CommandGroup {
+  key: string
+  active?: string
+  inactive?: string
+  commands: Command[]
+  options?: Partial<UseFuseOptions<Command>>
   [key: string]: unknown
 }
 
@@ -55,7 +55,7 @@ export function useCommandPalette() {
             icon: 'Sun',
             iconClass: 'text-white',
             click: () => {
-              console.log('Toggle theme...')
+              //
             },
           },
           {
@@ -66,7 +66,7 @@ export function useCommandPalette() {
             iconClass: 'text-white',
             shortcuts: [
               '⌘', 'U',
-            ]
+            ],
           },
           {
             id: 'filters',
@@ -79,7 +79,7 @@ export function useCommandPalette() {
             ],
           },
         ],
-      }
+      },
     ],
   )
 

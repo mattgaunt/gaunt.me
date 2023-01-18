@@ -2,9 +2,10 @@
 import type { ComponentPublicInstance, ComputedRef, PropType } from 'vue'
 import { groupBy, map } from 'lodash-es'
 import { defu } from 'defu'
-import { useFuse, UseFuseOptions } from '@vueuse/integrations/useFuse'
+import type { UseFuseOptions } from '@vueuse/integrations/useFuse'
+import { useFuse } from '@vueuse/integrations/useFuse'
 import { Combobox, ComboboxInput, ComboboxOptions } from '@headlessui/vue'
-import type { CommandPaletteGroup, CommandPaletteCommand } from '~/composables/useCommandPalette'
+import type { Command, CommandGroup } from '~/composables/useCommandPalette'
 
 const $props = defineProps({
   modelValue: {
@@ -36,7 +37,7 @@ const $props = defineProps({
     default: 'Search...',
   },
   groups: {
-    type: Array as PropType<CommandPaletteGroup[]>,
+    type: Array as PropType<CommandGroup[]>,
     default: () => [],
   },
   groupAttribute: {
@@ -48,7 +49,7 @@ const $props = defineProps({
     default: 'label',
   },
   options: {
-    type: Object as PropType<Partial<UseFuseOptions<CommandPaletteCommand>>>,
+    type: Object as PropType<Partial<UseFuseOptions<Command>>>,
     default: () => ({}),
   },
   autoselect: {
@@ -68,9 +69,9 @@ const comboboxApi = ref(null)
 
 const commands: ComputedRef = computed(() => $props.groups.reduce((acc, group) => {
   return acc.concat(group.commands.map(command => ({ ...command, group: group.key })))
-}, [] as CommandPaletteCommand[]))
+}, [] as Command[]))
 
-const options: ComputedRef<Partial<UseFuseOptions<CommandPaletteCommand>>> = computed(() => defu({}, $props.options, {
+const options: ComputedRef<Partial<UseFuseOptions<Command>>> = computed(() => defu({}, $props.options, {
   resultLimit: 12,
   matchAllWhenSearchEmpty: true,
   fuseOptions: {
@@ -81,7 +82,7 @@ const options: ComputedRef<Partial<UseFuseOptions<CommandPaletteCommand>>> = com
 const { results } = useFuse(query, commands, options)
 
 const groups = computed(() => map(groupBy(results.value, command => command.item.group), (results, key) => {
-  const commands = results.map(result => {
+  const commands = results.map((result) => {
     const { item, ...data } = result
 
     return {
@@ -92,11 +93,11 @@ const groups = computed(() => map(groupBy(results.value, command => command.item
 
   return {
     ...$props.groups.find(group => group.key.startsWith(key)),
-    commands: commands.slice(0, options.value.resultLimit)
-  } as CommandPaletteGroup
+    commands: commands.slice(0, options.value.resultLimit),
+  } as CommandGroup
 }))
 
-function onSelect(option: CommandPaletteCommand): void {
+function onSelect(option: Command): void {
   $emit('update:modelValue', option, { query: query.value })
 }
 
@@ -112,10 +113,10 @@ defineExpose({
       <Combobox
         ref="comboboxRef"
         :by="by"
-        :modelValue="modelValue"
+        :model-value="modelValue"
         :multiple="multiple"
         :nullable="nullable"
-        @update:modelValue="onSelect"
+        @update:model-value="onSelect"
       >
         <div flex flex-col flex-1 min-h-none>
           <div flex flex-col divide-y divide-white divide-opacity-10>
@@ -128,7 +129,6 @@ defineExpose({
                     :value="query"
                     :placeholder="placeholderLabel"
                     autocomplete="off"
-                    @change="query = $event.target.value"
                     transition
                     focus-visible:ring-none
                     focus-within:outline-none
@@ -139,6 +139,7 @@ defineExpose({
                     h-13
                     pr-4
                     pl-12
+                    @change="query = $event.target.value"
                   />
                 </div>
               </div>

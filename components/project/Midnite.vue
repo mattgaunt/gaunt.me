@@ -62,7 +62,7 @@ refs.forEach((ref, i) => {
             alt="Midnite"
             relative
             w-full
-          />
+          >
         </div>
       </div>
     </div>

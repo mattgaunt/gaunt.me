@@ -49,7 +49,7 @@ refs.forEach((ref, i) => {
       </div>
       <div col-span-6>
         <div flex flex-col items-center space-y-20 py-4>
-          <div grid grid-cols-1 gap-none lg:(grid-cols-2 gap-8) max-w-3xl px-8>
+          <div grid grid-cols-1 gap-none lg:grid-cols-2 lg:gap-8 max-w-3xl px-8>
             <div col-span-1 pr-12 lg:pr-none>
               <div ref="message" flex flex-col items-end relative>
                 <div bg-white bg-opacity-10 rounded-t-3xl rounded-bl-3xl p-6>
@@ -64,7 +64,7 @@ refs.forEach((ref, i) => {
                 </svg>
               </div>
             </div>
-            <div col-span-1 pt-12 pl-12 lg:(pt-20 pl-none)>
+            <div col-span-1 pt-12 pl-12 lg:pt-20 lg:pl-none>
               <div ref="reply" flex flex-col relative>
                 <div bg="#C1FA6B" rounded-t-3xl rounded-br-3xl p-6>
                   <p text-lg text-zinc-900 font-medium tracking-wide>
@@ -80,9 +80,9 @@ refs.forEach((ref, i) => {
           </div>
 
           <Button
-            @click="openContactModal"
             aria-label="Contact modal"
             font-semibold
+            @click="openContactModal"
           >
             Get in touch
           </Button>

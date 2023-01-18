@@ -21,9 +21,9 @@ const { data: navigation } = await useAsyncData('navigation', () => {
       <SidebarSection>
         <SidebarNavigationLink
           v-for="item in navigation"
+          :key="item._path"
           :href="item._path"
           :icon="item.icon"
-          :key="item._path"
         >
           {{ item.title }}
         </SidebarNavigationLink>

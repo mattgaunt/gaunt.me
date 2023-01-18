@@ -74,6 +74,7 @@ refs.forEach((ref, i) => {
                       <div flex gap-1>
                         <div
                           v-for="i in 2"
+                          :key="i"
                           flex
                           items-center
                           bg-zinc-800
@@ -113,6 +114,7 @@ refs.forEach((ref, i) => {
                       <div flex gap-1>
                         <div
                           v-for="i in 2"
+                          :key="i"
                           flex
                           items-center
                           bg-zinc-800
@@ -153,6 +155,7 @@ refs.forEach((ref, i) => {
                       <div flex gap-1>
                         <div
                           v-for="i in 2"
+                          :key="i"
                           flex
                           items-center
                           bg-zinc-800
@@ -192,6 +195,7 @@ refs.forEach((ref, i) => {
                       <div flex gap-1>
                         <div
                           v-for="i in 2"
+                          :key="i"
                           flex
                           items-center
                           bg-zinc-800

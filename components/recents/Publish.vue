@@ -42,7 +42,7 @@ gems.forEach((ref, i) => {
                 <div flex flex-col space-y-2 max-w-lg>
                   <p text-sm text-zinc-400 font-medium tracking-normal>
                     8 Nov
-                  </p> 
+                  </p>
 
                   <Heading type="h2" text-3xl text-white>
                     Publishable Models with Laravel

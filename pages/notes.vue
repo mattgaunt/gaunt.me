@@ -49,7 +49,7 @@ const isNotePage = computed(() => route.name === 'notes-slug')
             </div>
 
             <div flex flex-col gap-2>
-              <template v-for="post in posts">
+              <template v-for="post in posts" :key="post.id">
                 <NuxtLink
                   :href="post._path"
                   :title="post.title"

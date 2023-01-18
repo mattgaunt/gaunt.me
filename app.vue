@@ -5,7 +5,7 @@ const title = $ref('Matthew Gaunt')
 const description = $ref('Full-stack developer, budding designer, and tinkerer, working remotely.')
 
 useHead({
-  title: title,
+  title,
   titleTemplate: `%s - ${config.name}`,
   link: [
     { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
@@ -49,7 +49,7 @@ useHead({
 
 <template>
   <Body antialiased />
-  
+
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
