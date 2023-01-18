@@ -22,9 +22,11 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt',
     '@vue-macros/nuxt',
   ],
-  unocss: {
-    preflight: true,
-  },
+  css: [
+    '@unocss/reset/tailwind.css',
+    '~/styles/fonts.css',
+    '~/styles/global.css',
+  ],
   pinceau: {
     configFileName: 'tokens.config',
   },
