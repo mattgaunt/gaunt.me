@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center" style="font-weight: 900">Gaunt.me</h1>
+<h1 align="center">Gaunt.me</h1>
 
 <p align="center">
   My personal playground built with Nuxt.
