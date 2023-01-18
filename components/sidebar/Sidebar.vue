@@ -21,15 +21,13 @@ const { openContactModal } = useContactModal()
     xl:w-62
     z-auto
   >
-    <div flex-1 space-y-6 h-full p-1>
+    <div flex-1 space-y-6 h-full px-1 py-2>
       <div flex flex-col gap-4>
         <div flex flex-col justify-center p-2>
-          <div flex flex-none items-center justify-between>
-            <span flex items-center space-x-3>
-              <h2 text-lg font-semibold tracking-wide line-clamp-1>
-                {{ config.name }}
-              </h2>
-            </span>
+          <div flex flex-none items-center>
+            <NuxtLink to="/" :aria-label="$config.name">
+              <Logo w-10 text-white />
+            </NuxtLink>
           </div>
         </div>
 
