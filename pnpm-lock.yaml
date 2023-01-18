@@ -6,6 +6,7 @@ specifiers:
   '@nuxt/content': ^2.3.0
   '@nuxt/image-edge': 1.0.0-27840416.dc1ed65
   '@types/lodash-es': ^4.17.6
+  '@types/uuid': ^9.0.0
   '@unocss/nuxt': ^0.48.4
   '@vue-macros/nuxt': ^0.2.14
   '@vueuse/core': ^9.10.0
@@ -32,6 +33,7 @@ devDependencies:
   '@nuxt/content': 2.3.0
   '@nuxt/image-edge': 1.0.0-27840416.dc1ed65
   '@types/lodash-es': 4.17.6
+  '@types/uuid': 9.0.0
   '@unocss/nuxt': 0.48.4
   '@vue-macros/nuxt': 0.2.14_a4js542km4aeq7wluxkto3pynu
   '@vueuse/core': 9.10.0
@@ -1158,6 +1160,10 @@ packages:
 
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
+    dev: true
+
+  /@types/uuid/9.0.0:
+    resolution: {integrity: sha512-kr90f+ERiQtKWMz5rP32ltJ/BtULDI5RVO0uavn1HQUOwjx0R1h0rnDYNL0CepF1zL5bSY6FISAfd9tOdDhU5Q==}
     dev: true
 
   /@types/web-bluetooth/0.0.16:
