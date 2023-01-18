@@ -1,4 +1,4 @@
-import type { UseFuseOptions } from '@vueuse/integrations/useFuse'
+import type { UseFuseOptions } from '@vueuse/integrations'
 import { get, set } from '@vueuse/shared'
 
 export interface CommandPaletteGroup {
@@ -36,8 +36,8 @@ export function useCommandPalette() {
         commands: [
           {
             id: 100,
-            name: 'ngine',
-            label: '@nuxt-modules/cmdk',
+            name: '@ngine/cmdk',
+            label: '@ngine/cmdk',
             to: {
               name: 'repository',
             },
@@ -55,7 +55,7 @@ export function useCommandPalette() {
             icon: 'Sun',
             iconClass: 'text-white',
             click: () => {
-              console.log('toggle theme')
+              console.log('Toggle theme...')
             },
           },
           {
