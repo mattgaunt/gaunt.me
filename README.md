@@ -20,12 +20,12 @@
 
 ## 📍 Roadmap
 
-- [] Light mode
-- [] Use nuxt/image
-- [] Document driven mode for pages
-- [] Nuxt studio support
-- [] Move more settings to the app config
-- [] Create a theme for customization
+- [ ] Light mode
+- [ ] Use `nuxt/image`
+- [ ] Document driven mode for pages
+- [ ] Nuxt studio support
+- [ ] Move more settings to `app.config.ts`
+- [ ] Customization via theme support
 
 ## 🦄 Stack
 
