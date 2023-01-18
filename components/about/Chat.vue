@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { open } = useContactModal()
+const { openContactModal } = useContactModal()
 
 const message = ref<HTMLElement>()
 const reply = ref<HTMLElement>()
@@ -80,8 +80,8 @@ refs.forEach((ref, i) => {
           </div>
 
           <Button
-            @click="open"
-            aria-label="View Changelog"
+            @click="openContactModal"
+            aria-label="Contact modal"
             font-semibold
           >
             Get in touch

@@ -8,9 +8,9 @@ import {
 } from '@headlessui/vue'
 
 const config = useAppConfig()
-const { isOpen, close } = useContactModal()
+const { isOpen, closeContactModal } = useContactModal()
 
-const links = [
+const links: { label: string, href: string, icon: string }[] = [
   { label: 'Email me', href: `mailto:${config.email}`, icon: 'Mail' },
   { label: 'Book time', href: 'https://calendly.com/matthew.gaunt', icon: 'Calendar' },
   { label: 'Follow me', href: config.socials.twitter, icon: 'Twitter' },
@@ -20,7 +20,7 @@ const links = [
 
 <template>
   <TransitionRoot appear :show="isOpen" as="template">
-    <Dialog as="div" @close="close" relative z-10>
+    <Dialog as="div" @close="closeContactModal" relative z-10>
       <TransitionChild
         as="template"
         enter="duration-200 ease-out"
@@ -73,7 +73,7 @@ const links = [
                       text-zinc-400
                       bg-zinc-600
                       p-2
-                      @click="close"
+                      @click="closeContactModal"
                     >
                       <Icon name="Close" inline-flex />
                     </button>

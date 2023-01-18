@@ -1,6 +1,6 @@
 <script setup>
 const config = useAppConfig()
-const { open } = useContactModal()
+const { openContactModal } = useContactModal()
 </script>
 
 <template>
@@ -59,7 +59,7 @@ const { open } = useContactModal()
           </SidebarSection>
 
           <SidebarSection label="Stay in touch">
-            <SidebarNavButton icon="Chat" shortcut="/" @click.prevent="open">
+            <SidebarNavButton icon="Chat" shortcut="/" @click="openContactModal">
               Contact
             </SidebarNavButton>
             <SidebarNavLink
