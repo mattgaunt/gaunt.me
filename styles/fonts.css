@@ -1,0 +1,17 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Satoshi Variable';
+  font-weight: 700 900;
+  font-style: normal;
+  src: url('/fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('/fonts/Satoshi-Variable.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Satoshi Variable';
+  font-weight: 700 900;
+  font-style: italic;
+  src: url('/fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+       url('/fonts/Satoshi-VariableItalic.woff') format('woff');
+}

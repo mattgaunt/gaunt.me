@@ -19,7 +19,7 @@ export default defineConfig({
   theme: {
     fontFamily: {
       heading: [
-        'Satoshi',
+        'Satoshi Variable',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',

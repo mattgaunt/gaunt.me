@@ -9,9 +9,23 @@ useHead({
   titleTemplate: `%s - ${config.name}`,
   link: [
     { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
-    { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg', sizes: 'any' },
-    { rel: 'mask-icon', href: '/meta/mask-icon.svg' },
+    { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
     { rel: 'apple-touch-icon', href: '/meta/apple-touch-icon.png' },
+    { rel: 'mask-icon', href: '/meta/mask-icon.svg' },
+    {
+      rel: 'preload',
+      as: 'font',
+      type: 'font/woff2',
+      href: '/fonts/Satoshi-Variable.woff2',
+      crossorigin: 'anonymous',
+    },
+    {
+      rel: 'preload',
+      as: 'font',
+      type: 'font/woff2',
+      href: '/fonts/Satoshi-VariableItalic.woff2',
+      crossorigin: 'anonymous',
+    },
   ],
   meta: [
     { name: 'description', content: description },
@@ -34,70 +48,9 @@ useHead({
 </script>
 
 <template>
+  <Body antialiased />
+  
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
 </template>
-
-<style>
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #2e2e2e transparent;
-}
-
-:root {
-  --body-background-color: #1c1c1c;
-  --body-margin-left: max(24px, env(safe-area-inset-left));
-  --body-margin-right: max(24px, env(safe-area-inset-right));
-  --page-max-width: 1200px;
-  --page-padding-default: 32px;
-  --content-width: 640px;
-  --scrollbar-color: theme('colors.zinc.800');
-  --scrollbar-color-hover: theme('colors.zinc.700');
-  --scrollbar-color-active: theme('colors.zinc.600');
-  --scrollbar-width: 16px;
-}
-
-@layer base {
-  body {
-    @apply bg-zinc-900;
-    @apply flex;
-    @apply flex-col;
-    @apply h-full;
-    @apply min-h-screen;
-    @apply antialiased;
-    @apply font-sans;
-    @apply text-white;
-  }
-
-  ::-webkit-scrollbar {
-    width: var(--scrollbar-width);
-    height: var(--scrollbar-width);
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-color);
-    border-radius: var(--scrollbar-width);
-    border: 5px solid;
-    border-color: transparent;
-    background-clip: content-box;
-    @apply transition-ease;
-    @apply transition-colors;
-    @apply duration-200;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    --scrollbar-color: var(--scrollbar-color-hover);
-  }
-
-  ::-webkit-scrollbar-thumb:active {
-    --scrollbar-color: var(--scrollbar-color-active);
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: transparent;
-    border-left: 1px solid;
-    border-color: rgba(255, 255, 255, .05);
-  }
-}
-</style>
