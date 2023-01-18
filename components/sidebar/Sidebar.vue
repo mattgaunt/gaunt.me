@@ -25,7 +25,7 @@ const { openContactModal } = useContactModal()
       <div flex flex-col gap-4>
         <div flex flex-col justify-center p-2>
           <div flex flex-none items-center>
-            <NuxtLink to="/" :aria-label="$config.name">
+            <NuxtLink to="/" :aria-label="config.name">
               <Logo w-10 text-white />
             </NuxtLink>
           </div>
