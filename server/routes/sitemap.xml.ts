@@ -2,10 +2,10 @@ import { SitemapStream, streamToPromise } from 'sitemap'
 import { serverQueryContent } from '#content/server'
 
 export default defineEventHandler(async (event) => {
-  const config = useAppConfig()
+  const { domain } = useRuntimeConfig()
   const docs = await serverQueryContent(event).find()
   const sitemap = new SitemapStream({
-    hostname: config.domain,
+    hostname: domain,
   })
 
   const routes = [

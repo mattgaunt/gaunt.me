@@ -13,6 +13,9 @@ export default defineNuxtConfig({
       ],
     },
   },
+  runtimeConfig: {
+    domain: 'https://gaunt.me',
+  },
   nitro: {
     prerender: {
       routes: ['/sitemap.xml'],
