@@ -12,7 +12,7 @@ const target = ref<HTMLElement>()
 const { transform } = useElementTransform(target)
 const route = useRoute()
 const activeIdx = computed(() => {
-  return tabs.findIndex(t => (route.name as string).startsWith(t.name))
+  return tabs.findIndex(t => (route.name as string)?.startsWith(t.name))
 })
 
 watch(activeIdx, () => transform.x = 52 * activeIdx.value)
