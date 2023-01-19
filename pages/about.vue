@@ -2,6 +2,10 @@
 useHead({
   title: 'About',
 })
+
+definePageMeta({
+  changefreq: 'monthly',
+})
 </script>
 
 <template>

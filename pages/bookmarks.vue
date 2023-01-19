@@ -1,4 +1,8 @@
 <script setup>
+const { data: bookmarks } = await useAsyncData('bookmarks', () => {
+  return queryContent('bookmarks').find()
+})
+
 useHead({
   title: 'Bookmarks',
   meta: [
@@ -7,8 +11,8 @@ useHead({
   ],
 })
 
-const { data: bookmarks } = await useAsyncData('bookmarks', () => {
-  return queryContent('bookmarks').find()
+definePageMeta({
+  changefreq: 'weekly',
 })
 </script>
 

@@ -1,8 +1,4 @@
 <script lang="ts" setup>
-useHead({
-  titleTemplate: 'Matthew Gaunt',
-})
-
 const title = ref<HTMLElement>()
 const text = ref<HTMLElement>()
 const button = ref<HTMLElement>()
@@ -26,6 +22,15 @@ refs.forEach((ref, i) => {
       },
     },
   })
+})
+
+useHead({
+  title: 'Matthew Gaunt',
+  titleTemplate: '%s - Full-stack developer',
+})
+
+definePageMeta({
+  changefreq: 'monthly',
 })
 </script>
 

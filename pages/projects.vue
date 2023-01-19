@@ -6,6 +6,10 @@ useHead({
     { name: 'twitter:image', content: 'https://gaunt.me/og/projects.png' },
   ],
 })
+
+definePageMeta({
+  changefreq: 'monthly',
+})
 </script>
 
 <template>

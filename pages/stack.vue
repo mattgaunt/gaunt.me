@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+const { data: stack } = await useAsyncData('stack', () => {
+  return queryContent('stack').find()
+})
+
 useHead({
   title: 'Stack',
   meta: [
@@ -7,8 +11,8 @@ useHead({
   ],
 })
 
-const { data: stack } = await useAsyncData('stack', () => {
-  return queryContent('stack').find()
+definePageMeta({
+  changefreq: 'weekly',
 })
 </script>
 

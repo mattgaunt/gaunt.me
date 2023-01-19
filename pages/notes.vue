@@ -1,4 +1,12 @@
 <script lang="ts" setup>
+const { data: notes } = await useAsyncData('notes', () => {
+  return queryContent('notes').sort({ created_at: 1 }).find()
+})
+
+const route = useRoute()
+const isNotesPage = computed(() => route.name === 'notes')
+const isNotePage = computed(() => route.name === 'notes-slug')
+
 useHead({
   title: 'Notes',
   meta: [
@@ -7,13 +15,9 @@ useHead({
   ],
 })
 
-const { data: posts } = await useAsyncData('notes', () => {
-  return queryContent('notes').find()
+definePageMeta({
+  changefreq: 'daily',
 })
-
-const route = useRoute()
-const isNotesPage = computed(() => route.name === 'notes')
-const isNotePage = computed(() => route.name === 'notes-slug')
 </script>
 
 <template>
@@ -49,10 +53,10 @@ const isNotePage = computed(() => route.name === 'notes-slug')
             </div>
 
             <div flex flex-col gap-2>
-              <template v-for="post in posts" :key="post.id">
+              <template v-for="note in notes" :key="note.id">
                 <NuxtLink
-                  :href="post._path"
-                  :title="post.title"
+                  :href="note._path"
+                  :title="note.title"
                   hover="before:bg-zinc-800 before:bg-opacity-30 before:scale-100"
                   active-class="bg-zinc-800"
                   before:transition-all
@@ -71,11 +75,11 @@ const isNotePage = computed(() => route.name === 'notes-slug')
                 >
                   <div flex flex-1 flex-col justify-center space-y-1 relative>
                     <div text-base font-semibold line-clamp-3>
-                      {{ post.title }}
+                      {{ note.title }}
                     </div>
 
                     <div text-sm text-zinc-400 font-medium line-clamp-1>
-                      {{ post.published }}
+                      {{ note.published }}
                     </div>
                   </div>
                 </NuxtLink>
