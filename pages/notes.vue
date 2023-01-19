@@ -10,8 +10,8 @@ const isNotePage = computed(() => route.name === 'notes-slug')
 useHead({
   title: 'Notes',
   meta: [
-    { property: 'og:image', content: 'https://gaunt.me/og/notes.png' },
-    { name: 'twitter:image', content: 'https://gaunt.me/og/notes.png' },
+    { property: 'og:image', content: '/og/notes.png' },
+    { name: 'twitter:image', content: '/og/notes.png' },
   ],
 })
 

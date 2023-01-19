@@ -6,8 +6,8 @@ const { data: bookmarks } = await useAsyncData('bookmarks', () => {
 useHead({
   title: 'Bookmarks',
   meta: [
-    { property: 'og:image', content: 'https://gaunt.me/og/bookmarks.png' },
-    { name: 'twitter:image', content: 'https://gaunt.me/og/bookmarks.png' },
+    { property: 'og:image', content: '/og/bookmarks.png' },
+    { name: 'twitter:image', content: '/og/bookmarks.png' },
   ],
 })
 

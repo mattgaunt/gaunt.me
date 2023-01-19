@@ -2,8 +2,8 @@
 useHead({
   title: 'Projects',
   meta: [
-    { property: 'og:image', content: 'https://gaunt.me/og/projects.png' },
-    { name: 'twitter:image', content: 'https://gaunt.me/og/projects.png' },
+    { property: 'og:image', content: '/og/projects.png' },
+    { name: 'twitter:image', content: '/og/projects.png' },
   ],
 })
 
