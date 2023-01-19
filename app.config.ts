@@ -1,4 +1,5 @@
 export default defineAppConfig({
+  domain: 'https://gaunt.me',
   name: 'Matthew Gaunt',
   email: 'hello@gaunt.me',
   socials: {

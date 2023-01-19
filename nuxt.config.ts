@@ -13,6 +13,11 @@ export default defineNuxtConfig({
       ],
     },
   },
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml'],
+    },
+  },
   modules: [
     '@unocss/nuxt',
     '@nuxt-themes/tokens',
