@@ -35,7 +35,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div flex bg-zinc-800 bg-opacity-40 highlight rounded-6 lg:rounded-l-6 lg:rounded-r-2 overflow-hidden w-full>
+  <div flex bg-zinc-800 bg-opacity-40 lg:highlight rounded-none lg:rounded-l-6 lg:rounded-r-2 lg:overflow-hidden w-full>
     <main id="main" relative flex flex-col lg:overflow-y-auto lg:max-h-page w-full>
       <HeroPattern />
 

@@ -6,7 +6,7 @@ setupShortcuts()
 
 <template>
   <div relative h-full min-h-screen w-full>
-    <div flex gap-x-2 min-h-screen p-2>
+    <div flex gap-x-2 min-h-screen lg:p-2>
       <Sidebar />
       <Toolbar />
       <Contact />

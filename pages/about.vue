@@ -9,7 +9,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div flex bg-zinc-800 bg-opacity-40 highlight rounded-6 lg:rounded-l-6 lg:rounded-r-2 w-full>
+  <div flex bg-zinc-800 bg-opacity-40 lg:highlight rounded-none lg:rounded-l-6 lg:rounded-r-2 lg:overflow-hidden w-full>
     <main id="main" relative flex flex-col lg:overflow-y-auto lg:max-h-page w-full>
       <Container max-w-6xl py-20 lg:py-32>
         <ListDetailView
@@ -24,7 +24,7 @@ definePageMeta({
               </div>
               <div col-span-1>
                 <div grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8>
-                  <div col-span-1 flex>
+                  <div col-span-1>
                     <AboutTweet />
                   </div>
                   <div col-span-1>
