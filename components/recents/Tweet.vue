@@ -44,14 +44,14 @@ refs.forEach((ref, i) => {
         <div flex flex-col h-full gap-4>
           <div flex-1>
             <div flex items-center relative>
-              <img ref="at" alt="At" src="/recents/twitter/at.svg" class="absolute -left-8 top-4 max-w-36">
-              <img ref="retweet" alt="Retweet" src="/recents/twitter/retweet.svg" class="absolute right-12 top-none max-w-36">
-              <img ref="hashtag" alt="Hashtag" src="/recents/twitter/hashtag.svg" class="absolute left-16 top-42 max-w-36">
-              <img ref="like" alt="Like" src="/recents/twitter/like.svg" class="absolute -right-8 top-48 max-w-36">
+              <img ref="at" alt="At" src="/recents/twitter/at.svg" class="absolute -left-8 top-4 max-w-24 md:max-w-36">
+              <img ref="retweet" alt="Retweet" src="/recents/twitter/retweet.svg" class="absolute right-12 top-none max-w-24 md:max-w-36">
+              <img ref="hashtag" alt="Hashtag" src="/recents/twitter/hashtag.svg" class="absolute left-16 top-42 max-w-24 md:max-w-36">
+              <img ref="like" alt="Like" src="/recents/twitter/like.svg" class="absolute -right-8 top-48 max-w-24 md:max-w-36">
             </div>
           </div>
           <div flex-initial>
-            <div flex justify-center w-full>
+            <div flex justify-start w-full>
               <div space-y-8 text-left p-6>
                 <div flex flex-col space-y-2 max-w-lg>
                   <p text-sm text-white text-opacity-75 font-medium tracking-normal>

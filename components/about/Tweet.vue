@@ -51,7 +51,7 @@ refs.forEach((ref, i) => {
             </div>
           </div>
           <div flex-initial>
-            <div flex justify-center w-full>
+            <div flex justify-start w-full>
               <div space-y-8 text-left p-6>
                 <div flex flex-col space-y-2 max-w-lg>
                   <p text-sm text-white text-opacity-75 font-medium>
