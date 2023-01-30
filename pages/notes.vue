@@ -21,7 +21,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div flex w-full gap-2>
+  <div flex w-full lg:gap-2>
     <div flex flex-1>
       <div
         :class="{
@@ -30,10 +30,10 @@ definePageMeta({
         relative
         bg-zinc-800
         bg-opacity-40
-        highlight
-        rounded-6
+        lg:highlight
+        lg:rounded-6
         h-full
-        max-h-page
+        lg:max-h-page
         flex-none
         overflow-y-auto
         w-full
@@ -96,8 +96,8 @@ definePageMeta({
       }"
       bg-zinc-800
       bg-opacity-40
-      highlight
-      rounded-6
+      lg:highlight
+      rounded-none
       lg:rounded-l-6
       lg:rounded-r-2
       lg:overflow-y-auto
