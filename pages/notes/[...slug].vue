@@ -44,8 +44,8 @@ definePageMeta({
           </NuxtLink>
 
           <article flex flex-col relative>
-            <header flex flex-col gap-y-2>
-              <h1 font-heading text-4xl lg:text-5xl font-black mb-6>
+            <header flex flex-col gap-y-4>
+              <h1 font-heading text-4xl lg:text-5xl font-black leading-tight mb-6>
                 {{ data.title }}
               </h1>
               <time datetime="data.createdAt" order-first flex items-center gap-2 text-base text-zinc-500>
