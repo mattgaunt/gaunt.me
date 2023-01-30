@@ -42,6 +42,9 @@ export default defineNuxtConfig({
     provider: 'vercel',
   },
   content: {
+    markdown: {
+      remarkPlugins: ['remark-reading-time'],
+    },
     highlight: {
       theme: 'dracula',
       preload: [
