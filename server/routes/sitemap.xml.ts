@@ -28,7 +28,7 @@ export default defineEventHandler(async (event) => {
     sitemap.write({
       url: doc._path,
       changefreq: doc.changefreq,
-      lastmod: doc.updated_at ?? doc.created_at,
+      lastmod: doc.updatedAt ?? doc.createdAt,
     })
   }
 

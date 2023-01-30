@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const { data: notes } = await useAsyncData('notes', () => {
-  return queryContent('notes').sort({ created_at: 1 }).find()
+  return queryContent('notes').sort({ createdAt: 1 }).find()
 })
 
 const route = useRoute()
@@ -78,9 +78,7 @@ definePageMeta({
                       {{ note.title }}
                     </div>
 
-                    <div text-sm text-zinc-400 font-medium line-clamp-1>
-                      {{ note.published }}
-                    </div>
+                    <div text-sm text-zinc-400 font-medium line-clamp-1 v-text="formatDate(note.createdAt)" />
                   </div>
                 </NuxtLink>
               </template>
