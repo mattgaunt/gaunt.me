@@ -1,5 +1,31 @@
 <script lang="ts" setup>
 const config = useAppConfig()
+
+const at = ref<HTMLElement>()
+const retweet = ref<HTMLElement>()
+const hashtag = ref<HTMLElement>()
+const like = ref<HTMLElement>()
+
+const refs = [at, retweet, hashtag, like]
+
+refs.forEach((ref, i) => {
+  useMotion(ref, {
+    initial: {
+      opacity: 0,
+      scale: 0.5,
+    },
+    visibleOnce: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        type: 'spring',
+        stiffness: 400,
+        damping: 8,
+        delay: 100 * i,
+      },
+    },
+  })
+})
 </script>
 
 <template>
@@ -18,10 +44,10 @@ const config = useAppConfig()
         <div flex flex-col h-full gap-4>
           <div flex-1>
             <div flex items-center relative>
-              <img alt="At" src="/recents/twitter/at.svg" class="absolute -left-8 top-4 max-w-24 md:max-w-42">
-              <img alt="Retweet" src="/recents/twitter/retweet.svg" class="absolute right-12 top-none max-w-24 md:max-w-42">
-              <img alt="Hashtag" src="/recents/twitter/hashtag.svg" class="absolute left-16 top-32 md:top-42 max-w-24 md:max-w-42">
-              <img alt="Like" src="/recents/twitter/like.svg" class="absolute -right-8 top-40 md:top-48 max-w-24 md:max-w-42">
+              <img ref="at" alt="At" src="/recents/twitter/at.svg" class="absolute -left-8 top-4 max-w-24 md:max-w-42">
+              <img ref="retweet" alt="Retweet" src="/recents/twitter/retweet.svg" class="absolute right-12 top-none max-w-24 md:max-w-42">
+              <img ref="hashtag" alt="Hashtag" src="/recents/twitter/hashtag.svg" class="absolute left-16 top-32 md:top-42 max-w-24 md:max-w-42">
+              <img ref="like" alt="Like" src="/recents/twitter/like.svg" class="absolute -right-8 top-40 md:top-48 max-w-24 md:max-w-42">
             </div>
           </div>
           <div flex-initial>
