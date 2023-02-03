@@ -11,7 +11,7 @@ setupShortcuts()
       <Toolbar />
       <Contact />
 
-      <div flex flex-1>
+      <div flex flex-1 max-w-full>
         <div flex w-full>
           <slot />
         </div>
