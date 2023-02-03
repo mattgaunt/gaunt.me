@@ -48,7 +48,7 @@ refs.forEach((ref, i) => {
       <div col-span-2>
         <div max-h-xs h-full px-8 pt-4>
           <div flex justify-center items-center relative>
-            <div grid grid-cols-2 gap-4 w-full>
+            <div grid grid-cols-2 gap-4 w-full min-w-xl>
               <div rotate="-3" col-span-1 grid gap-4>
                 <div
                   flex
