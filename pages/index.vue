@@ -83,29 +83,29 @@ definePageMeta({
               </div>
             </div>
             <div col-span-1>
-              <div grid grid-cols-1 gap-4 lg:grid-cols-8 lg:gap-8>
-                <div col-span-1 lg:col-span-3>
+              <div grid grid-cols-1 gap-4 md:grid-cols-8 md:gap-8>
+                <div col-span-1 order-1 md:col-span-4 xl:col-span-3>
                   <RecentsNuxt3 />
                 </div>
-                <div col-span-1 lg:col-span-5>
+                <div col-span-1 order-3 md:col-span-8 xl:col-span-5 xl:order-2>
                   <RecentsCommandMenu />
                 </div>
-                <div col-span-1 lg:col-span-5>
+                <div col-span-1 order-3 md:col-span-8 xl:col-span-5 xl:order-3>
                   <RecentsStack />
                 </div>
-                <div col-span-1 lg:col-span-3>
+                <div col-span-1 order-2 md:col-span-4 xl:col-span-3 xl:order-4>
                   <RecentsTweet />
                 </div>
-                <div col-span-1 lg:col-span-3>
+                <div col-span-1 order-5 md:col-span-4 xl:col-span-3 xl:order-5>
                   <RecentsPolywork />
                 </div>
-                <div col-span-1 lg:col-span-5>
+                <div col-span-1 order-7 md:col-span-8 xl:col-span-5 xl:order-6>
                   <RecentsAlwaysdead />
                 </div>
-                <div col-span-1 lg:col-span-5>
+                <div col-span-1 order-7 md:col-span-8 xl:col-span-5 xl:order-7>
                   <RecentsLoadout />
                 </div>
-                <div col-span-1 lg:col-span-3>
+                <div col-span-1 order-6 md:col-span-4 xl:col-span-3 xl:order-8>
                   <RecentsPublish />
                 </div>
               </div>
