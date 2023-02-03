@@ -69,7 +69,7 @@ useMotion(right, {
           </div>
 
           <div flex justify-center items-center relative>
-            <div space-x="-16" flex justify-center>
+            <div space-x="-16" flex justify-center min-w-lg>
               <AlwaysdeadPost
                 ref="left"
                 image="https://d3sg99hx6ladh0.cloudfront.net/media/980/conversions/jyjSxslI8oJ7eWa2F6Rr97bDWVk3bjZfiVV1iLSk-thumbnail.jpg"
