@@ -109,7 +109,7 @@ defineExpose({
 
 <template>
   <div bg-white bg-opacity-6 rounded-2xl highlight>
-    <div flex flex-col gap-y-2 min-w-lg>
+    <div flex flex-col gap-y-2 w-lg max-w-full>
       <Combobox
         ref="comboboxRef"
         :by="by"

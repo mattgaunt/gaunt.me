@@ -49,7 +49,7 @@ refs.forEach((ref, i) => {
         </div>
       </div>
       <div col-span-2>
-        <div max-h-68 h-full px-8>
+        <div max-h-68 h-full lg:px-8>
           <div flex justify-center items-center relative>
             <CommandPalette
               ref="commandPalette"
@@ -58,6 +58,7 @@ refs.forEach((ref, i) => {
               placeholder-label="Search..."
               searchable
               :groups="groups"
+              max-w-full
             />
           </div>
         </div>
