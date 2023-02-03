@@ -21,7 +21,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div flex w-full lg:gap-2>
+  <div flex w-full xl:gap-2>
     <div flex flex-1>
       <div
         :class="{
