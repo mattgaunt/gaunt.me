@@ -19,8 +19,8 @@ definePageMeta({
 <template>
   <div flex w-full relative>
     <main id="main" relative flex flex-col w-full>
-      <Container max-w-3xl py-12 lg:py-24 relative>
-        <div flex flex-col gap-y-8>
+      <Container max-w-3xl py-8 lg:py-24 relative>
+        <div flex flex-col gap-y-8 p-3>
           <NuxtLink
             aria-label="Go back to notes"
             href="/notes"
