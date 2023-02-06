@@ -30,7 +30,7 @@ gems.forEach((ref, i) => {
 
 <template>
   <div bg-zinc-900 bg-opacity-25 rounded-10 h-full>
-    <NuxtLink to="/notes" hover="-rotate-1 -translate-y-5" block transition duration-250 h-full>
+    <NuxtLink to="/notes/creating-themes-with-nuxt-3" hover="-rotate-1 -translate-y-5" block transition duration-250 h-full>
       <Card min-h-142 overflow-hidden p-4>
         <div flex flex-col h-full gap-4>
           <div flex-1>
