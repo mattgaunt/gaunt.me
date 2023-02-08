@@ -1,6 +1,6 @@
 export function useKeyShortcuts() {
   const keys = useMagicKeys()
-  const { open } = useContactModal()
+  const { openContactModal } = useContactModal()
 
   function setupShortcuts(): void {
     whenever(keys['1'], () => navigateTo('/'))
@@ -9,7 +9,7 @@ export function useKeyShortcuts() {
     whenever(keys['4'], () => navigateTo('/stack'))
     whenever(keys['5'], () => navigateTo('/bookmarks'))
     whenever(keys['6'], () => navigateTo('/notes'))
-    whenever(keys['/'], () => open())
+    whenever(keys['/'], () => openContactModal())
   }
 
   return {
