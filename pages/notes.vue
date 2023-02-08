@@ -1,7 +1,5 @@
 <script lang="ts" setup>
-const { data: notes } = await useAsyncData('notes', () => {
-  return queryContent('notes').sort({ createdAt: 1 }).find()
-})
+const { data: notes } = await useAsyncData('notes', () => queryContent('notes').find())
 
 const route = useRoute()
 const isNotesPage = computed(() => route.name === 'notes')
