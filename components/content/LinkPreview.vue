@@ -8,21 +8,21 @@ defineProps<{
 </script>
 
 <template>
-  <Card rounded-3xl shadow-lg shadow-neutral-900 shadow-opacity-25 my-8>
+  <Card hover="-translate-y-1" rounded-3xl shadow-lg shadow-neutral-900 shadow-opacity-25 my-8 duration-250>
     <NuxtLink :href="url" target="_blank" rel="noopener noreferrer" decoration-none>
-      <div flex flex-col gap-y-4>
+      <div flex flex-col gap-y-3>
         <figure
           inline-flex
-          bg-neutral-800
+          aspect-video
+          bg-neutral-900
           rounded-2xl
           overflow-hidden
-          object-cover
           m-none
         >
-          <img :src="image" loading="lazy" inline-flex />
+          <img :src="image" loading="lazy" object-cover inline-flex />
         </figure>
 
-        <div flex flex-col gap-y-1>
+        <div flex flex-col gap-y-1 px-2>
           <h3 text-2xl font-bold m-none>{{ title }}</h3>
           <span text-neutral-400>
             {{ description }}
