@@ -17,6 +17,11 @@ export default defineNuxtConfig({
     domain: 'https://gaunt.me',
   },
   nitro: {
+    routeRules: {
+      '/notes/hybridly-an-inertia-replacement': {
+        redirect: '/notes/hybridly-an-inertia-alternative',
+      },
+    },
     prerender: {
       routes: ['/sitemap.xml'],
     },
