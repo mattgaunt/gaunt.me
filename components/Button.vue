@@ -26,7 +26,7 @@ defineOptions({
       border
       border-white
       border-opacity-3
-      rounded-5
+      rounded-full
       min-h-11
       px-6
       font-semibold

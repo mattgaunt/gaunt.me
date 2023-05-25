@@ -11,15 +11,15 @@ defineOptions({
       inline-flex
       justify-center
       items-center
-      bg-cyan
-      bg-opacity-12
+      bg-white
+      bg-opacity-8
       hover:bg-opacity-10
       ring
       ring-inset
-      ring-cyan
-      ring-opacity-15
-      rounded-5
-      min-h-11
+      ring-white
+      ring-opacity-5
+      rounded-full
+      min-h-12
       px-6
       font-semibold
       transition-all
