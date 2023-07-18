@@ -1,6 +1,3 @@
 {
-  "extends": "./.nuxt/tsconfig.json",
-  "vueCompilerOptions": {
-    "plugins": ["pinceau/volar"]
-  }
+  "extends": "./.nuxt/tsconfig.json"
 }
