@@ -12,7 +12,7 @@ const { isOpen, closeContactModal } = useContactModal()
 
 const links: { label: string; href: string; icon: string }[] = [
   { label: 'Email me', href: `mailto:${config.email}`, icon: 'Mail' },
-  { label: 'Book time', href: 'https://calendly.com/matthew.gaunt', icon: 'Calendar' },
+  { label: 'Book time', href: 'https://cal.com/matthew-gaunt/intro', icon: 'Calendar' },
   { label: 'Follow me', href: config.socials.twitter, icon: 'Twitter' },
   { label: 'Join my network', href: config.socials.linkedin, icon: 'LinkedIn' },
 ]
