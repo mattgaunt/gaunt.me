@@ -11,6 +11,12 @@ export default defineNuxtConfig({
     typedPages: true,
   },
 
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://gaunt.me',
+    },
+  },
+
   nitro: {
     future: { nativeSWR: true },
     prerender: {

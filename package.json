@@ -4,12 +4,10 @@
   "private": true,
   "packageManager": "pnpm@8.6.12",
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "start": "nuxi start",
-    "generate": "nuxi generate",
-    "preview": "nuxi preview",
-    "postinstall": "nuxi prepare",
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "postinstall": "nuxt prepare",
     "lint": "eslint --cache .",
     "lint:fix": "pnpm lint --fix"
   },
@@ -29,7 +27,6 @@
     "@vueuse/nuxt": "^9.13.0",
     "fuse.js": "^6.6.2",
     "lodash-es": "^4.17.21",
-    "nuxt": "3.7.3",
     "pinceau": "^0.20.1",
     "remark": "^14.0.3",
     "remark-html": "^15.0.2",
@@ -43,6 +40,7 @@
     "@types/uuid": "^9.0.1",
     "eslint": "8.48.0",
     "eslint-plugin-nuxt": "4.0.0",
+    "nuxt": "3.7.3",
     "typescript": "^5.1.6",
     "uuid": "^9.0.0",
     "vitest": "0.33.0"
