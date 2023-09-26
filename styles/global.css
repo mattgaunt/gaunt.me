@@ -1,15 +1,9 @@
 * {
   scrollbar-width: thin;
-  scrollbar-color: #2e2e2e transparent;
+  scrollbar-color: var(--scrollbar-color) transparent;
 }
 
 :root {
-  --body-background-color: #1c1c1c;
-  --body-margin-left: max(24px, env(safe-area-inset-left));
-  --body-margin-right: max(24px, env(safe-area-inset-right));
-  --page-max-width: 1200px;
-  --page-padding-default: 32px;
-  --content-width: 640px;
   --scrollbar-color: theme('colors.zinc.800');
   --scrollbar-color-hover: theme('colors.zinc.700');
   --scrollbar-color-active: theme('colors.zinc.600');
@@ -18,13 +12,9 @@
 
 @layer base {
   body {
-    @apply bg-zinc-900;
-    @apply flex;
-    @apply flex-col;
-    @apply h-full;
-    @apply min-h-screen;
-    @apply font-sans;
-    @apply text-white;
+    --at-apply: bg-zinc-900 text-white;
+    --at-apply: flex flex-col;
+    --at-apply: h-full min-h-screen;
   }
 
   ::-webkit-scrollbar {
@@ -33,14 +23,11 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-color);
-    border-radius: var(--scrollbar-width);
-    border: 5px solid;
-    border-color: transparent;
-    background-clip: content-box;
-    @apply transition-ease;
-    @apply transition-colors;
-    @apply duration-200;
+    --at-apply: transition-ease transition-colors duration-200;
+    --at-apply: bg-[var(--scrollbar-color)];
+    --at-apply: rounded-[var(--scrollbar-width)];
+    --at-apply: border-5px border-solid border-transparent;
+    --at-apply: bg-clip-content;
   }
 
   ::-webkit-scrollbar-thumb:hover {
@@ -52,8 +39,7 @@
   }
 
   ::-webkit-scrollbar-track {
-    background-color: transparent;
-    border-left: 1px solid;
-    border-color: rgba(255, 255, 255, .05);
+    --at-apply: border-l-px border-l-solid border-white/5;
+    --at-apply: bg-transparent;
   }
 }
