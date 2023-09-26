@@ -52,7 +52,7 @@ defineOptions({
       <template v-if="shortcut">
         <span flex items-center flex-none>
           <span inline-flex justify-center shortcut>
-            <kbd text-2xs text-zinc-500 font-semibold>{{ shortcut }}</kbd>
+            <kbd text-xs text-zinc-500 font-semibold>{{ shortcut }}</kbd>
           </span>
         </span>
       </template>

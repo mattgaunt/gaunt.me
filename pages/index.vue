@@ -46,7 +46,7 @@ refs.forEach((ref, i) => {
 
                   <div max-w-42em px-2>
                     <p ref="text" text-xl text-zinc-400 font-normal leading-relaxed>
-                      I’m a full-stack developer, semi-capable designer and notorious non-stop tinkerer.
+                      I’m a frontend engineer, designer and notorious non-stop tinkerer.
                       If you can’t find me writing code, or designing in Figma, I’ll
                       be toying with game development.
                     </p>
