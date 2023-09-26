@@ -57,8 +57,8 @@ useServerHead({
               </time>
             </header>
 
-            <div>
-              <ContentDoc prose prose-invert prose-zinc max-w-full />
+            <div prose="~">
+              <ContentDoc prose-invert prose-zinc max-w-full />
             </div>
           </article>
         </div>

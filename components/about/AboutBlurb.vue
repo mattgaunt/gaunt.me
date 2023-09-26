@@ -33,7 +33,7 @@ refs.forEach((ref, i) => {
         <div col-span-6 md:col-span-3>
           <div flex items-center w-full>
             <div flex flex-col items-start space-y-8 md:space-y-12 md:py-4>
-              <Heading type="h2" text-4xl lg:text-5xl>
+              <Heading type="h2" text-4xl lg:text-5xl lg:leading-14>
                 A Full-Stack Developer and Designer
                 Based in the UK.
               </Heading>
@@ -53,7 +53,7 @@ refs.forEach((ref, i) => {
         <div col-span-6 md:col-span-3>
           <div flex items-center w-full>
             <div flex flex-col space-y-6>
-              <div prose text-xl text-zinc-300 tracking-normal max-w-full>
+              <div prose="~" text-xl text-zinc-300 tracking-normal max-w-full>
                 <p>
                   Hey, I'm Matthew. I'm a full-stack developer, budding designer and all round tinkerer. I was most recently
                   leading frontend engineering at <a href="https://midnite.com/" font-medium text-white underline-zinc-500 underline-wavy>Midnite</a>, before leaving earlier this year to persuit
