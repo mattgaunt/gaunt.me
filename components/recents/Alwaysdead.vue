@@ -72,10 +72,10 @@ useMotion(right, {
             <div space-x="-16" flex justify-center min-w-lg>
               <AlwaysdeadPost
                 ref="left"
-                image="https://d3sg99hx6ladh0.cloudfront.net/media/980/conversions/jyjSxslI8oJ7eWa2F6Rr97bDWVk3bjZfiVV1iLSk-thumbnail.jpg"
-                title="Valheim and Slime Rancher 2 join Deathloop on Xbox Game Pass"
-                source="Polygon"
-                logo="https://d3sg99hx6ladh0.cloudfront.net/media/19/RazgTVzEWZJ0SBbIyNfmAgWIpg2Yj1UVPgAmEOre.png"
+                image="/projects/alwaysdead/article-2.jpg"
+                title="Square Enix casually confirms there's a new Just Cause in development"
+                source="Destructoid"
+                logo="/projects/alwaysdead/destructoid.jpg"
                 date="Sep 20, 2022"
                 reads="13 reads"
                 shadow-2xl
@@ -85,10 +85,10 @@ useMotion(right, {
               />
               <AlwaysdeadPost
                 ref="right"
-                image="https://d3sg99hx6ladh0.cloudfront.net/media/971/conversions/44YC4APO7KuErgrosXppXHqu2nMEwC7igd07tyyF-thumbnail.jpg"
-                title="Electronic Arts CEO kinda hopes Call of Duty will become an Xbox exclusive"
-                source="PCGamer"
-                logo="https://d3sg99hx6ladh0.cloudfront.net/media/17/d7lAjJvnlxVz4njFC64hG1Sx5pLwUhGOxcjsrAkc.png"
+                image="/projects/alwaysdead/article-1.jpg"
+                title="Tunic Is Coming To PS4 and PS5 in September"
+                source="IGN"
+                logo="/projects/alwaysdead/ign.jpg"
                 date="Sep 22, 2022"
                 reads="47 reads"
                 mt-6

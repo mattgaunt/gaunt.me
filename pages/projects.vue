@@ -1,13 +1,6 @@
 <script lang="ts" setup>
-useHead({
-  title: 'Projects',
-  meta: [
-    { property: 'og:image', content: '/og/projects.png' },
-    { name: 'twitter:image', content: '/og/projects.png' },
-  ],
-})
-
 definePageMeta({
+  title: 'Projects',
   changefreq: 'monthly',
 })
 </script>

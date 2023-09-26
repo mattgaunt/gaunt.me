@@ -37,12 +37,13 @@ useMotion(mobile, {
       </div>
       <div col-span-12>
         <div flex justify-center>
-          <img
+          <NuxtImg
             ref="mobile"
             src="/projects/alwaysdead/mobile.png"
             alt="Alwaysdead Mobile"
+            loading="lazy"
             w-full
-          >
+          />
         </div>
       </div>
     </div>

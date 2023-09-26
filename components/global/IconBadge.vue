@@ -9,25 +9,10 @@ defineProps({
 
 <template>
   <div inline-flex>
-    <div
-      flex
-      items-center
-      justify-center
-      rounded-7
-      bg-white
-      bg-opacity-5
-      ring-1
-      ring-white
-      ring-opacity-10
-      backdrop-blur-2
-      transition
-      duration-300
-      w-18
-      h-18
-    >
+    <div p-1>
       <Icon
         :name="name"
-        size="40"
+        size="48"
         fill-cyan
         fill-opacity-10
         stroke-cyan

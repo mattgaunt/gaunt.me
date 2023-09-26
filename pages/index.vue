@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+definePageMeta({
+  changefreq: 'monthly',
+})
+
 const title = ref<HTMLElement>()
 const text = ref<HTMLElement>()
 const button = ref<HTMLElement>()
@@ -22,15 +26,6 @@ refs.forEach((ref, i) => {
       },
     },
   })
-})
-
-useHead({
-  title: 'Matthew Gaunt',
-  titleTemplate: '%s - Full-stack developer',
-})
-
-definePageMeta({
-  changefreq: 'monthly',
 })
 </script>
 
@@ -103,7 +98,7 @@ definePageMeta({
                   <RecentsAlwaysdead />
                 </div>
                 <div col-span-1 order-7 md:col-span-8 xl:col-span-5 xl:order-7>
-                  <RecentsLoadout />
+                  <RecentsMidnite />
                 </div>
                 <div col-span-1 order-6 md:col-span-4 xl:col-span-3 xl:order-8>
                   <RecentsPublish />

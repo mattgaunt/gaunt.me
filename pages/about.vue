@@ -1,9 +1,6 @@
 <script lang="ts" setup>
-useHead({
-  title: 'About',
-})
-
 definePageMeta({
+  title: 'About',
   changefreq: 'monthly',
 })
 </script>

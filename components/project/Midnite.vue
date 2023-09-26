@@ -33,7 +33,7 @@ refs.forEach((ref, i) => {
         <div flex justify-center w-full relative z-5>
           <div space-y-8 text-center py-16 md:py-20 px-6>
             <div flex flex-col space-y-6 max-w-lg>
-              <Heading type="h2" text="#B3FF66" text-4xl lg:(text-5xl leading-14)>
+              <Heading type="h2" text="#B3FF66!" text-4xl lg:text-5xl lg:leading-14>
                 Next level betting.
               </Heading>
 
@@ -57,12 +57,12 @@ refs.forEach((ref, i) => {
       </div>
       <div col-span-12 md:min-h-xs h-full mt="-20 md:-50">
         <div flex justify-center items-center>
-          <img
+          <NuxtImg
             src="/projects/midnite/wave.svg"
             alt="Midnite"
             relative
             w-full
-          >
+          />
         </div>
       </div>
     </div>

@@ -176,7 +176,7 @@
 
       <Button
         type="button"
-        bg="cyan/100"
+        bg="cyan/100!"
         border-transparent
         text-zinc-900
         w-full

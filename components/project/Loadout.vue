@@ -34,7 +34,7 @@ refs.forEach((ref, i) => {
         <div flex justify-center w-full>
           <div space-y-8 text-center py-16 md:py-20 px-6>
             <div flex flex-col space-y-6 max-w-lg>
-              <Heading type="h2" text="#FF5E33" text-4xl lg:(text-5xl leading-14)>
+              <Heading type="h2" text="#FF5E33!" text-4xl lg:text-5xl lg:leading-14>
                 Loadout with style.
               </Heading>
 

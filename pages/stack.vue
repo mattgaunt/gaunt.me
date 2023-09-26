@@ -1,18 +1,11 @@
 <script lang="ts" setup>
+definePageMeta({
+  title: 'Stack',
+  changefreq: 'weekly',
+})
+
 const { data: stack } = await useAsyncData('stack', () => {
   return queryContent('stack').find()
-})
-
-useHead({
-  title: 'Stack',
-  meta: [
-    { property: 'og:image', content: '/og/stack.png' },
-    { name: 'twitter:image', content: '/og/stack.png' },
-  ],
-})
-
-definePageMeta({
-  changefreq: 'weekly',
 })
 </script>
 

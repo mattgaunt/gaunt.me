@@ -71,74 +71,79 @@ second.forEach((ref, index) => {
           <div grid grid-cols-3 gap-12 lg:gap-16 w-full>
             <div col-span-1>
               <figure ref="wolf1" relative overflow-hidden aspect-square rounded-3xl>
-                <img
+                <NuxtImg
                   src="/projects/wolfpack/wolf-001.png"
+                  loading="lazy"
                   absolute
                   inset-none
                   object-cover
                   w-full
                   h-full
-                >
+                />
               </figure>
             </div>
             <div col-span-1>
               <figure ref="wolf2" relative overflow-hidden aspect-square rounded-3xl>
-                <img
+                <NuxtImg
                   src="/projects/wolfpack/wolf-002.png"
+                  loading="lazy"
                   absolute
                   inset-none
                   object-cover
                   w-full
                   h-full
-                >
+                />
               </figure>
             </div>
             <div col-span-1>
               <figure ref="wolf3" relative overflow-hidden aspect-square rounded-3xl>
-                <img
+                <NuxtImg
                   src="/projects/wolfpack/wolf-003.png"
+                  loading="lazy"
                   absolute
                   inset-none
                   object-cover
                   w-full
                   h-full
-                >
+                />
               </figure>
             </div>
             <div col-span-1>
               <figure ref="wolf4" relative overflow-hidden aspect-square rounded-3xl>
-                <img
+                <NuxtImg
                   src="/projects/wolfpack/wolf-004.png"
                   absolute
                   inset-none
                   object-cover
                   w-full
                   h-full
-                >
+                />
               </figure>
             </div>
             <div col-span-1>
               <figure ref="wolf5" relative overflow-hidden aspect-square rounded-3xl>
-                <img
+                <NuxtImg
                   src="/projects/wolfpack/wolf-005.png"
+                  loading="lazy"
                   absolute
                   inset-none
                   object-cover
                   w-full
                   h-full
-                >
+                />
               </figure>
             </div>
             <div col-span-1>
               <figure ref="wolf6" relative overflow-hidden aspect-square rounded-3xl>
-                <img
+                <NuxtImg
                   src="/projects/wolfpack/wolf-006.png"
+                  loading="lazy"
                   absolute
                   inset-none
                   object-cover
                   w-full
                   h-full
-                >
+                />
               </figure>
             </div>
           </div>

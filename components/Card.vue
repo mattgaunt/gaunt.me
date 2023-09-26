@@ -10,7 +10,7 @@
     h-full
     p-4
     before:mask
-    before:content-none
+    before:content-empty
     before:rounded-inherit
     before:absolute
     before:inset-none

@@ -124,7 +124,7 @@ useMotion(five, {
         <div flex justify-center w-full>
           <div space-y-8 text-center py-16 md:py-20 px-6>
             <div flex flex-col space-y-6 max-w-xl>
-              <Heading type="h2" text="#27FFF2" text-4xl lg:(text-5xl leading-14)>
+              <Heading type="h2" text="#27FFF2!" text-4xl lg:text-5xl lg:leading-14>
                 Daily digest for your gaming habits.
               </Heading>
 
@@ -154,10 +154,10 @@ useMotion(five, {
 
           <AlwaysdeadPost
             ref="one"
-            image="https://d3sg99hx6ladh0.cloudfront.net/media/980/conversions/jyjSxslI8oJ7eWa2F6Rr97bDWVk3bjZfiVV1iLSk-thumbnail.jpg"
-            title="Valheim and Slime Rancher 2 join Deathloop on Xbox Game Pass"
-            source="Polygon"
-            logo="https://d3sg99hx6ladh0.cloudfront.net/media/19/RazgTVzEWZJ0SBbIyNfmAgWIpg2Yj1UVPgAmEOre.png"
+            image="/projects/alwaysdead/article-1.jpg"
+            title="Tunic Is Coming To PS4 and PS5 in September"
+            source="IGN"
+            logo="/projects/alwaysdead/ign.jpg"
             date="Sep 20, 2022"
             reads="13 reads"
             max-w-82
@@ -169,10 +169,10 @@ useMotion(five, {
           />
           <AlwaysdeadPost
             ref="two"
-            image="https://d3sg99hx6ladh0.cloudfront.net/media/971/conversions/44YC4APO7KuErgrosXppXHqu2nMEwC7igd07tyyF-thumbnail.jpg"
-            title="Electronic Arts CEO kinda hopes Call of Duty will become an Xbox exclusive"
-            source="PCGamer"
-            logo="https://d3sg99hx6ladh0.cloudfront.net/media/17/d7lAjJvnlxVz4njFC64hG1Sx5pLwUhGOxcjsrAkc.png"
+            image="/projects/alwaysdead/article-2.jpg"
+            title="Square Enix casually confirms there's a new Just Cause in development"
+            source="Destructoid"
+            logo="/projects/alwaysdead/destructoid.jpg"
             date="Sep 22, 2022"
             reads="47 reads"
             max-w-82
@@ -184,10 +184,10 @@ useMotion(five, {
           />
           <AlwaysdeadPost
             ref="three"
-            image="https://d3sg99hx6ladh0.cloudfront.net/media/929/conversions/0KKKxaD57XhRe9epKzYhCbTI1HgRfXlJOghSz49b-thumbnail.jpg"
-            title="Battlefield 2042 Strayed A Little Too Far From What Makes The Series Fun, EA Exec Says"
-            source="GameSpot"
-            logo="https://d3sg99hx6ladh0.cloudfront.net/media/30/fvEx0loDNSaN73GGENrcJ5h8122cLlq5oNtyyjPr.png"
+            image="/projects/alwaysdead/article-3.jpg"
+            title="Overwatch 2 finally launches into early access for everyone in October"
+            source="Kotaku"
+            logo="/projects/alwaysdead/kotaku.jpg"
             date="Sep 17, 2022"
             reads="33 reads"
             max-w-82

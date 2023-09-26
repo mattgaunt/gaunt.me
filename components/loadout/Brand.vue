@@ -13,7 +13,7 @@ defineProps({
         <div flex justify-center relative>
           <div rounded-7 overflow-hidden w-18>
             <div flex justify-center items-center>
-              <img :src="image" :alt="name">
+              <NuxtImg loading="lazy" :src="image" :alt="name" />
             </div>
           </div>
         </div>

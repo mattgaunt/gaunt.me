@@ -34,7 +34,7 @@ defineProps({
         <div flex flex-col flex-auto>
           <div bg-zinc-800 rounded-2xl w-full>
             <figure group-hover="opacity-80" flex-initial duration-250>
-              <img
+              <NuxtImg
                 :src="image"
                 :alt="title"
                 inline-flex
@@ -44,7 +44,7 @@ defineProps({
                 object-cover
                 rounded-xl
                 w-full
-              >
+              />
             </figure>
           </div>
         </div>
@@ -53,13 +53,13 @@ defineProps({
             <div flex flex-col items-start space-y-3 min-h-36>
               <div flex items-center space-x-1 bg-zinc-800 bg-opacity-60 rounded-xl px-2 h-8>
                 <div inline-flex items-center rounded-md overflow-hidden>
-                  <img
+                  <NuxtImg
                     :src="logo"
                     :alt="source"
                     inline-flex
                     aspect-square
                     w-4
-                  >
+                  />
                 </div>
                 <span text-xs text-white font-semibold px-1>
                   {{ source }}

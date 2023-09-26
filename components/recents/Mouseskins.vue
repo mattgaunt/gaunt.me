@@ -20,9 +20,10 @@
       <div col-span-2>
         <div max-h-xs h-full px-8>
           <div flex justify-center items-center relative>
-            <img
+            <NuxtImg
               alt="Gaming Mice"
               src="/recents/mouseskins/render.png"
+              loading="lazy"
               block
               max-w-160
               w-full

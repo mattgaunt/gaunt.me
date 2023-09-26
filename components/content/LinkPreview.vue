@@ -19,7 +19,7 @@ defineProps<{
           overflow-hidden
           m-none
         >
-          <img :src="image" loading="lazy" object-cover inline-flex />
+          <NuxtImg :src="image" loading="lazy" object-cover inline-flex />
         </figure>
 
         <div flex flex-col gap-y-1 px-2>

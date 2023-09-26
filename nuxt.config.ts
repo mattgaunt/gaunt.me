@@ -1,66 +1,68 @@
 export default defineNuxtConfig({
-  experimental: {
-    reactivityTransform: true,
+  $production: {
+    experimental: {
+      noVueServer: true,
+    },
   },
-  app: {
-    head: {
-      script: [
-        {
-          'defer': true,
-          'src': 'https://plausible.io/js/script.js',
-          'data-domain': 'gaunt.me',
-        },
+
+  experimental: {
+    componentIslands: true,
+    payloadExtraction: true,
+    typedPages: true,
+  },
+
+  nitro: {
+    future: { nativeSWR: true },
+    prerender: {
+      concurrency: 12,
+      crawlLinks: true,
+      routes: [
+        '/',
+        '/about',
+        '/projects',
+        '/bookmarks',
+        '/stack',
+        '/sitemap.xml',
       ],
     },
   },
-  runtimeConfig: {
-    domain: 'https://gaunt.me',
-  },
-  nitro: {
-    routeRules: {
-      '/notes/hybridly-an-inertia-replacement': {
-        redirect: '/notes/hybridly-an-inertia-alternative',
-      },
-    },
-    prerender: {
-      routes: ['/sitemap.xml'],
+
+  routeRules: {
+    '/notes/hybridly-an-inertia-replacement': {
+      redirect: '/notes/hybridly-an-inertia-alternative',
     },
   },
+
   modules: [
-    '@unocss/nuxt',
-    '@nuxt-themes/tokens',
     '@nuxt/content',
-    '@nuxt/image-edge',
+    '@nuxt/image',
+    '@nuxt-themes/tokens',
+    '@nuxtjs/plausible',
+    '@unocss/nuxt',
     '@vueuse/nuxt',
     '@vueuse/motion/nuxt',
-    '@vue-macros/nuxt',
   ],
+
   css: [
     '@unocss/reset/tailwind.css',
     '~/styles/fonts.css',
     '~/styles/global.css',
   ],
-  pinceau: {
-    configFileName: 'tokens.config',
-  },
+
   image: {
     provider: 'vercel',
+    domains: [
+      'opengraph.githubassets.com',
+    ],
   },
+
   content: {
-    markdown: {
-      remarkPlugins: ['remark-reading-time'],
-    },
     highlight: {
       theme: 'dracula',
-      preload: [
-        'php',
-        'js',
-        'ts',
-        'html',
-        'css',
-        'vue',
-        'diff',
-      ],
+      preload: ['php', 'js', 'ts', 'vue', 'diff'],
+    },
+    markdown: {
+      remarkPlugins: ['remark-reading-time'],
     },
   },
 })

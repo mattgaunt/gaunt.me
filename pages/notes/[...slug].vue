@@ -1,18 +1,20 @@
 <script lang="ts" setup>
-const { path } = useRoute()
-const data = await queryContent('notes').where({ _path: path }).findOne()
+const route = useRoute()
+const data = await queryContent('notes').where({ _path: route.path }).findOne()
 
-useHead({
+route.meta.title = data.title
+
+definePageMeta({
+  changefreq: 'monthly',
+})
+
+useServerHead({
   meta: [
     { property: 'og:type', content: 'article' },
     { property: 'article:published_time', content: data.updatedAt ?? data.createdAt },
     { property: 'article:author', content: 'Matthew Gaunt' },
     { property: 'article:published', content: 'https://twitter.com/mattgaunt' },
   ],
-})
-
-definePageMeta({
-  changefreq: 'monthly',
 })
 </script>
 

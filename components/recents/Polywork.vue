@@ -33,8 +33,8 @@ refs.forEach((ref, i) => {
   <div bg-zinc-900 bg-opacity-25 rounded-10 h-full>
     <a :href="config.socials.polywork" target="_blank" hover="-rotate-1 -translate-y-5" block transition duration-250 h-full>
       <Card
-        from="#7B61FF/80"
-        to="#7B61FF/100"
+        from="#7B61FF/80!"
+        to="#7B61FF/100!"
         overflow-hidden
         before:from-white
         before:from-opacity-15

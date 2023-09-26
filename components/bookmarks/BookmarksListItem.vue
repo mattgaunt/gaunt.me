@@ -21,7 +21,7 @@ defineProps({
     h-full
     hover:scale-101
     before:mask
-    before:content-none
+    before:content-empty
     before:rounded-inherit
     before:absolute
     before:inset-none
@@ -35,7 +35,12 @@ defineProps({
     <div flex items-center gap-6>
       <div flex flex-none>
         <div inline-flex rounded-5 overflow-hidden>
-          <img loading="lazy" :src="bookmark.image" aspect-square max-w-16>
+          <NuxtImg
+            loading="lazy"
+            :src="bookmark.image"
+            aspect-square
+            max-w-16
+          />
         </div>
       </div>
       <div flex flex-1 flex-col space-y-1>

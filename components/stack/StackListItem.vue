@@ -21,7 +21,7 @@ defineProps({
     bg-zinc-800
     h-full
     before:mask
-    before:content-none
+    before:content-empty
     before:rounded-inherit
     before:absolute
     before:inset-none
@@ -34,7 +34,12 @@ defineProps({
     <div flex flex-col items-center gap-6>
       <div flex items-center flex-none py-8>
         <div inline-flex rounded-7 overflow-hidden>
-          <img loading="lazy" :src="item.image" aspect-square max-w-22>
+          <NuxtImg
+            loading="lazy"
+            :src="item.image"
+            aspect-square
+            max-w-22
+          />
         </div>
       </div>
       <div flex flex-1 items-center w-full>

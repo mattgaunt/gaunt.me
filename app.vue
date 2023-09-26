@@ -1,12 +1,11 @@
 <script lang="ts" setup>
+const route = useRoute()
 const config = useAppConfig()
 
-const title = $ref('Matthew Gaunt')
-const description = $ref('Full-stack developer, budding designer, and tinkerer, working remotely.')
-
 useHead({
-  title,
-  titleTemplate: `%s - ${config.name}`,
+  htmlAttrs: { lang: 'en' },
+  title: () => route.meta.title as string,
+  titleTemplate: title => (title ? `${title} - ${config.name}` : config.name),
   link: [
     { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
     { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
@@ -29,11 +28,11 @@ useHead({
     },
   ],
   meta: [
-    { name: 'description', content: description },
-    { property: 'og:title', content: title },
-    { property: 'og:description', content: description },
-    { property: 'og:image', content: '/og/default.png' },
-    { property: 'og:url', content: config.domain },
+    { name: 'description', content: config.description },
+    { property: 'og:title', content: (route.meta.title as string) || config.name },
+    { property: 'og:description', content: config.description },
+    { property: 'og:image', content: `https://gaunt.me/og/default.png`, key: 'og:image' },
+    { property: 'og:url', content: config.domain as string },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:creator', content: '@mattgaunt' },
     { name: 'twitter:site', content: '@mattgaunt' },
@@ -42,14 +41,11 @@ useHead({
     { name: 'theme-color', content: '#fff', media: '(prefers-color-scheme: light)' },
     { name: 'theme-color', content: 'rgb(23, 23, 23)', media: '(prefers-color-scheme: dark)' },
   ],
-  htmlAttrs: {
-    lang: 'en',
-  },
 })
 </script>
 
 <template>
-  <Body antialiased />
+  <Body antialiased="~" />
 
   <NuxtLayout>
     <NuxtPage />

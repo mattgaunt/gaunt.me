@@ -1,18 +1,11 @@
 <script setup>
+definePageMeta({
+  title: 'Bookmarks',
+  changefreq: 'weekly',
+})
+
 const { data: bookmarks } = await useAsyncData('bookmarks', () => {
   return queryContent('bookmarks').find()
-})
-
-useHead({
-  title: 'Bookmarks',
-  meta: [
-    { property: 'og:image', content: '/og/bookmarks.png' },
-    { name: 'twitter:image', content: '/og/bookmarks.png' },
-  ],
-})
-
-definePageMeta({
-  changefreq: 'weekly',
 })
 </script>
 

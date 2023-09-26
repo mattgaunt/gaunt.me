@@ -1,21 +1,16 @@
 <script lang="ts" setup>
-const { data: notes } = await useAsyncData('notes', () => queryContent('notes').find())
+definePageMeta({
+  title: 'Notes',
+  changefreq: 'weekly',
+})
+
+const { data: notes } = await useAsyncData('notes', async () => {
+  return await queryContent('notes').find()
+})
 
 const route = useRoute()
 const isNotesPage = computed(() => route.name === 'notes')
 const isNotePage = computed(() => route.name === 'notes-slug')
-
-useHead({
-  title: 'Notes',
-  meta: [
-    { property: 'og:image', content: '/og/notes.png' },
-    { name: 'twitter:image', content: '/og/notes.png' },
-  ],
-})
-
-definePageMeta({
-  changefreq: 'daily',
-})
 </script>
 
 <template>
@@ -59,7 +54,7 @@ definePageMeta({
                   active-class="bg-zinc-800"
                   before:transition-all
                   before:scale-95
-                  before:content-none
+                  before:content-empty
                   before:rounded-2xl
                   before:absolute
                   before:inset-none

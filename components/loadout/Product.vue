@@ -29,7 +29,7 @@ defineProps({
       <div col-span-1>
         <div bg-transparent rounded-2xl w-full>
           <figure inline-flex overflow-hidden>
-            <img :src="image" :alt="name" max-w-72>
+            <NuxtImg :src="image" :alt="name" max-w-72 />
           </figure>
         </div>
       </div>
