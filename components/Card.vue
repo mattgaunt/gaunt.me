@@ -11,7 +11,7 @@
     p-4
     before:mask
     before:content-empty
-    before:rounded-inherit
+    before:rounded-10
     before:absolute
     before:inset-none
     before:pointer-events-none
