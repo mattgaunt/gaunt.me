@@ -37,7 +37,7 @@ defineOptions({
       rounded-4
       px-3
       py-default
-      text-sm
+      text-base
       text-zinc-400
       fill-white
       fill-opacity-10

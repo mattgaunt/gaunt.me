@@ -34,12 +34,7 @@ defineProps({
     <div flex flex-col items-center gap-6>
       <div flex items-center flex-none py-8>
         <div inline-flex rounded-7 overflow-hidden>
-          <NuxtImg
-            loading="lazy"
-            :src="item.image"
-            aspect-square
-            max-w-22
-          />
+          <NuxtImg :src="item.image" aspect-square max-w-22 />
         </div>
       </div>
       <div flex flex-1 items-center w-full>

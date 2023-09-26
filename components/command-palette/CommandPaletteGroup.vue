@@ -22,12 +22,12 @@ defineProps({
 <template>
   <li p-2>
     <template v-if="group[groupAttribute]">
-      <h2 text-xs font-medium text-zinc-400 px-3 my-2>
+      <h2 text-sm font-medium text-zinc-400 px-3 my-2>
         {{ group[groupAttribute] }}
       </h2>
     </template>
 
-    <ul text-sm text-zinc-200>
+    <ul text-base text-zinc-200>
       <ComboboxOption
         v-for="(command, idx) of group.commands"
         v-slot="{ active }"

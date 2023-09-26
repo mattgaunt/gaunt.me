@@ -35,12 +35,7 @@ defineProps({
     <div flex items-center gap-6>
       <div flex flex-none>
         <div inline-flex rounded-5 overflow-hidden>
-          <NuxtImg
-            loading="lazy"
-            :src="bookmark.image"
-            aspect-square
-            max-w-16
-          />
+          <NuxtImg :src="bookmark.image" aspect-square max-w-16 />
         </div>
       </div>
       <div flex flex-1 flex-col space-y-1>
