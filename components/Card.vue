@@ -7,16 +7,11 @@
     from-opacity-3
     to-white
     to-opacity-5
+    ring-1
+    ring-white
+    ring-opacity-8
     h-full
     p-4
-    before:mask
-    before:content-empty
-    before:rounded-10
-    before:absolute
-    before:inset-none
-    before:pointer-events-none
-    before:select-none
-    before:p-px
   >
     <slot />
   </div>

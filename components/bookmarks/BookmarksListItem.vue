@@ -18,16 +18,11 @@ defineProps({
     relative
     rounded-3xl
     bg-zinc-800
+    ring-1
+    ring-white
+    ring-opacity-8
     h-full
     hover:scale-101
-    before:mask
-    before:content-empty
-    before:rounded-inherit
-    before:absolute
-    before:inset-none
-    before:pointer-events-none
-    before:select-none
-    before:p-px
     px-6
     lg:px-8
     py-6

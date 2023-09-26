@@ -11,7 +11,6 @@ export default defineConfig({
   shortcuts: [
     {
       'max-h-page': 'max-h-[calc(100vh_-_16px)]',
-      'mask': '[mask-composite:xor] [mask:linear-gradient(black,black)_content-box_content-box,linear-gradient(black,black)] bg-gradient-to-b bg-gradient-from-white/5 bg-gradient-to-white/5',
       'glow': '[background:radial-gradient(ellipse_at_center,var(--un-gradient-stops))]',
       'highlight': 'shadow-px shadow-inset shadow-white/5',
       'shortcut': 'flex items-center bg-white bg-opacity-4 rounded-md w-4.5 h-5',
