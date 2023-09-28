@@ -55,11 +55,11 @@ refs.forEach((ref, i) => {
               <div space-y-8 text-left p-6>
                 <div flex flex-col space-y-2 max-w-lg>
                   <p text-sm text-white text-opacity-75 font-medium tracking-normal>
-                    18 Oct
+                    30 Aug
                   </p>
 
                   <Heading type="h2" text-3xl text-white>
-                    Livewire 3 has me very excited for building Loadout.co
+                    You might have missed this from the latest Nuxt release
                   </Heading>
                 </div>
               </div>
