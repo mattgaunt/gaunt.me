@@ -1,6 +1,6 @@
 <template>
   <div flex bg-zinc-900 bg-opacity-25 rounded-10>
-    <a href="https://checkpoint.live/" target="_blank" hover="-rotate-1 -translate-y-5" transition duration-250>
+    <a href="http://checkpoint.live/" target="_blank" hover="-rotate-1 -translate-y-5" transition duration-250>
       <Card
         from="#168DFF/75!"
         to="#168DFF/100!"
